@@ -1,1 +1,74 @@
-<p>login works!</p>
+<div class="auth-bg">
+    <img src="assets/images/curve.svg" alt="curve">
+</div>
+<div class="container container--auth">
+        <div class="row align-items-center">
+            <div class="col-md-6 login-form-col">
+                <div class="transparent-bg login-form mb-4">
+                    <div class="login-wrap">
+                        <div class="logo d-flex justify-content-center">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <h2>Login</h2>
+                        <p>Please login to your account</p>
+                        <form>
+                           <div class="mb-2">
+                            <label>User Name</label>
+                            <div class="form-group d-flex position-relative">
+                                <img src="assets/images/user.svg">
+                                <input type="text" class="form-control">
+                            </div>
+                           </div>
+                            <div>
+                                <label>Password</label>
+                            <div class="form-group d-flex position-relative">
+                                <img src="assets/images/padlock.svg">
+                                <input type="password" class="form-control">
+                            </div>
+                            </div>
+                            <a class="remember" href="#">Remember me?</a><br>
+                            <button class="btn btn-primary w-100">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="transparent-bg support d-flex align-items-center">
+                    <div class="support__img">
+                        <img src="assets/images/customer-support.svg" alt="">
+                    </div>
+                    <div class="support__content">
+                        <h4>Trouble login in ?</h4>
+                        <p class="mb-0">Contact customer support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 login-slider-col">
+                <div class="slider">
+                    <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig">
+                    <div ngxSlickItem>
+                        <div class="slider-section">
+                        <img src="assets/images/slider-img.svg" alt="">
+                        <h2>Friendly Dashboard</h2>
+                        <p>The all new designed dashboard lets you enjoy all features on the go</p>
+                    </div>
+                    </div>
+                    <div ngxSlickItem>
+                        <div class="slider-section">
+                        <img src="assets/images/slider-img.svg" alt="">
+                        <h2>Friendly Dashboard</h2>
+                        <p>The all new designed dashboard lets you enjoy all features on the go</p>
+                    </div>
+                    </div>
+                    <div ngxSlickItem>
+                        <div class="slider-section">
+                        <img src="assets/images/slider-img.svg" alt="">
+                        <h2>Friendly Dashboard</h2>
+                        <p>The all new designed dashboard lets you enjoy all features on the go</p>
+                    </div>
+                    </div>
+                </ngx-slick-carousel>
+                </div>
+            </div>
+        </div>
+    </div>

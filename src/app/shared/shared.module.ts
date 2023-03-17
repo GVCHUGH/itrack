@@ -5,6 +5,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { StatusCardComponent } from './status-card/status-card.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { StatusCardComponent } from './status-card/status-card.component';
     StatusCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SlickCarouselModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SideMenuComponent,
-    StatusCardComponent
+    StatusCardComponent,
+    SlickCarouselModule
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,219 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+.auth-bg {
+    background: $primary-200;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    pointer-events: none;
+    z-index: -1;
+    &::before {
+        content: '';
+        position: absolute;
+        right: -170px;
+        top: -80px;
+        background: url(./../../../../../assets/images/shape1.svg);
+        height: 328px;
+        width: 328px;
+        background-repeat: no-repeat;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -170px;
+        bottom: -150px;
+        background: url(./../../../../../assets/images/shape2.svg);
+        height: 258px;
+        width: 328px;
+        background-repeat: no-repeat;
+    }
+    img {
+        
+    position: absolute;
+    left: -20%;
+    top: -19%;
+
+    }
+}
+
+.container {
+    &--auth {
+        padding-top: 40px;
+    }
+}
+
+.login-form-col {
+    max-width: 548px;
+}
+
+.login-slider-col {
+    width: calc(100% - 548px);
+    .slider {
+    }
+}
+
+.transparent-bg {
+    background: rgba(252,252,252,0.7);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.login-form {
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    padding: 75px 0 30px 0;
+    .login-wrap{
+        width: calc(100% - 70px);
+        margin: 0 auto;
+    }
+    .logo{
+        margin-bottom: 30px;
+        img{
+            width: 160px;
+            height: 40px;
+        }
+    }
+    h2{
+        font-weight: 600;
+        font-size: 28px;
+        margin: 0;
+        color: #1C1C1C;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        color: #4C4C4C;
+        margin-bottom: 40px;
+    }
+    label{
+        color: #1C1C1C;
+        margin-bottom: 3px;
+        font-size: $text-sm;
+    }
+    .form-group {
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+    }
+    input{
+        border: none;
+        color: #858585;
+        padding: 5px 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 50px;
+        padding-left: 45px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .password{
+        margin-bottom: 0;
+    }
+    .remember{
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+        color: #1C1C1C;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .login-btn{
+        width: 100%;
+        background-color: $primary;
+        height: 50px;
+        color: #1C1C1C;
+    }
+}
+
+.form-group {
+    box-shadow: 0 5px 12px rgb(0 0 0 / 6%);
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    font-size: $text-base;
+}
+
+.slider{
+    .slider-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 320px;
+            height: 300px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p{
+            width: 350px;
+            text-align: center;
+            color: #1C1C1C;
+        }
+    }
+}
+
+.support {
+    padding: 35px;
+    &__img {
+        img {
+            width: 45px;
+        }
+    }
+    &__content {
+        padding: {
+            left: 10px;
+        }
+        h4 {
+            font-size: $text-base;
+        }
+        p {
+            font-size: $text-sm;
+        }
+    }
+}
+::ng-deep {
+    .slick-dots {
+        li {
+            height: auto;
+            width: auto;
+            button {
+                height: 10px;
+                width: 10px;
+                background: #DFAB01;
+                opacity: 0.8;
+                border-radius: 30px;
+                transition: all ease-in-out 0.5s;
+                &::before {
+                    content: none;
+                }
+            }
+            &.slick-active {
+                button {
+                    width: 20px;
+                    height: 10px;
+                    opacity: 1;
+                    transition: all ease-in-out 0.5s;
+                }
+            }
+        }
+    }
+}

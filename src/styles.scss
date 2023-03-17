@@ -5,3 +5,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: $font; }
+
+.btn {
+    height: 50px;
+    &-primary {
+        background: $primary;
+        border-color: $primary;
+        &:hover,&:focus {
+            background: darken($color: $primary, $amount: 10%);
+            border-color: darken($color: $primary, $amount: 10%);
+        }
+    }
+}
