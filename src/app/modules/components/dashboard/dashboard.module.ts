@@ -5,13 +5,19 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-distributor.component';
 import { AngularMaterialModule } from 'src/app/core/models/angular-material/angular-material.module';
+import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
+import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
 
 
 
 @NgModule({
   declarations: [
     AdminDashboardComponent,
-    AddZonalDistributorComponent
+    AddZonalDistributorComponent,
+    ViewZonalDistributorComponent,
+    UploadEmployeeComponent,
+    AddEmployeeComponent
   ],
   imports: [
     CommonModule,

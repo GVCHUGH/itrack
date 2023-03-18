@@ -1,0 +1,80 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+
+.heading{
+    h2{
+        font-size: $text-lg;
+        margin: 0;
+    }
+    .breadcrumb{
+        li{
+            font-size: $text-sm;
+        }
+    }
+}
+.content{
+    background-color: $light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    padding: 5px 15px 20px;
+    .btn-download{
+        background: $secondary;
+        border-color: $secondary;
+        color: $dark;
+        &:hover,&:focus {
+            background: darken($color: $secondary, $amount: 10%);
+            border-color: darken($color: $secondary, $amount: 10%);
+        }
+        font-size: 12px;
+        width: 230px;
+        height: 35px;
+        margin-left: 10px;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+::ng-deep{
+    .mat-mdc-form-field-flex {
+        height: 35px;
+    }
+    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix{
+        padding: 6px 0px;
+    }
+    .mat-mdc-form-field {
+        width: 100%;
+    }
+}
+
+.label{
+    margin-bottom: 5px;
+}
+.file-upload{
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 15px;
+    .upload-img{
+        background-color: $secondary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .upload-content{
+        margin-left: 20px;
+        width: calc(100% - 50px);
+        h2{
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+            color: #6d6d6d;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+}
