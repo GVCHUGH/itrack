@@ -26,6 +26,10 @@ export class AppComponent {
   toggleMenu(event:any){
     this.menuToggler = !this.menuToggler;
   }
+
+  expend(){
+    this.menuToggler = true;
+  }
 }
 
 

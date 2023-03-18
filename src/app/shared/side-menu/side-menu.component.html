@@ -14,7 +14,7 @@
                     </div>
                 </a>
                 <ng-container *ngIf="item.hasDropdown">
-                    <ul class="sub-menu" [ngClass]="openDropdowns[i] ? 'opened':''">
+                    <ul class="sub-menu" [ngClass]="openDropdowns[i] && toggleValue ? 'opened':''">
                         <li *ngFor="let subMenu of item.dropDown">
                             {{subMenu.name}}
                         </li>
