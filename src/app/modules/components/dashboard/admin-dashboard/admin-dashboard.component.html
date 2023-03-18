@@ -1,1 +1,140 @@
-Hello
+<div class="status-cards d-flex flex-wrap">
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Report Date'"
+            [value]="'02/02/2023'"
+            [background]="'#52D188'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Total App User'"
+            [value]="'1,00,000'"
+            [background]="'#D982EA'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Logged In'"
+            [value]="'605'"
+            [background]="'#4B8DEC'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Visits'"
+            [value]="'605'"
+            [background]="'#E1960F'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Images'"
+            [value]="'605'"
+            [background]="'#FF7C7C'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Orders'"
+            [value]="'02/02/2023'"
+            [background]="'#7A81E1'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Payments'"
+            [value]="'0'"
+            [background]="'#E17F47'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Not Logged In'"
+            [value]="'386'"
+            [background]="'#67DCC5'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Feedback'"
+            [value]="'386'"
+            [background]="'#6AA2C7'">
+        </app-status-card>
+    </div>
+    <div class="status-card-list">
+        <app-status-card
+            [title]="'Form'"
+            [value]="'386'"
+            [background]="'#B1AE43'">
+        </app-status-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card--common">
+            <div class="card__title">
+                <h4 class="mb-0">User List</h4>
+            </div>
+            <div class="card__body"></div>
+            <table class="table table-striped table--common mb-0">
+                <thead>
+                  <tr>
+                    <th>S.NO</th>
+                    <th>Area Name</th>
+                    <th>Region</th>
+                    <th>Branch</th>
+                    <th style="text-align: center;">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of [1,2,3,4,5]; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>Faridabad</td>
+                    <td>North</td>
+                    <td>Faridabad</td>
+                    <td style="text-align: center;">
+                        <button class="btn btn--action" [matMenuTriggerFor]="menu">
+                            <img src="assets/images/action.svg">
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                                <i class="material-icons">edit</i>
+                              <span>Edit</span>
+                            </button>
+                            <button mat-menu-item>
+                                <i class="material-icons">delete</i>
+                              <span>Delete</span>
+                            </button>
+                          </mat-menu>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card--common">
+            <div class="card__title">
+                <h4 class="mb-0">Login Details</h4>
+            </div>
+            <div class="card__body"></div>
+            <table class="table table-striped table--common mb-0">
+                <tbody>
+                  <tr *ngFor="let item of [1,2,3,4]">
+                      <td>
+                          <div class="d-flex align-items-center">
+                              <img src="assets/images/user.png" alt="" class="me-2">
+                              <p class="mb-0">Rajender</p>
+                          </div>
+                      </td>
+                    <td>08:34 AM,<br>02 Mar 2023</td>
+                    <td>DH425ABC</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>    
+</div>

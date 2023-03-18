@@ -1,0 +1,25 @@
+.card{
+    background-image: url('./../../../assets/images/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: 165px 35px;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 15px !important;
+    color: #fff;
+    box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 19%);
+    border: none;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 12%);
+        margin-bottom: 3px;
+    }
+    h5{
+        text-shadow: 0 2px 3px rgb(0 0 0 / 12%);
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

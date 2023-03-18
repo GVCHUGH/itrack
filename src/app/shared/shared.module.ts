@@ -27,7 +27,8 @@ import { NotificationComponent } from './notification/notification.component';
     SideMenuComponent,
     StatusCardComponent,
     SlickCarouselModule,
-    NotificationComponent
+    NotificationComponent,
+    StatusCardComponent
   ]
 })
 export class SharedModule { }

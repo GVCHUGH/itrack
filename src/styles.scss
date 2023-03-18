@@ -34,10 +34,55 @@ body { margin: 0; font-family: $font; background: $gray-200; }
             border-color:none ;
         }
     }
+    &--action {
+        width: 30px;
+        height: 30px;
+        background: $primary-500;
+        border-radius: 50%;
+        padding: 0;
+        &:hover {
+            background: $primary-500;
+        }
+    }
 }
 
  //mat tab width
 
 .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{
     flex-grow: 0 !important;
+}
+
+.mat-mdc-menu-item {
+    div[class*='mdc-list-item'],
+    span[class*='mdc-list-item'] {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.card {
+    &--common {
+        overflow: hidden;
+        border: none;
+        box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 19%);
+    }
+    &__title {
+        background:#e0e0e0;
+        padding: 10px;
+        h4 {
+            font-size: $text-base;
+        }
+    }
+}
+
+.table {
+    &--common {
+        font-size: $text-sm;
+        td, th {
+            vertical-align: middle;
+        }
+    }
 }
