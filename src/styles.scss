@@ -7,13 +7,31 @@ html, body { height: 100%; }
 body { margin: 0; font-family: $font; background: $gray-200; }
 
 .btn {
-    height: 50px;
-    &-primary {
+    height: 40px;
+    width: 100px;
+    &-submit {
         background: $primary;
         border-color: $primary;
+        color: $dark;
         &:hover,&:focus {
             background: darken($color: $primary, $amount: 10%);
             border-color: darken($color: $primary, $amount: 10%);
+            color: $dark;
+        }
+        &:active{
+            border-color:none ;
+        }
+    }
+    &-reset {
+        background: $secondary;
+        border-color: $secondary;
+        color: $dark;
+        &:hover,&:focus {
+            background: darken($color: $secondary, $amount: 10%);
+            border-color: darken($color: $secondary, $amount: 10%);
+        }
+        &:active{
+            border-color:none ;
         }
     }
 }

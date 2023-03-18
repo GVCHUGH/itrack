@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading">
+            <h2>Upload Employee</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Upload Employee</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-12 content">
+            <div class="row m-0 mt-3">
+                <div class="col-md-5 d-flex flex-column">
+                    <label class="label">File Name</label>
+                    <div class="d-flex">
+                        <mat-form-field appearance="outline">
+                            <mat-select>
+                                <mat-option value="Employee 1">
+                                Employee 1
+                                </mat-option>
+                                <mat-option value="Employee 2">
+                                Employee 2
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex align-items-center pt-1">
+                    <button class="btn btn-download"><img src="../../../../../assets/images/document.svg">Download Sample</button>
+                </div>
+            </div>
+            <div class="row m-0 mt-3">
+                <div class="col-md-5 d-flex flex-column">
+                    <label class="label">Upload</label>
+                    <div class="file-upload d-flex align-items-center">
+                        <div class="upload-img">
+                            <img src="../../../../../assets/images/upload.svg" alt="">
+                        </div>
+                        <div class="upload-content">
+                            <h2>Upload File</h2>
+                            <p>File must have contain Region name,  Branch Name, Branch Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 d-flex justify-content-end">
+                    <button matRipple class="btn btn-reset me-2">Reset</button>
+                    <button matRipple class="btn btn-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,21 +3,27 @@ import { CommonModule } from '@angular/common';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
+import {MatRippleModule} from '@angular/material/core';
+import {MatMenuModule} from '@angular/material/menu';
 
+
+const material = [
+    MatTabsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatRippleModule,
+    MatMenuModule
+]
 
 @NgModule({
   declarations: [
   ],
   imports: [
     CommonModule,
-    MatTabsModule,
-    MatSelectModule,
-    MatInputModule
+    ...material
   ],
   exports: [
-    MatTabsModule,
-    MatSelectModule,
-    MatInputModule
+    ...material
   ]
 })
 export class AngularMaterialModule { }
