@@ -36,8 +36,31 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     }
 }
 
- //mat tab width
+ //mat tabs
 
 .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{
     flex-grow: 0 !important;
+}
+.mat-mdc-form-field-flex {
+    height: 35px;
+}
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix{
+    padding: 6px 0px;
+}
+.mat-mdc-form-field {
+    width: 100%;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color: $dark !important;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline{
+    border-color: $primary;
+    border-width: 3px !important;
+}
+.mat-mdc-tab-labels{
+    border-bottom: 1px solid $border;
+}
+.mat-mdc-text-field-wrapper{
+    // border: 1px solid red;
+    // border-radius: 5px;
 }

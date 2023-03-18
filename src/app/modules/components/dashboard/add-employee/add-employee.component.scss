@@ -1,10 +1,16 @@
 @import '../../../../../mixins';
 @import '../../../../../variables';
 
+.configure{
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 10px 0;
+}
 .content{
     background-color: $light;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
     border-radius: 5px;
+    padding-bottom: 20px;
     &-header{
         background-color: #eeeeee;
         height: 50px;
@@ -14,4 +20,7 @@
         font-size: $text-xl;
         font-weight: 500;
     }
+}
+.label{
+    margin-bottom: 5px;
 }
