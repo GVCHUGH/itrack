@@ -3,7 +3,7 @@ export const menu = [
         name:'Home',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu.svg',
+        icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
         hasDropdown:false,
         dropDown:[
@@ -33,5 +33,124 @@ export const menu = [
                 isVisible:true,
             }
         ]
+    },
+    {
+        name:'Products',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/products.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Regions',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/regions.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Branch',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/home.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Employees',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/group.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Employees Leaves',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/group.svg',
+        isIconVisible:true
+    },
+    {
+        name:'App Users',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/app-user.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Zonal Distributer',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/distributor.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Area Distributer',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/distributor.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Reatailer',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/store.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Assets Management',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/asset-management.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Due Amount',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/due-amount.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Stock',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/stock.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Sample Group',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/group.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Forms',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/forms.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Target',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/target.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Report',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/report.svg',
+        isIconVisible:true
+    },
+    {
+        name:'Logout',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/logout.svg',
+        isIconVisible:true
     }
 ]

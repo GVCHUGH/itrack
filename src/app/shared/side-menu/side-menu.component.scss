@@ -1,7 +1,7 @@
 @import '../../../mixins';
 @import '../../../variables';
 .side-nav{
-    width: 250px;
+    width: 300px;
     height: calc(100vh - 60px);
     overflow-y: auto;
     transition: all ease-in-out 0.5s;
@@ -22,19 +22,58 @@
         background-color: #fff;
         ul{
             li{
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
                 a{
-                    padding: 10px 8px 0px 16px;
+                    padding: 10px 20px;
                     img{
-                        width: 14px;
-                        height: 12px;
-                        margin-right: 10px;
+                        width: 17px;
+                        height: 17px;
                     }
                     span{
                         color: #6D6D6D;
-                        font-size: 15px;
+                        font-size: $text-base;
+                    }
+                    &:hover {
+                        background: rgb(255 201 21 / 10%);
+                        span {
+                            color: $dark;
+                        }
+                    }
+                }
+            }
+            &.sub-menu {
+                padding-left: 26px;
+                li {    
+                    &:not(:last-child) {
+                        margin-bottom: 5px;
+                    }
+                    padding: 4px 10px 4px 30px;
+                    font-size: $text-sm;
+                    position: relative;
+                    list-style: none;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 10px;
+                        height: 2px;
+                        background: $dark;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
                     }
                 }
             }
         }
     }
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
 }
