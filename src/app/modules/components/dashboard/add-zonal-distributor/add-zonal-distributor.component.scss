@@ -1,0 +1,19 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+
+.heading{
+    h2{
+        font-size: $text-lg;
+        margin: 0;
+    }
+    .breadcrumb{
+        li{
+            font-size: $text-sm;
+        }
+    }
+}
+.content{
+    background-color: $light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+}

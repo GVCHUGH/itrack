@@ -1,3 +1,6 @@
+@import '../mixins';
+@import '../variables';
+
 .side-menu {
     width: 300px;
     padding-top: 60px;
@@ -5,5 +8,8 @@
 }
 
 .main-content {
-    padding-top: 60px;
+    width: 100%;
+    padding: 80px 20px 20px;
+    background-color: $light-gray;
 }
+
