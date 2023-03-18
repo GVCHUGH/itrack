@@ -9,6 +9,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 .btn {
     height: 40px;
     width: 100px;
+    font-size: $text-sm;
     &-submit {
         background: $primary;
         border-color: $primary;
@@ -71,7 +72,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     }
     &__title {
         background:#e0e0e0;
-        padding: 10px;
+        padding: 10px 15px;
         h4 {
             font-size: $text-base;
         }
@@ -87,7 +88,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     }
 }
 .mat-mdc-form-field-flex {
-    height: 35px;
+    height: 40px;
 }
 .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix{
     padding: 6px 0px;
@@ -105,7 +106,28 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 .mat-mdc-tab-labels{
     border-bottom: 1px solid $border;
 }
-.mat-mdc-text-field-wrapper{
-    // border: 1px solid red;
-    // border-radius: 5px;
+.mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+.mat-mdc-form-field-infix{
+    min-height: 40px;
+}
+.mat-mdc-text-field-wrapper {
+    margin-bottom: 20px;
+}
+.label{
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.heading{
+    h2{
+        font-size: $text-lg;
+        margin: 0;
+    }
+    .breadcrumb{
+        li{
+            font-size: $text-sm;
+        }
+    }
 }

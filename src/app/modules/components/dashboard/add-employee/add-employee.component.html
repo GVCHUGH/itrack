@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 heading">
+        <div class="col-md-12 heading p-0">
             <h2>Add Employee</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -9,32 +9,34 @@
                 </ol>
             </nav>
         </div>
-        <div class="col-md-12 content">
-            <mat-tab-group>
-                <mat-tab label="Personal Info">
-                    <div class="row m-0 mt-3 configure">
-                        <div class="col-md-6 d-flex flex-column">
-                            <label class="label">Attendance Time</label>
-                            <mat-form-field class="example-full-width"  appearance="outline">
-                                <input type="time" matInput placeholder="Site Name">
-                            </mat-form-field>
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <mat-tab-group>
+                    <mat-tab label="Personal Info">
+                        <div class="row m-0 mt-3 configure">
+                            <div class="col-md-6 d-flex flex-column">
+                                <label class="label">Attendance Time</label>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input type="time" matInput placeholder="Site Name">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column">
+                                <label class="label">Minimum Working Hours</label>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Site Name">
+                                </mat-form-field>
+                            </div>
                         </div>
-                        <div class="col-md-6 d-flex flex-column">
-                            <label class="label">Minimum Working Hours</label>
-                            <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
-                            </mat-form-field>
-                        </div>
-                    </div>
-                </mat-tab>
-                <mat-tab label="Other Info"> Content 2 </mat-tab>
-                <mat-tab label="Official Info"> Content 3 </mat-tab>
-                <mat-tab label="configuration">
-                    hello
-                </mat-tab>
-                <mat-tab label="Reports"> Content 5 </mat-tab>
-                <mat-tab label="Allowance"> Content 6 </mat-tab>
-              </mat-tab-group>
+                    </mat-tab>
+                    <mat-tab label="Other Info"> Content 2 </mat-tab>
+                    <mat-tab label="Official Info"> Content 3 </mat-tab>
+                    <mat-tab label="configuration">
+                        hello
+                    </mat-tab>
+                    <mat-tab label="Reports"> Content 5 </mat-tab>
+                    <mat-tab label="Allowance"> Content 6 </mat-tab>
+                  </mat-tab-group>
+            </div>
         </div>
     </div>
 </div>
