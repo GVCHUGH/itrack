@@ -1,1 +1,22 @@
-<p>side-menu works!</p>
+<div class="side-nav">
+    <div class="menubar">
+        <ul class="nav flex-column">
+            <li class="nav-item" *ngFor="let item of menuItems">
+                <a class="nav-link d-flex justify-content-between" href="#">
+                    <div>
+                        <img [src]="item?.icon">
+                        <span>{{item?.name}}</span>
+                    </div>
+                    <div *ngIf="item.dropDown?.length">
+                        <img src="assets/images/arrow-right.svg">
+                    </div>
+                </a>
+                <ul *ngIf="item.dropDown?.length">
+                    <li *ngFor="let subMenu of item.dropDown">
+                        {{subMenu.name}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

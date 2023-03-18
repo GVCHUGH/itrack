@@ -1,0 +1,40 @@
+@import '../../../mixins';
+@import '../../../variables';
+.side-nav{
+    width: 250px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    transition: all ease-in-out 0.5s;
+    .nav-header{
+        background-color: $primary;
+        height: 60px;
+        padding: 0 15px;
+        h3{
+            font-size: 20px;
+            margin: 0;
+            font-weight: 500;
+        }
+        img{
+            display: none;
+        }
+    }
+    .menubar{
+        background-color: #fff;
+        ul{
+            li{
+                a{
+                    padding: 10px 8px 0px 16px;
+                    img{
+                        width: 14px;
+                        height: 12px;
+                        margin-right: 10px;
+                    }
+                    span{
+                        color: #6D6D6D;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

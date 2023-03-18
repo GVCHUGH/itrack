@@ -1,0 +1,45 @@
+@import '../../../variables';
+@import '../../../mixins';
+.main-header{
+    background-color: $primary;
+    height: 60px;
+    padding: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.14);
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    h3{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        margin-left: 10px;
+    }
+    p{
+        margin: 0;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    img{
+        cursor: pointer;
+    }
+    .notification {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+        margin-left: 10px;
+        background-color: #fff;
+    }
+}
+
+.main-header {
+    &__brand {
+        width: 250px;
+        padding-left: 20px;
+    }
+    &__content {
+        flex: 2;
+        padding-right: 20px;
+    }
+}
