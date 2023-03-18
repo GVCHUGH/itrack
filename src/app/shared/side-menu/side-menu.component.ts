@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { menu } from 'src/app/core/constant';
 
 @Component({
@@ -8,5 +9,20 @@ import { menu } from 'src/app/core/constant';
 })
 export class SideMenuComponent {
   public menuItems:any = menu;
+  public openDropdown:boolean = false;
+  @Input() toggleValue!:boolean;
+  public openDropdowns:any[] = [];
+  constructor(
+    private router:Router
+  ){
+
+  }
+
+  redirectTo(item:any, index:any){
+    this.openDropdowns[index] = !this.openDropdowns[index];
+    if(!item.hasDropdown){
+      this.router.navigateByUrl(item.link);
+    }
+  }
 
 }

@@ -5,6 +5,10 @@
     height: calc(100vh - 60px);
     overflow-y: auto;
     transition: all ease-in-out 0.5s;
+    &--sm {
+        transition: all ease-in-out 0.5s;
+        width: 68px;
+    }
     .nav-header{
         background-color: $primary;
         height: 60px;
@@ -30,10 +34,18 @@
                     img{
                         width: 17px;
                         height: 17px;
+                        &.dropdown-arrow {
+                            width: 6px;
+                            height: auto;
+                            &.opened {
+                                transform: rotate(90deg);
+                            }
+                        }
                     }
                     span{
                         color: #6D6D6D;
                         font-size: $text-base;
+                        transition: opacity ease-in-out 0.1s;
                     }
                     &:hover {
                         background: rgb(255 201 21 / 10%);
@@ -45,6 +57,13 @@
             }
             &.sub-menu {
                 padding-left: 26px;
+                max-height: 0;
+                transition: max-height 0.5s ease-in-out;
+                overflow: hidden;
+                &.opened {
+                    max-height: 1000px;
+                    transition: max-height 0.5s ease-in-out;
+                }
                 li {    
                     &:not(:last-child) {
                         margin-bottom: 5px;

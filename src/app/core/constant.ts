@@ -5,7 +5,7 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
         dropDown:[
             {
                 name:'Home 1',
@@ -39,118 +39,162 @@ export const menu = [
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/products.svg',
-        isIconVisible:true
+        isIconVisible:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Home 1',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Home 2',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Home 3',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Home 4',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Home 5',
+                link:'',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Regions',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/regions.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Branch',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Employees',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Employees Leaves',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'App Users',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/app-user.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Zonal Distributer',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/distributor.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Area Distributer',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/distributor.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Reatailer',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/store.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Assets Management',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/asset-management.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Due Amount',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/due-amount.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Stock',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/stock.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Sample Group',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Forms',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/forms.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Target',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/target.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Report',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/report.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     },
     {
         name:'Logout',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/logout.svg',
-        isIconVisible:true
+        isIconVisible:true,
+        hasDropdown:false,
     }
 ]

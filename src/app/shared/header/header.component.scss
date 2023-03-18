@@ -37,6 +37,9 @@
     &__brand {
         width: 300px;
         padding-left: 20px;
+        &--sm {
+            width: 68px;
+        }
     }
     &__content {
         flex: 2;

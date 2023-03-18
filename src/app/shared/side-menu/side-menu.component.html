@@ -1,23 +1,26 @@
 <div class="side-nav">
     <div class="menubar">
         <ul class="nav flex-column">
-            <li class="nav-item" *ngFor="let item of menuItems">
-                <a class="nav-link d-flex justify-content-between" href="#">
+            <li class="nav-item" *ngFor="let item of menuItems; let i = index">
+                <a class="nav-link d-flex justify-content-between"(click)="redirectTo(item, i)" role="button">
                     <div class="d-flex">
                         <div class="menu-icon">
                             <img [src]="item?.icon">
                         </div>
-                        <span>{{item?.name}}</span>
+                        <span [ngClass]="toggleValue ? '':'opacity-0'">{{item?.name}}</span>
                     </div>
-                    <div *ngIf="item.dropDown?.length">
-                        <img src="assets/images/arrow-right.svg">
+                    <div *ngIf="item.hasDropdown" >
+                        <img src="assets/images/arrow-right.svg" class="dropdown-arrow" [ngClass]="openDropdowns[i] ? 'opened':''">
                     </div>
                 </a>
-                <ul *ngIf="item.dropDown?.length" class="sub-menu">
-                    <li *ngFor="let subMenu of item.dropDown">
-                        {{subMenu.name}}
-                    </li>
-                </ul>
+                <ng-container *ngIf="item.hasDropdown">
+                    <ul class="sub-menu" [ngClass]="openDropdowns[i] ? 'opened':''">
+                        <li *ngFor="let subMenu of item.dropDown">
+                            {{subMenu.name}}
+                        </li>
+                    </ul>
+                </ng-container>
+                
             </li>
         </ul>
     </div>

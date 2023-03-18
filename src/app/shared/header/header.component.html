@@ -1,16 +1,23 @@
 <div class="main-header d-flex justify-content-between align-items-center">
-    <div class="main-header__brand">
-        <p class="mb-0">Daytrack</p>
+    <div class="main-header__brand" [ngClass]="toggleValue ? '':'main-header__brand--sm'">
+        <ng-container *ngIf="toggleValue; else smLogo">
+            <p class="mb-0">Daytrack</p>
+        </ng-container>
+        <ng-template #smLogo>
+            <p class="mb-0">D</p>
+        </ng-template>
+        
+        
     </div>
     <div class="main-header__content d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-            <img src="assets/images/menu.svg" onclick="menuToggle()">
+            <img src="assets/images/menu.svg" (click)="menu.emit(true)">
             <h3>Realme Telecommunications(India) Pvt. Ltd.</h3>
         </div>
         <div class="d-flex justify-content-between align-items-center">
             <p>Today: 03 Feb 2033 -  07:54:30 PM</p>
             <div class="notification">            
-                <img src="assets/images/notification.svg" alt="">
+                <img src="assets/images/notification.svg" alt="notification">
             </div>
         </div>
     </div>

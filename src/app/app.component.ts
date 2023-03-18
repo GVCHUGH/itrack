@@ -10,6 +10,7 @@ import { filter } from 'rxjs';
 export class AppComponent {
   shoudlShowHeader: boolean = true;
   currentRoute: string | undefined;
+  public menuToggler:boolean = true;
   title = 'itrack';
   constructor(private router: Router) {
     router.events
@@ -20,6 +21,10 @@ export class AppComponent {
           else this.shoudlShowHeader = true;
         }
       });
+  }
+
+  toggleMenu(event:any){
+    this.menuToggler = !this.menuToggler;
   }
 }
 

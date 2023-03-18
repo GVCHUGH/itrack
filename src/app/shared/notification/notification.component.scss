@@ -1,0 +1,36 @@
+@import '../../../mixins';
+@import '../../../variables';
+.notification{
+    .notification-title{
+        background-color: #6D6D6D;
+        width: 120px;
+        height: 40px;
+        span{
+            color: #fff;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 16px solid #6d6d6d;
+                position: absolute;
+                transition: all ease-in-out 0.5s;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: -30px;
+            }
+        }
+    }
+    .notification-detail{
+        width: calc(100% - 120px);
+        background-color: $primary-500;
+        padding-left: 40px;
+        span{
+            font-size: 14px;
+        }
+    }
+}

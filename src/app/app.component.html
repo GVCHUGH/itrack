@@ -1,10 +1,13 @@
 <ng-container *ngIf="shoudlShowHeader; else noHeader">
-    <app-header></app-header>
+    <app-header (menu)="toggleMenu($event)" [toggleValue]="menuToggler"></app-header>
 <div class="parent-container d-flex">
-<div class="side-menu">
-    <app-side-menu></app-side-menu>
+<div class="side-menu" [ngClass]="menuToggler ? 'opened':'closed'">
+    <app-side-menu [toggleValue]="menuToggler"></app-side-menu>
 </div>
 <div class="main-content">
+    <div class="notification-wrapper">
+        <app-notification></app-notification>
+    </div>
     <router-outlet></router-outlet>
 </div>
 </div>

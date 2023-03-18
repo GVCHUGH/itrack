@@ -5,11 +5,18 @@
     width: 300px;
     padding-top: 60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+    transition: all ease-in-out 0.1s;
+    &.closed {
+        width: 68px;
+        transition: all ease-in-out 0.1s;
+    }
 }
 
 .main-content {
     width: 100%;
     padding: 80px 20px 20px;
-    background-color: $light-gray;
 }
 
+.notification-wrapper {
+    margin:-20px -20px 0 -20px;
+}
