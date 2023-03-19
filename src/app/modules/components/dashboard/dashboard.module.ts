@@ -23,6 +23,8 @@ import { AttendanceReportComponent } from './attendance-report/attendance-report
 import { AttendanceReportDrawerComponent } from './attendance-report-drawer/attendance-report-drawer.component';
 import { AddBranchComponent } from './add-branch/add-branch.component';
 import { AddRegionComponent } from './add-region/add-region.component';
+import { ViewBranchComponent } from './view-branch/view-branch.component';
+import { ViewRegionComponent } from './view-region/view-region.component';
 
 
 
@@ -49,6 +51,8 @@ import { AddRegionComponent } from './add-region/add-region.component';
     AttendanceReportDrawerComponent,
     AddBranchComponent,
     AddRegionComponent,
+    ViewBranchComponent,
+    ViewRegionComponent,
   ],
   imports: [
     CommonModule,

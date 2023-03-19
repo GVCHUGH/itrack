@@ -28,6 +28,11 @@ export const menu = [
                 link:'add-region',
                 isVisible:true,
             },
+            {
+                name:'View Region',
+                link:'view-region',
+                isVisible:true,
+            },
         ]
     },
     {
@@ -41,6 +46,11 @@ export const menu = [
             {
                 name:'Add Branch',
                 link:'add-branch',
+                isVisible:true,
+            },
+            {
+                name:'View Branch',
+                link:'view-branch',
                 isVisible:true,
             },
         ]
