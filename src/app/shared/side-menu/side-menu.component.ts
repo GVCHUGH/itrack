@@ -18,7 +18,8 @@ export class SideMenuComponent {
   ){
   }
 
-  redirectTo(item:any, index:any){
+  redirectTo(item:any, index?:any){
+    debugger
     this.openDropdowns[index] = !this.openDropdowns[index];
     if(!item.hasDropdown){
       this.router.navigateByUrl(item.link);

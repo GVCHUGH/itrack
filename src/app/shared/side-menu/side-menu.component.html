@@ -1,27 +1,29 @@
 <div class="side-nav">
     <div class="menubar">
         <ul class="nav flex-column">
-            <li class="nav-item" *ngFor="let item of menuItems; let i = index">
-                <a class="nav-link d-flex justify-content-between"(click)="redirectTo(item, i)" role="button">
-                    <div class="d-flex">
-                        <div class="menu-icon">
-                            <img [src]="item?.icon">
+            <ng-container  *ngFor="let item of menuItems; let i = index">
+                <li class="nav-item" *ngIf="item.isVisible">
+                    <a class="nav-link d-flex justify-content-between"(click)="redirectTo(item, i)" role="button">
+                        <div class="d-flex">
+                            <div class="menu-icon">
+                                <img [src]="item?.icon">
+                            </div>
+                            <span [ngClass]="toggleValue ? '':'opacity-0'">{{item?.name}}</span>
                         </div>
-                        <span [ngClass]="toggleValue ? '':'opacity-0'">{{item?.name}}</span>
-                    </div>
-                    <div *ngIf="item.hasDropdown" >
-                        <img src="assets/images/arrow-right-light.svg" class="dropdown-arrow" [ngClass]="openDropdowns[i] ? 'opened':''">
-                    </div>
-                </a>
-                <ng-container *ngIf="item.hasDropdown">
-                    <ul class="sub-menu" [ngClass]="openDropdowns[i] && toggleValue ? 'opened':''">
-                        <li *ngFor="let subMenu of item.dropDown">
-                            {{subMenu.name}}
-                        </li>
-                    </ul>
-                </ng-container>
-                
-            </li>
+                        <div *ngIf="item.hasDropdown" >
+                            <img src="assets/images/arrow-right-light.svg" class="dropdown-arrow" [ngClass]="openDropdowns[i] ? 'opened':''">
+                        </div>
+                    </a>
+                    <ng-container *ngIf="item.hasDropdown">
+                        <ul class="sub-menu" [ngClass]="openDropdowns[i] && toggleValue ? 'opened':''">
+                            <li *ngFor="let subMenu of item.dropDown">
+                                {{subMenu.name}}
+                            </li>
+                        </ul>
+                    </ng-container>
+                    
+                </li>
+            </ng-container>
         </ul>
     </div>
 </div>
