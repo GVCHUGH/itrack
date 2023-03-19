@@ -17,19 +17,33 @@ export const menu = [
     },
     {
         name:'Regions',
-        link:'regions',
+        link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/regions.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Region',
+                link:'add-region',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Branch',
-        link:'branch',
+        link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Branch',
+                link:'add-branch',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Employees',

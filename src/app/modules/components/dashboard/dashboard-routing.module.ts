@@ -19,6 +19,8 @@ import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zon
 import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
 import { ViewAreaDistributorListComponent } from './view-area-distributor-list/view-area-distributor-list.component';
 import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
+import { AddBranchComponent } from './add-branch/add-branch.component';
+import { AddRegionComponent } from './add-region/add-region.component';
 
 const routes: Routes = [
   {path:'dashboard', component:AdminDashboardComponent},
@@ -43,7 +45,9 @@ const routes: Routes = [
   {path:'view-retailer-list', component:ViewRetailerListComponent},
   {path:'view-retailer', component:ViewRetailerComponent},
 
-  {path:'attendance-report', component:AttendanceReportComponent}
+  {path:'attendance-report', component:AttendanceReportComponent},
+  {path:'add-branch', component:AddBranchComponent},
+  {path:'add-region', component:AddRegionComponent},
 ];
 
 @NgModule({
