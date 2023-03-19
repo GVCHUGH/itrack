@@ -1,7 +1,7 @@
 <div class="main-header d-flex justify-content-between align-items-center">
     <div class="main-header__brand" [ngClass]="toggleValue ? '':'main-header__brand--sm'">
         <ng-container *ngIf="toggleValue; else smLogo">
-            <p class="mb-0 text-dark">iTrack</p>
+            <p class="mb-0 text-dark">R Track</p>
         </ng-container>
         <ng-template #smLogo>
             <p class="mb-0 text-dark">I</p>
@@ -9,7 +9,7 @@
         
         
     </div>
-    <div class="main-header__content d-flex justify-content-between align-items-center">
+    <div class="main-header__content d-flex justify-content-between align-items-center ps-3">
         <div class="d-flex align-items-center">
             <img src="assets/images/menu.svg" (click)="menu.emit(true)">
             <h3 class="text-dark">Today: 03 Feb 2033 -  07:54:30 PM</h3>

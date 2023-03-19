@@ -40,6 +40,11 @@
     &__brand {
         width: 300px;
         padding-left: 20px;
+        height: 60px;
+        background: #ffe89d;
+        align-items: center;
+        display: flex;
+        padding-left: 20px;
         &--sm {
             width: 68px;
         }
