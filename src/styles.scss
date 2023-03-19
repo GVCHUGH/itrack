@@ -10,26 +10,52 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     height: 40px;
     width: 100px;
     font-size: $text-sm;
+    // &-submit {
+    //     background: $primary;
+    //     border-color: $primary;
+    //     color: $dark;
+    //     &:hover,&:focus {
+    //         background: darken($color: $primary, $amount: 10%);
+    //         border-color: darken($color: $primary, $amount: 10%);
+    //         color: $dark;
+    //     }
+    //     &:active{
+    //         border-color:none ;
+    //     }
+    // }
+    // &-reset {
+    //     background: $secondary;
+    //     border-color: $secondary;
+    //     color: $dark;
+    //     &:hover,&:focus {
+    //         background: darken($color: $secondary, $amount: 10%);
+    //         border-color: darken($color: $secondary, $amount: 10%);
+    //     }
+    //     &:active{
+    //         border-color:none ;
+    //     }
+    // }
+
     &-submit {
-        background: $primary;
-        border-color: $primary;
-        color: $dark;
+        background: #0d6efd;
+        border-color: #0d6efd;
+        color: $light;
         &:hover,&:focus {
-            background: darken($color: $primary, $amount: 10%);
-            border-color: darken($color: $primary, $amount: 10%);
-            color: $dark;
+            background: darken($color: #0d6efd, $amount: 10%);
+            border-color: darken($color: #0d6efd, $amount: 10%);
+            color: $light;
         }
         &:active{
             border-color:none ;
         }
     }
     &-reset {
-        background: $secondary;
-        border-color: $secondary;
+        background: $light-gray;
+        border-color: $light-gray;
         color: $dark;
         &:hover,&:focus {
-            background: darken($color: $secondary, $amount: 10%);
-            border-color: darken($color: $secondary, $amount: 10%);
+            background: darken($color: $light-gray, $amount: 10%);
+            border-color: darken($color: $light-gray, $amount: 10%);
         }
         &:active{
             border-color:none ;
