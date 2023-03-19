@@ -131,6 +131,20 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         }
     }
 }
+  
+.heading{
+    h2{
+        font-size: $text-lg;
+        margin: 0;
+    }
+    .breadcrumb{
+        li{
+            font-size: $text-sm;
+        }
+    }
+}
+
+
 .mat-mdc-form-field-flex {
     height: 40px;
 }
@@ -164,14 +178,10 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     font-size: 14px;
 }
 
-.heading{
-    h2{
-        font-size: $text-lg;
-        margin: 0;
-    }
-    .breadcrumb{
-        li{
-            font-size: $text-sm;
-        }
-    }
+.mat-mdc-text-field-wrapper {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px !important;
+}
+.mdc-text-field--outlined .mdc-notched-outline {
+    display: none;
 }
