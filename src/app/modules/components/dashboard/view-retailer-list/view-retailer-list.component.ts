@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-retailer-list.component.scss']
 })
 export class ViewRetailerListComponent {
-
+  public contentView:any='l';
+  changeView(view:any){
+    this.contentView = view;
+  }
 }
