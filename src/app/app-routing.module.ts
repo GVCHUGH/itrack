@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NoPageComponent } from './shared/no-page/no-page.component';
 
 const routes: Routes = [
   {path:'',
@@ -17,6 +18,7 @@ const routes: Routes = [
       import('./modules/components/auth/auth.module').then(
         (m) => m.AuthModule
       ),},
+      {path:'**', component:NoPageComponent}
     ];
 
 @NgModule({

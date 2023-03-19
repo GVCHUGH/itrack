@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 heading p-0">
-            <h2>View Zonal Distributor</h2>
+            <h2>View Retailer</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a>Home</a></li>
-                    <li class="breadcrumb-item active">View Zonal Distributor</li>
+                    <li class="breadcrumb-item active">View Retailer</li>
                 </ol>
             </nav>
         </div>
@@ -296,11 +296,11 @@
                    <span>1</span>
                 </div>
                 <div class="zonal-result-chip d-flex align-items-center justify-content-center">
-                  <p>Total Zonal Distributor tagged with GPS:</p>
+                  <p>Total Retailer tagged with GPS:</p>
                    <span>5</span>
                 </div>
                 <div class="zonal-result-chip d-flex align-items-center justify-content-center">
-                  <p>Total Zonal Distributor without GPS tagging:</p>
+                  <p>Total Retailer without GPS tagging:</p>
                    <span>0</span>
                 </div>
               </div>
@@ -346,7 +346,7 @@
                     <p class="mb-4">Thane-Maharastra</p> 
                     <ul class="card_action">
                       <li>Attendance</li>
-                      <li>View Profile</li>
+                      <li (click)="goViewEmployee()">View Profile</li>
                     </ul>
                   </div>
                 </div>
@@ -361,7 +361,7 @@
                   </section>
                 </div>
                 <div class="zonal-name d-flex align-items-center">
-                  <label>Zonal Distributor Name</label>
+                  <label>Retailer Name</label>
                 </div>
                 <div class="zonal-region d-flex align-items-center">
                   <label for="">Region</label>
@@ -389,7 +389,7 @@
                         <img src="../../../../../assets/images/user.png">
                       </div>
                       <div>
-                        <p>Excel Telecom Private Limited</p>
+                        <p (click)="goViewEmployee()" style="cursor: pointer;">Excel Telecom Private Limited</p>
                         <div>
                           <span>V5022</span>
                           <span>Approved</span>

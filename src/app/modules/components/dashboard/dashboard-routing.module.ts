@@ -14,22 +14,34 @@ import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
 import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
 import { ViewZonalDistributorListComponent } from './view-zonal-distributor-list/view-zonal-distributor-list.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
+import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
+import { ViewAreaDistributorListComponent } from './view-area-distributor-list/view-area-distributor-list.component';
 
 const routes: Routes = [
-  {path:'', component:AdminDashboardComponent},
   {path:'dashboard', component:AdminDashboardComponent},
+
   {path:'add-zonal-distributor', component:AddZonalDistributorComponent},
   {path:'view-zonal-distributor-list', component:ViewZonalDistributorListComponent},
-  {path:'upload-employee', component:UploadEmployeeComponent},
-  {path:'add-employee', component:AddEmployeeComponent},
-  {path:'view-employee-list', component:ViewEmployeeListComponent},
   {path:'upload-zonal-distributor', component:UploadZonalDistributorComponent},
+  {path:'view-zonal-distributor', component:ViewZonalDistributorComponent},
+
+  {path:'add-employee', component:AddEmployeeComponent},
+  {path:'upload-employee', component:UploadEmployeeComponent},
+  {path:'view-employee-list', component:ViewEmployeeListComponent},
+  {path:'view-employee', component:ViewEmployeeComponent},
+
   {path:'add-area-distributor', component:AddAreaDistributorComponent},
   {path:'upload-area-distributor', component:UploadAreaDistributorComponent},
   {path:'view-area-distributor', component:ViewAreaDistributorComponent},
+  {path:'view-area-distributor-list', component:ViewAreaDistributorListComponent},
+
   {path:'add-retailer', component:AddRetailerComponent},
   {path:'upload-retailer', component:UploadRetailerComponent},
   {path:'view-retailer-list', component:ViewRetailerListComponent},
+  {path:'view-retailer', component:ViewRetailerComponent},
+
 ];
 
 @NgModule({

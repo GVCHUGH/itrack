@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-retailer-list',
@@ -6,8 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-retailer-list.component.scss']
 })
 export class ViewRetailerListComponent {
+  constructor(private router: Router){}
   public contentView:any='l';
   changeView(view:any){
     this.contentView = view;
+  }
+
+  goViewEmployee(){
+    this.router.navigateByUrl('view-retailer');
   }
 }
