@@ -121,6 +121,9 @@ body { margin: 0; font-family: $font; background: $gray-200; }
             font-size: $text-base;
         }
     }
+    &__body {
+        padding: 20px;
+    }
 }
 
 .table {
