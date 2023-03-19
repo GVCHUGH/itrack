@@ -7,7 +7,7 @@ import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { UploadAreaDistributorComponent } from './upload-area-distributor/upload-area-distributor.component';
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
-import { ViewEmployeeListComponent } from './view-employee/view-employee-list.component';
+import { ViewEmployeeListComponent } from './view-employee-list/view-employee-list.component';
 import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
 import { ViewAreaDistributorComponent } from './view-area-distributor/view-area-distributor.component';
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';

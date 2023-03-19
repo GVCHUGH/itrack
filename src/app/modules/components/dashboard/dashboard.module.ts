@@ -7,14 +7,15 @@ import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
-import { ViewEmployeeListComponent } from './view-employee/view-employee-list.component';
+import { ViewEmployeeListComponent } from './view-employee-list/view-employee-list.component';
 import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
 import { AddAreaDistributorComponent } from './add-area-distributor/add-area-distributor.component';
 import { UploadAreaDistributorComponent } from './upload-area-distributor/upload-area-distributor.component';
 import { ViewAreaDistributorComponent } from './view-area-distributor/view-area-distributor.component';
 import { AddRetailerComponent } from './add-retailer/add-retailer.component';
-import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
 
 
 
@@ -31,8 +32,9 @@ import { UploadRetailerComponent } from './upload-retailer/upload-retailer.compo
     UploadAreaDistributorComponent,
     ViewAreaDistributorComponent,
     AddRetailerComponent,
-    ViewRetailerComponent,
-    UploadRetailerComponent
+    UploadRetailerComponent,
+    ViewRetailerListComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     CommonModule,
