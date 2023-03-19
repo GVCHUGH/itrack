@@ -5,34 +5,7 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
-        hasDropdown:true,
-        dropDown:[
-            {
-                name:'Home 1',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Home 2',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Home 3',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Home 4',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Home 5',
-                link:'',
-                isVisible:true,
-            }
-        ]
+        hasDropdown:false,
     },
     {
         name:'Products',
@@ -40,34 +13,7 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/products.svg',
         isIconVisible:false,
-        hasDropdown:true,
-        dropDown:[
-            {
-                name:'Product 1',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Product 2',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Product 3',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Product 4',
-                link:'',
-                isVisible:true,
-            },
-            {
-                name:'Product 5',
-                link:'',
-                isVisible:true,
-            }
-        ]
+        hasDropdown:false,
     },
     {
         name:'Regions',
@@ -91,7 +37,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Employee',
+                link:'/add-employee',
+                isVisible:true,
+            },
+            {
+                name:'View Employee',
+                link:'/view-employee',
+                isVisible:true,
+            },
+            {
+                name:'Import Employee',
+                link:'/upload-employee',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Employees Leaves',
@@ -115,7 +78,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/distributor.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Employee',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'View Employee',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Import Employee',
+                link:'',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Area Distributer',
@@ -123,7 +103,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/distributor.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Employee',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'View Employee',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Import Employee',
+                link:'',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Reatailer',
@@ -192,7 +189,7 @@ export const menu = [
     {
         name:'Logout',
         link:'',
-        isVisible:true,
+        isVisible:false,
         icon:'assets/images/menu-icons/logout.svg',
         isIconVisible:true,
         hasDropdown:false,
