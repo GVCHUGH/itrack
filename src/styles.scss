@@ -120,7 +120,12 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         h4 {
             font-size: $text-base;
         }
+        &--nobg {
+            background: none;
+            border-bottom: 1px solid $border;
+        }
     }
+    
     &__body {
         padding: 20px;
     }
@@ -131,6 +136,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         font-size: $text-sm;
         td, th {
             vertical-align: middle;
+            padding: 10px 15px;
         }
     }
 }
