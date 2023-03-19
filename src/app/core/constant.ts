@@ -45,8 +45,8 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'View Employee',
-                link:'/view-employee',
+                name:'View Employee List',
+                link:'/view-employee-list',
                 isVisible:true,
             },
             {

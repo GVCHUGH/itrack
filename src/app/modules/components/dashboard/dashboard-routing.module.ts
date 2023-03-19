@@ -5,7 +5,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-distributor.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
-import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { ViewEmployeeListComponent } from './view-employee/view-employee-list.component';
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'view-zonal-distributor', component:ViewZonalDistributorComponent},
   {path:'upload-employee', component:UploadEmployeeComponent},
   {path:'add-employee', component:AddEmployeeComponent},
-  {path:'view-employee', component:ViewEmployeeComponent},
+  {path:'view-employee-list', component:ViewEmployeeListComponent},
 ];
 
 @NgModule({
