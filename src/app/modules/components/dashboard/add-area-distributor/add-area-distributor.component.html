@@ -1,0 +1,274 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading">
+            <h2>Add Zonal Distributor</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a>Home</a></li>
+                  <li class="breadcrumb-item active">Add Zonal Distributor</li>
+                </ol>
+              </nav>
+        </div>
+        <div class="col-md-12 content">
+            <mat-tab-group>
+                <mat-tab label="General Info" class="px-2">
+                    <div class="row m-0 mt-3 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Site Name</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Latitude</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Longitude</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Radius* (In Meter)</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Site Away Alert Distance</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column" >
+                            <label class="label">Employee</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Selected Employee</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Send SMS to Concern Person</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Remarks</label>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 pb-3 px-2">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </mat-tab>
+
+
+
+                <mat-tab label="Contact & Other Info">
+                    <div class="row m-0 mt-3 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Telephone</label>
+                            <div class="d-flex">
+                                <button class="menu-btn btn btn-outline-dark" mat-button [matMenuTriggerFor]="menu">CD</button>
+                                <mat-menu #menu="matMenu">
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 1</button>
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 2</button>
+                                </mat-menu>
+                                <button class="menu-btn btn btn-outline-dark" mat-button [matMenuTriggerFor]="menu">STD</button>
+                                <mat-menu #menu="matMenu">
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 1</button>
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 2</button>
+                                </mat-menu>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Site Name">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Mobile Number</label>
+                            <div class="d-flex">
+                                <button class="menu-btn btn btn-outline-dark" mat-button [matMenuTriggerFor]="menu">ISD</button>
+                                <mat-menu #menu="matMenu">
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 1</button>
+                                    <button class="btn btn-outline-dark" mat-menu-item>Item 2</button>
+                                </mat-menu>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Site Name">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Email-id</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input type="email" matInput placeholder="Ex. pat@example.com">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Web Site</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Contact Person</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Super Zonal Distributor Linked Code</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Validity</label>
+                            <div class="d-flex">
+                                <mat-form-field class="example-full-width me-2"  appearance="outline">
+                                    <input matInput placeholder="Site Name">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Site Name">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Payment Terms</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Assigned To</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Assoc. With Spl. Product Price</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Member of Beat / Route Plan</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 pb-3 px-2">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button class="btn btn-reset me-2">Reset</button>
+                            <button class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </mat-tab>
+
+
+                <mat-tab label="Company Details">
+                    <div class="row m-0 mt-3 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Send SMS to Concern Person</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Site Name</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Latitude</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Longitude</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-2 pb-3">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button class="btn btn-reset me-2">Reset</button>
+                            <button class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+</div>

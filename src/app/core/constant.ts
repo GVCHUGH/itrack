@@ -107,17 +107,17 @@ export const menu = [
         dropDown:[
             {
                 name:'Add Area Distributer',
-                link:'',
+                link:'add-area-distributor',
                 isVisible:true,
             },
             {
                 name:'View Area Distributer',
-                link:'',
+                link:'view-area-distributor',
                 isVisible:true,
             },
             {
                 name:'Import Area Distributer',
-                link:'',
+                link:'upload-area-distributor',
                 isVisible:true,
             }
         ]
