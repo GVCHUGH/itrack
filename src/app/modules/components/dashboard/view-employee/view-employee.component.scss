@@ -127,6 +127,9 @@
 .zonal-action{
     width: 6%;
 }
+.result-chips {
+    gap: 10px;
+}
 .visit-status{
     height: 35px;
     display: flex;
@@ -146,6 +149,105 @@
             }
             &:last-child{
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+// Grid view
+
+.card {
+    &--grid {
+        background: $light;
+        text-align: center;
+        padding: 50px 20px 0 20px;
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h4 {
+            font-size: $text-base;
+        }
+        p {
+            font-size: $text-sm;
+        }
+        ul.card-chip {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            li {
+                padding: 4px 12px;
+                border-radius: 50px;
+                background: $primary-500;
+                list-style: none;
+                font-size: $text-sm;
+                &.success {
+                    background: #49E979;
+                    color: $light;
+                }
+            }
+        }
+        .btn--card-action {
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+
+.card_action {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid $light-gray;
+    margin: 0 -15px;
+    li {
+        list-style: none;
+        color: $dark;
+        font-size: $text-sm;
+        padding: 10px;
+        cursor: pointer;
+        width: 50%;
+        &:not(:last-child) {
+            border-right: 1px solid $light-gray;
+        }
+    }
+}
+
+.view-change {
+    font-size: $text-sm;
+    span {
+        width: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        border-radius: 5px;
+        background: $light;
+        border: 1px solid $light-gray;
+        margin-left: 10px;
+        cursor: pointer;
+        img {
+            filter: grayscale(1);
+            width: 15px;
+        }
+        &.active {
+            background: #fffbed;
+            border-color: #fffbed;
+            img {
+                filter: grayscale(0);
             }
         }
     }
