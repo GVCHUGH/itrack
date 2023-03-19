@@ -13,18 +13,26 @@
             <div class="card card--common">
                 <mat-tab-group>
                     <mat-tab label="Personal Info">
-                        <div class="row m-0 mt-3 configure">
-                            <div class="col-md-6 d-flex flex-column">
+                        <div class="row m-0 mt-3 configure p-0">
+                            <div class="card__title">
+                                <h4 class="mb-0">Configuration</h4>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column mt-3">
                                 <label class="label">Attendance Time</label>
                                 <mat-form-field class="example-full-width"  appearance="outline">
                                     <input type="time" matInput placeholder="Site Name">
                                 </mat-form-field>
                             </div>
-                            <div class="col-md-6 d-flex flex-column">
+                            <div class="col-md-6 d-flex flex-column mt-3">
                                 <label class="label">Minimum Working Hours</label>
                                 <mat-form-field class="example-full-width"  appearance="outline">
                                     <input matInput placeholder="Site Name">
                                 </mat-form-field>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="configure-toggle">
+                                    <p>Expense to be approved by team leader</p>
+                                </div>
                             </div>
                         </div>
                     </mat-tab>

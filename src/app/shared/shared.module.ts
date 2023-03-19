@@ -7,6 +7,8 @@ import { StatusCardComponent } from './status-card/status-card.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NotificationComponent } from './notification/notification.component';
+import { XyChartComponent } from './xy-chart/xy-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { AngularMaterialModule } from '../core/models/angular-material/angular-material.module';
 
 
@@ -17,6 +19,8 @@ import { AngularMaterialModule } from '../core/models/angular-material/angular-m
     FooterComponent,
     StatusCardComponent,
     NotificationComponent,
+    XyChartComponent,
+    PieChartComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +35,8 @@ import { AngularMaterialModule } from '../core/models/angular-material/angular-m
     SlickCarouselModule,
     NotificationComponent,
     StatusCardComponent,
+    XyChartComponent,
+    PieChartComponent,
     AngularMaterialModule
   ]
 })
