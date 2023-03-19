@@ -11,6 +11,7 @@ import { XyChartComponent } from './xy-chart/xy-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { AngularMaterialModule } from '../core/models/angular-material/angular-material.module';
 import { SwitchCheckboxComponent } from './switch-checkbox/switch-checkbox.component';
+import { NoPageComponent } from './no-page/no-page.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SwitchCheckboxComponent } from './switch-checkbox/switch-checkbox.compo
     NotificationComponent,
     XyChartComponent,
     PieChartComponent,
-    SwitchCheckboxComponent
+    SwitchCheckboxComponent,
+    NoPageComponent
   ],
   imports: [
     CommonModule,

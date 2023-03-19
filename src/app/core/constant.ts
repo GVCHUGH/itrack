@@ -1,7 +1,7 @@
 export const menu = [
     {
         name:'Home',
-        link:'',
+        link:'dashboard',
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
@@ -9,7 +9,7 @@ export const menu = [
     },
     {
         name:'Products',
-        link:'',
+        link:'products',
         isVisible:true,
         icon:'assets/images/menu-icons/products.svg',
         isIconVisible:false,
@@ -21,7 +21,14 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/regions.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Region',
+                link:'add-region',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Branch',
@@ -29,7 +36,14 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/home.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Branch',
+                link:'add-branch',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Employees',
@@ -58,7 +72,7 @@ export const menu = [
     },
     {
         name:'Employees Leaves',
-        link:'',
+        link:'employees-leaves',
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
         isIconVisible:true,
@@ -66,7 +80,7 @@ export const menu = [
     },
     {
         name:'App Users',
-        link:'',
+        link:'app-users',
         isVisible:true,
         icon:'assets/images/menu-icons/app-user.svg',
         isIconVisible:true,
@@ -112,7 +126,7 @@ export const menu = [
             },
             {
                 name:'View Area Distributer List',
-                link:'view-area-distributor',
+                link:'view-area-distributor-list',
                 isVisible:true,
             },
             {
@@ -149,7 +163,7 @@ export const menu = [
     },
     {
         name:'Assets Management',
-        link:'',
+        link:'assets-management',
         isVisible:true,
         icon:'assets/images/menu-icons/asset-management.svg',
         isIconVisible:true,
@@ -157,7 +171,7 @@ export const menu = [
     },
     {
         name:'Due Amount',
-        link:'',
+        link:'due-amount',
         isVisible:true,
         icon:'assets/images/menu-icons/due-amount.svg',
         isIconVisible:true,
@@ -165,7 +179,7 @@ export const menu = [
     },
     {
         name:'Stock',
-        link:'',
+        link:'stock',
         isVisible:true,
         icon:'assets/images/menu-icons/stock.svg',
         isIconVisible:true,
@@ -173,7 +187,7 @@ export const menu = [
     },
     {
         name:'Sample Group',
-        link:'',
+        link:'sample-group',
         isVisible:true,
         icon:'assets/images/menu-icons/group.svg',
         isIconVisible:true,
@@ -181,7 +195,7 @@ export const menu = [
     },
     {
         name:'Forms',
-        link:'',
+        link:'forms',
         isVisible:true,
         icon:'assets/images/menu-icons/forms.svg',
         isIconVisible:true,
@@ -189,7 +203,7 @@ export const menu = [
     },
     {
         name:'Target',
-        link:'',
+        link:'target',
         isVisible:true,
         icon:'assets/images/menu-icons/target.svg',
         isIconVisible:true,

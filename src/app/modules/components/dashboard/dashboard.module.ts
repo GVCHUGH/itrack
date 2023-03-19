@@ -16,8 +16,13 @@ import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
+import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
+import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
+import { ViewAreaDistributorListComponent } from './view-area-distributor-list/view-area-distributor-list.component';
 import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
 import { AttendanceReportDrawerComponent } from './attendance-report-drawer/attendance-report-drawer.component';
+import { AddBranchComponent } from './add-branch/add-branch.component';
+import { AddRegionComponent } from './add-region/add-region.component';
 
 
 
@@ -37,8 +42,13 @@ import { AttendanceReportDrawerComponent } from './attendance-report-drawer/atte
     UploadRetailerComponent,
     ViewRetailerListComponent,
     ViewEmployeeComponent,
+    ViewZonalDistributorComponent,
+    ViewRetailerComponent,
+    ViewAreaDistributorListComponent,
     AttendanceReportComponent,
-    AttendanceReportDrawerComponent
+    AttendanceReportDrawerComponent,
+    AddBranchComponent,
+    AddRegionComponent,
   ],
   imports: [
     CommonModule,
