@@ -305,7 +305,17 @@
                 </div>
               </div>
               <div class="view-change">
-                View: <span (click)="changeView('g')" [ngClass]="contentView == 'g' ? 'active':''">Grid</span> <span  [ngClass]="contentView == 'l' ? 'active':''" (click)="changeView('l')">list</span>
+                View: 
+                <span 
+                  (click)="changeView('g')" 
+                  [ngClass]="contentView == 'g' ? 'active':''"
+                  ><img src="assets/images/card-view.svg" alt="">
+                </span> 
+                  <span  
+                    [ngClass]="contentView == 'l' ? 'active':''" 
+                    (click)="changeView('l')"
+                    ><img src="assets/images/table-view.svg" alt="">
+                  </span>
               </div>
             </div>
             <ng-container *ngIf="contentView == 'g'">

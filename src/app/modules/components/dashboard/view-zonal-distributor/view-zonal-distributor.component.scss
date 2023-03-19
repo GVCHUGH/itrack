@@ -224,9 +224,28 @@
 }
 
 .view-change {
+    font-size: $text-sm;
     span {
-        width: auto;
-        display: inline-block;
-        padding: 10px 20px;
+        width: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        border-radius: 5px;
+        background: $light;
+        border: 1px solid $light-gray;
+        margin-left: 10px;
+        cursor: pointer;
+        img {
+            filter: grayscale(1);
+            width: 15px;
+        }
+        &.active {
+            background: #fffbed;
+            border-color: #fffbed;
+            img {
+                filter: grayscale(0);
+            }
+        }
     }
 }
