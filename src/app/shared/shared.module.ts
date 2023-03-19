@@ -24,7 +24,7 @@ import { NoPageComponent } from './no-page/no-page.component';
     XyChartComponent,
     PieChartComponent,
     SwitchCheckboxComponent,
-    NoPageComponent
+    NoPageComponent,
   ],
   imports: [
     CommonModule,

@@ -90,7 +90,17 @@
                 <h4 class="mb-0">User List</h4>
             </div>
             <div class="card__body">
-            <app-pie-chart></app-pie-chart>
+            <app-pie-chart [IdName]="'chartpie'" [radius]="0"></app-pie-chart>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card card--common">
+            <div class="card__title">
+                <h4 class="mb-0">User List</h4>
+            </div>
+            <div class="card__body">
+            <app-pie-chart [IdName]="'chartDragpie'" [radius]="40"></app-pie-chart>
             </div>
         </div>
     </div>
