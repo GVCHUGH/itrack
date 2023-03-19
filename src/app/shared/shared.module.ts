@@ -7,6 +7,7 @@ import { StatusCardComponent } from './status-card/status-card.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NotificationComponent } from './notification/notification.component';
+import { AngularMaterialModule } from '../core/models/angular-material/angular-material.module';
 
 
 @NgModule({
@@ -15,11 +16,12 @@ import { NotificationComponent } from './notification/notification.component';
     SideMenuComponent,
     FooterComponent,
     StatusCardComponent,
-    NotificationComponent
+    NotificationComponent,
   ],
   imports: [
     CommonModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    AngularMaterialModule
   ],
   exports: [
     HeaderComponent,
@@ -28,7 +30,8 @@ import { NotificationComponent } from './notification/notification.component';
     StatusCardComponent,
     SlickCarouselModule,
     NotificationComponent,
-    StatusCardComponent
+    StatusCardComponent,
+    AngularMaterialModule
   ]
 })
 export class SharedModule { }

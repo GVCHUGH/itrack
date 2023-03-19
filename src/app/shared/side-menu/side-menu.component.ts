@@ -16,8 +16,6 @@ export class SideMenuComponent {
   constructor(
     private router:Router
   ){
-    this.toggleValue;
-    debugger;
   }
 
   redirectTo(item:any, index:any){

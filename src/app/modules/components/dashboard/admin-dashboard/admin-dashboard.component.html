@@ -95,7 +95,7 @@
                     <td>North</td>
                     <td>Faridabad</td>
                     <td style="text-align: center;">
-                        <button class="btn btn--action" [matMenuTriggerFor]="menu">
+                        <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
                             <img src="assets/images/action.svg">
                         </button>
                         <mat-menu #menu="matMenu">
@@ -127,11 +127,14 @@
                       <td>
                           <div class="d-flex align-items-center">
                               <img src="assets/images/user.png" alt="" class="me-2">
-                              <p class="mb-0">Rajender</p>
+                              <div>
+                                <p class="mb-0 fw-500 text-base text-dark">Rajender</p>
+                                <span class="text-sm  text-gray">DH425ABC</span>
+                              </div>
                           </div>
                       </td>
-                    <td>08:34 AM,<br>02 Mar 2023</td>
-                    <td>DH425ABC</td>
+                    <td>08:34 AM</td>
+                    <td>02 Mar 2023</td>
                   </tr>
                 </tbody>
               </table>

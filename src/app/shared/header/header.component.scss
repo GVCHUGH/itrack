@@ -1,7 +1,7 @@
 @import '../../../variables';
 @import '../../../mixins';
 .main-header{
-    background-color: $primary;
+    background-color: $gray-900;
     height: 60px;
     padding: 0;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.14);
@@ -44,5 +44,56 @@
     &__content {
         flex: 2;
         padding-right: 20px;
+    }
+}
+
+.menu-dropdown {
+    position: absolute;
+    background: $light;
+    width: 220px;
+    right: 0;
+    top: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 19%);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition:0.2s all ease-in-out;
+    p {
+        padding: 5px 15px;
+        margin-top: 10px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            color: $gray;
+            font-size: $text-base;
+            i {
+                color: $gray;
+                font-size: $text-base;
+                margin-right: 10px;
+            }
+            &:hover {
+                background: $light-gray;
+            }
+        }
+    }
+}
+
+.has-dropdown {
+    height: 60px;
+    &:hover {
+        .menu-dropdown {
+            transition:0.2s all ease-in-out;
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
     }
 }

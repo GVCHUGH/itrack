@@ -44,6 +44,50 @@ body { margin: 0; font-family: $font; background: $gray-200; }
             background: $primary-500;
         }
     }
+    &--flat {
+        width: 30px;
+        height: 30px;
+        background: none;
+        border-radius: 50%;
+        padding: 0;
+        &:hover {
+            background: none;
+        }
+    }
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+.text-base {
+    font-size: $text-base;
+}
+
+.text-sm {
+    font-size: $text-sm;
+}
+
+.text-lg {
+    font-size: $text-lg;
+}
+
+.text-xl {
+    font-size: $text-xl;
+}
+
+.text-dark {
+    color: $dark;
+}
+.text-gray {
+    color: $gray;
+}
+
+.text-white {
+    color: $light;
 }
 
  //mat tabs
