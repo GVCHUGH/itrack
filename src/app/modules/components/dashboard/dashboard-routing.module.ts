@@ -14,6 +14,7 @@ import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
 import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
 import { ViewZonalDistributorListComponent } from './view-zonal-distributor-list/view-zonal-distributor-list.component';
+import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:'add-retailer', component:AddRetailerComponent},
   {path:'upload-retailer', component:UploadRetailerComponent},
   {path:'view-retailer-list', component:ViewRetailerListComponent},
+  {path:'attendance-report', component:AttendanceReportComponent}
 ];
 
 @NgModule({

@@ -16,6 +16,8 @@ import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
+import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
+import { AttendanceReportDrawerComponent } from './attendance-report-drawer/attendance-report-drawer.component';
 
 
 
@@ -34,7 +36,9 @@ import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-li
     AddRetailerComponent,
     UploadRetailerComponent,
     ViewRetailerListComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    AttendanceReportComponent,
+    AttendanceReportDrawerComponent
   ],
   imports: [
     CommonModule,

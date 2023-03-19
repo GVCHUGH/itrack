@@ -1,0 +1,21 @@
+<div class="report-header d-flex align-items-center justify-content-between p-4">
+    <div class="d-flex align-items-center">
+        <img src="assets/images/attendance/attendance-report.svg" alt="">
+        <h4 class="text-xl ps-3 mb-0">Attendance Report</h4>
+    </div>
+    <div class="close" (click)="drawer.emit()" role="button">
+        <img src="assets/images/attendance/close.svg" alt="close">
+    </div>
+</div>
+
+<div class="report-body">
+    <ul class="p-0 m-0">
+        <li class="d-flex align-items-center justify-content-between p-4" *ngFor="let item of attendanceList" role="button" (click)="drawer.emit()" matRipple>
+            <div class="d-flex align-items-center">
+                <img src="assets/images/attendance/task-list.svg" alt="task">
+                <p class="mb-0 ps-4">{{item}}</p>
+            </div>
+            <img src="assets/images/attendance/arrow.svg" alt="">
+        </li>
+    </ul>
+</div>

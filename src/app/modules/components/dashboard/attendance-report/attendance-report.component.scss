@@ -1,0 +1,53 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+.card {
+    background: $light;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.09);
+    flex-direction: row;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: 9;
+    pointer-events: none;
+    transition: all ease-in-out 0.2s;
+    &.opened {
+        opacity: 0.5;
+        pointer-events: all;
+        transition: all ease-in-out 0.2s;
+    }
+}
+
+.attendance-drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    background: $light;
+    z-index: 10;
+    transform: translateX(500px);
+    transition: all ease-in-out 0.2s;
+    &.opened {
+        transform: translateX(0);
+        transition: all ease-in-out 0.2s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.359);
+    }
+}
