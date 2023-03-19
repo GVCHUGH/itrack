@@ -1,10 +1,10 @@
 <div class="main-header d-flex justify-content-between align-items-center">
     <div class="main-header__brand" [ngClass]="toggleValue ? '':'main-header__brand--sm'">
         <ng-container *ngIf="toggleValue; else smLogo">
-            <p class="mb-0 text-white">iTrack</p>
+            <p class="mb-0 text-dark">iTrack</p>
         </ng-container>
         <ng-template #smLogo>
-            <p class="mb-0 text-white">I</p>
+            <p class="mb-0 text-dark">I</p>
         </ng-template>
         
         
@@ -12,7 +12,7 @@
     <div class="main-header__content d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
             <img src="assets/images/menu.svg" (click)="menu.emit(true)">
-            <h3 class="text-white">Today: 03 Feb 2033 -  07:54:30 PM</h3>
+            <h3 class="text-dark">Today: 03 Feb 2033 -  07:54:30 PM</h3>
         </div>
         <div class="d-flex justify-content-between align-items-center">
             <div class="notification" role="button">            
@@ -26,8 +26,8 @@
                     <img src="assets/images/man.svg" alt="user" width="20">
                 </div>
                 <div class="d-flex align-items-center">
-                    <p class="ps-2 text-white me-0">Welcome, Rajender Rohila</p>
-                    <i class="material-icons text-white">keyboard_arrow_down</i>
+                    <p class="ps-2 text-dark me-0">Welcome, Rajender Rohila</p>
+                    <i class="material-icons text-dark">keyboard_arrow_down</i>
                 </div>
                 <div class="menu-dropdown">
                     <p>Welcome Rajender!</p>   
