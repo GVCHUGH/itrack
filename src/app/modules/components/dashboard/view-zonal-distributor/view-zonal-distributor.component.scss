@@ -1,52 +1,9 @@
 @import '../../../../../mixins';
 @import '../../../../../variables';
 
-.heading{
-    h2{
-        font-size: $text-lg;
-        margin: 0;
+.input-field{
+    width: 220px;
+    &:not(:first-child){
+        margin-left: 15px;
     }
-    .breadcrumb{
-        li{
-            font-size: $text-sm;
-        }
-    }
-}
-.content{
-    background-color: $light;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
-    border-radius: 5px;
-    &-header{
-        background-color: #eeeeee;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        padding-left: 25px;
-        font-size: $text-xl;
-        font-weight: 500;
-    }
-}
-
-::ng-deep{
-    .mat-mdc-form-field-flex {
-        height: 35px;
-    }
-    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix{
-        padding: 6px 0px;
-    }
-    .mat-mdc-form-field {
-        width: 100%;
-    }
-}
-
-.label{
-    margin-bottom: 5px;
-}
-.menu-btn{
-    width: 50px;
-    height: 35px;
-    font-size: $text-sm;
-    padding: 0;
-    margin-right: 5px;
-    border: 1px solid $border;
 }
