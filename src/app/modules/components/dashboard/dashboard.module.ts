@@ -8,6 +8,7 @@ import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zon
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
 
 
 
@@ -18,7 +19,8 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
     ViewZonalDistributorComponent,
     UploadEmployeeComponent,
     AddEmployeeComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    UploadZonalDistributorComponent
   ],
   imports: [
     CommonModule,
