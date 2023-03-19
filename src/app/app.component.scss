@@ -6,6 +6,7 @@
     padding-top: 60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
     transition: all ease-in-out 0.1s;
+    position: fixed;
     &.closed {
         width: 68px;
         overflow: hidden;
@@ -16,9 +17,16 @@
 .main-content {
     width: 100%;
     padding: 80px 20px 20px;
+    padding-left: 320px;
 }
 
 .notification-wrapper {
     overflow: hidden;
     border-radius: 5px;
+}
+
+.side-menu.closed {
+    & + .main-content {
+        padding-left: 80px;
+    }
 }
