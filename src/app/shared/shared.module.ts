@@ -8,8 +8,8 @@ import { StatusCardComponent } from './status-card/status-card.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NotificationComponent } from './notification/notification.component';
 import { XyChartComponent } from './xy-chart/xy-chart.component';
-import { XYChart } from '@amcharts/amcharts5/xy';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { AngularMaterialModule } from '../core/models/angular-material/angular-material.module';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
   ],
   imports: [
     CommonModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    AngularMaterialModule
   ],
   exports: [
     HeaderComponent,
@@ -35,7 +36,8 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
     NotificationComponent,
     StatusCardComponent,
     XyChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    AngularMaterialModule
   ]
 })
 export class SharedModule { }
