@@ -211,8 +211,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid $light-gray;
-    margin: 0 -15px;
+    border-top: 1px solid #cfcfcf;
+    margin: 0 -20px;
+    background: $light-gray;
     li {
         list-style: none;
         color: $dark;
@@ -221,7 +222,7 @@
         cursor: pointer;
         width: 50%;
         &:not(:last-child) {
-            border-right: 1px solid $light-gray;
+            border-right: 1px solid #cfcfcf;
         }
     }
 }
