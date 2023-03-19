@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-zonal-distributor.component.scss']
 })
 export class ViewZonalDistributorComponent {
-
+  public contentView:any='l';
+  changeView(view:any){
+    this.contentView = view;
+  }
 }
