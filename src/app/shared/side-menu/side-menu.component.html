@@ -10,7 +10,7 @@
                         <span [ngClass]="toggleValue ? '':'opacity-0'">{{item?.name}}</span>
                     </div>
                     <div *ngIf="item.hasDropdown" >
-                        <img src="assets/images/arrow-right.svg" class="dropdown-arrow" [ngClass]="openDropdowns[i] ? 'opened':''">
+                        <img src="assets/images/arrow-right-light.svg" class="dropdown-arrow" [ngClass]="openDropdowns[i] ? 'opened':''">
                     </div>
                 </a>
                 <ng-container *ngIf="item.hasDropdown">

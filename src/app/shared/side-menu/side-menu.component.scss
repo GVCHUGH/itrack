@@ -23,7 +23,7 @@
         }
     }
     .menubar{
-        background-color: #fff;
+        background-color: $gray-900;
         ul{
             li{
                 &:not(:last-child) {
@@ -31,7 +31,7 @@
                 }
                 a{
                     padding: 20px 20px;
-                    border-bottom: 1px solid $light-gray;
+                    border-bottom: 1px solid rgb(238 238 238 / 12%);
                     img{
                         width: 17px;
                         height: 17px;
@@ -44,14 +44,14 @@
                         }
                     }
                     span{
-                        color: #6D6D6D;
+                        color: $light;
                         font-size: $text-base;
                         transition: opacity ease-in-out 0.1s;
                     }
                     &:hover {
-                        background: rgb(255 201 21 / 10%);
+                        background:#404759;
                         span {
-                            color: $dark;
+                            color: $light;
                         }
                     }
                 }
@@ -73,12 +73,13 @@
                     font-size: $text-sm;
                     position: relative;
                     list-style: none;
+                    color: $light;
                     &::before {
                         content: "";
                         display: block;
                         width: 10px;
                         height: 2px;
-                        background: $dark;
+                        background: $light;
                         position: absolute;
                         left: 0;
                         top: 50%;
@@ -97,3 +98,25 @@
     place-items: center;
     margin-right: 10px;
 }
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $gray-900;
+    border-radius: 0;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(144, 150, 163); 
+    border-radius: 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary; 
+  }
