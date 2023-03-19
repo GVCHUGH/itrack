@@ -37,14 +37,17 @@
     align-items: center;
     justify-content: space-between;   
     background: #f8f8f8;
+    // background: red;
     position: fixed;
     bottom: 0;
-    width: calc(100% - 330px);
+    width: calc(100% - 300px);
     padding-right: 0;
-    right: 10px;
+    right: 0;
     padding: 10px;
+    transition: all ease-in-out 0.1s;
     &.closed {
-        width: calc(100% - 90px);
+        width: calc(100% - 68px);
+        transition: all ease-in-out 0.1s;
     }
     p {
         font-size: 12px;
