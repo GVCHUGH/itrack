@@ -19,6 +19,8 @@ import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-li
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
 import { ViewAreaDistributorListComponent } from './view-area-distributor-list/view-area-distributor-list.component';
+import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
+import { AttendanceReportDrawerComponent } from './attendance-report-drawer/attendance-report-drawer.component';
 
 
 
@@ -41,6 +43,8 @@ import { ViewAreaDistributorListComponent } from './view-area-distributor-list/v
     ViewZonalDistributorComponent,
     ViewRetailerComponent,
     ViewAreaDistributorListComponent,
+    AttendanceReportComponent,
+    AttendanceReportDrawerComponent
   ],
   imports: [
     CommonModule,

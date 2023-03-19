@@ -18,6 +18,7 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 import { ViewRetailerComponent } from './view-retailer/view-retailer.component';
 import { ViewAreaDistributorListComponent } from './view-area-distributor-list/view-area-distributor-list.component';
+import { AttendanceReportComponent } from './attendance-report/attendance-report.component';
 
 const routes: Routes = [
   {path:'dashboard', component:AdminDashboardComponent},
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path:'view-retailer-list', component:ViewRetailerListComponent},
   {path:'view-retailer', component:ViewRetailerComponent},
 
+  {path:'attendance-report', component:AttendanceReportComponent}
 ];
 
 @NgModule({

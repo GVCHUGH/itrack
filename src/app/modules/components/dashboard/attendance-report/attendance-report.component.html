@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let item of attendanceReport">
+        <div class="card d-flex align-items-center position-relative" matRipple (click)="openReport()">
+            <div class="card__thumbnail">
+                <img [src]="item.icon" alt="">
+            </div>
+            <p class="mb-0 ps-3">{{item?.label}}</p>
+            <img src="assets/images/attendance/arrow.svg" alt="arrow" class="arrow position-absolute">
+        </div>
+    </div>
+</div>
+<div class="attendance-drawer" [ngClass]="openDrawer ? 'opened':''">
+    <app-attendance-report-drawer (drawer)="toggleDrawer()"></app-attendance-report-drawer>
+</div>
+<div class="overlay"  [ngClass]="openDrawer ? 'opened':''" (click)="openDrawer = !openDrawer"></div>

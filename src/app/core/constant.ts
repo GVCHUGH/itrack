@@ -197,7 +197,7 @@ export const menu = [
     },
     {
         name:'Report',
-        link:'report',
+        link:'attendance-report',
         isVisible:true,
         icon:'assets/images/menu-icons/report.svg',
         isIconVisible:true,
@@ -211,4 +211,46 @@ export const menu = [
         isIconVisible:true,
         hasDropdown:false,
     }
+]
+
+export const attendanceReport = [
+    {
+        label:"Attendance Report",
+        icon:"assets/images/attendance/attendance-report.svg"
+    },
+    {
+        label:"Visit Report",
+        icon:"assets/images/attendance/visit-report.svg"
+    },
+    {
+        label:"Travel Report",
+        icon:"assets/images/attendance/travel-report.svg"
+    },
+    {
+        label:"Expense Report",
+        icon:"assets/images/attendance/expense-report.svg"
+    },
+    {
+        label:"Order Report",
+        icon:"assets/images/attendance/order-report.svg"
+    },
+    {
+        label:"Other Report",
+        icon:"assets/images/attendance/other-report.svg"
+    },
+    {
+        label:"Favorite Report",
+        icon:"assets/images/attendance/favorite-report.svg"
+    },
+];
+
+
+export const attendanceList = [
+    'Attendance Compliance Report',
+    'Attendance Cut-off Time Report',
+    'Consolidated Report',
+    'Daily Attendance',
+    'Employee Consolidated Monthly Report (PDF)',
+    'Employee Consolidated Weekly Report (PDF)',
+    'Monthly Attendance'
 ]
