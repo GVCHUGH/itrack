@@ -81,18 +81,18 @@ export const menu = [
         hasDropdown:true,
         dropDown:[
             {
-                name:'Add Employee',
-                link:'',
+                name:'Add Zonal Distributer',
+                link:'add-zonal-distributor',
                 isVisible:true,
             },
             {
-                name:'View Employee',
-                link:'',
+                name:'View Zonal Distributer',
+                link:'view-zonal-distributor',
                 isVisible:true,
             },
             {
-                name:'Import Employee',
-                link:'',
+                name:'Import Zonal Distributer',
+                link:'upload-zonal-distributor',
                 isVisible:true,
             }
         ]
@@ -106,24 +106,24 @@ export const menu = [
         hasDropdown:true,
         dropDown:[
             {
-                name:'Add Employee',
-                link:'',
+                name:'Add Area Distributer',
+                link:'add-area-distributor',
                 isVisible:true,
             },
             {
-                name:'View Employee',
-                link:'',
+                name:'View Area Distributer',
+                link:'view-area-distributor',
                 isVisible:true,
             },
             {
-                name:'Import Employee',
-                link:'',
+                name:'Import Area Distributer',
+                link:'upload-area-distributor',
                 isVisible:true,
             }
         ]
     },
     {
-        name:'Reatailer',
+        name:'Retailer',
         link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/store.svg',

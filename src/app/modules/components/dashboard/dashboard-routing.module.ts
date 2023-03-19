@@ -1,11 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddAreaDistributorComponent } from './add-area-distributor/add-area-distributor.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-distributor.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { UploadAreaDistributorComponent } from './upload-area-distributor/upload-area-distributor.component';
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
 import { ViewEmployeeListComponent } from './view-employee/view-employee-list.component';
+import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
+import { ViewAreaDistributorComponent } from './view-area-distributor/view-area-distributor.component';
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 
 const routes: Routes = [
@@ -16,6 +20,10 @@ const routes: Routes = [
   {path:'upload-employee', component:UploadEmployeeComponent},
   {path:'add-employee', component:AddEmployeeComponent},
   {path:'view-employee-list', component:ViewEmployeeListComponent},
+  {path:'upload-zonal-distributor', component:UploadZonalDistributorComponent},
+  {path:'add-area-distributor', component:AddAreaDistributorComponent},
+  {path:'upload-area-distributor', component:UploadAreaDistributorComponent},
+  {path:'view-area-distributor', component:ViewAreaDistributorComponent},
 ];
 
 @NgModule({
