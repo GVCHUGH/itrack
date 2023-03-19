@@ -16,7 +16,7 @@
                     </a>
                     <ng-container *ngIf="item.hasDropdown">
                         <ul class="sub-menu" [ngClass]="openDropdowns[i] && toggleValue ? 'opened':''">
-                            <li *ngFor="let subMenu of item.dropDown">
+                            <li *ngFor="let subMenu of item.dropDown" (click)="redirectToSub(subMenu.link)">
                                 {{subMenu.name}}
                             </li>
                         </ul>

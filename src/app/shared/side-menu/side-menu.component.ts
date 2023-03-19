@@ -28,4 +28,8 @@ export class SideMenuComponent {
     }
   }
 
+  redirectToSub(link:any){
+    this.router.navigateByUrl(link);
+  }
+
 }
