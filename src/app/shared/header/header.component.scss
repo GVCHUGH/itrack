@@ -49,13 +49,27 @@
         padding-right: 20px;
     }
 }
+.profile-menu{
+    padding: 15px 0;
+    &:hover{
+        .notification--dropdown {
+                .menu-dropdown {
+                    transition:0.2s all ease-in-out;
+                    opacity: 1;
+                    pointer-events: all;
+                    transform: translateY(0);
+                }
+        }
+    }
+}
 
 .menu-dropdown {
     position: absolute;
     background: $light;
     width: 220px;
     right: 0;
-    top: 100%;
+    // top: 100%;
+    top: 42px;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 19%);
@@ -85,18 +99,17 @@
             &:hover {
                 background: $light-gray;
             }
+            &:not(:last-child){
+                border-bottom: 1px solid $border;
+            }
+            &:last-child{
+                background-color: red;
+                color: $light;
+                i{
+                    color: $light;
+                }
+            }
         }
     }
 }
 
-.notification--dropdown {
-    // height: 60px;
-    &:hover {
-        .menu-dropdown {
-            transition:0.2s all ease-in-out;
-            opacity: 1;
-            pointer-events: all;
-            transform: translateY(0);
-        }
-    }
-}
