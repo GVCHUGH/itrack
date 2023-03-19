@@ -43,27 +43,27 @@ export const menu = [
         hasDropdown:true,
         dropDown:[
             {
-                name:'Home 1',
+                name:'Product 1',
                 link:'',
                 isVisible:true,
             },
             {
-                name:'Home 2',
+                name:'Product 2',
                 link:'',
                 isVisible:true,
             },
             {
-                name:'Home 3',
+                name:'Product 3',
                 link:'',
                 isVisible:true,
             },
             {
-                name:'Home 4',
+                name:'Product 4',
                 link:'',
                 isVisible:true,
             },
             {
-                name:'Home 5',
+                name:'Product 5',
                 link:'',
                 isVisible:true,
             }

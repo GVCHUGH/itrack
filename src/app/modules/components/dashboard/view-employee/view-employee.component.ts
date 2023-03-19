@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-employee.component.scss']
 })
 export class ViewEmployeeComponent {
-
+  public contentView:any='l';
+  changeView(view:any){
+    this.contentView = view;
+  }
 }
