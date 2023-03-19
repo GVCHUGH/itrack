@@ -41,17 +41,17 @@ export const menu = [
         dropDown:[
             {
                 name:'Add Employee',
-                link:'/add-employee',
+                link:'add-employee',
                 isVisible:true,
             },
             {
                 name:'View Employee List',
-                link:'/view-employee-list',
+                link:'view-employee-list',
                 isVisible:true,
             },
             {
                 name:'Import Employee',
-                link:'/upload-employee',
+                link:'upload-employee',
                 isVisible:true,
             }
         ]
@@ -86,7 +86,7 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'View Zonal Distributer',
+                name:'View Zonal Distributer List',
                 link:'view-zonal-distributor',
                 isVisible:true,
             },
@@ -111,7 +111,7 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'View Area Distributer',
+                name:'View Area Distributer List',
                 link:'view-area-distributor',
                 isVisible:true,
             },
@@ -128,7 +128,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/store.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Retailer',
+                link:'add-retailer',
+                isVisible:true,
+            },
+            {
+                name:'View Retailer List',
+                link:'view-retailer-list',
+                isVisible:true,
+            },
+            {
+                name:'Import Retailer',
+                link:'upload-retailer',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Assets Management',

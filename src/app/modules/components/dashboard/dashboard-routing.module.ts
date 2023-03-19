@@ -11,6 +11,9 @@ import { ViewEmployeeListComponent } from './view-employee-list/view-employee-li
 import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
 import { ViewAreaDistributorComponent } from './view-area-distributor/view-area-distributor.component';
 import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
+import { AddRetailerComponent } from './add-retailer/add-retailer.component';
+import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
+import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -24,6 +27,9 @@ const routes: Routes = [
   {path:'add-area-distributor', component:AddAreaDistributorComponent},
   {path:'upload-area-distributor', component:UploadAreaDistributorComponent},
   {path:'view-area-distributor', component:ViewAreaDistributorComponent},
+  {path:'add-retailer', component:AddRetailerComponent},
+  {path:'upload-retailer', component:UploadRetailerComponent},
+  {path:'view-retailer-list', component:ViewRetailerListComponent},
 ];
 
 @NgModule({
