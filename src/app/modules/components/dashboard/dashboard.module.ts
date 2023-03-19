@@ -4,7 +4,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AddZonalDistributorComponent } from './add-zonal-distributor/add-zonal-distributor.component';
-import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
+import {  ViewZonalDistributorListComponent } from './view-zonal-distributor-list/view-zonal-distributor-list.component';
 import { UploadEmployeeComponent } from './upload-employee/upload-employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeListComponent } from './view-employee-list/view-employee-list.component';
@@ -23,7 +23,7 @@ import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-li
   declarations: [
     AdminDashboardComponent,
     AddZonalDistributorComponent,
-    ViewZonalDistributorComponent,
+    ViewZonalDistributorListComponent,
     UploadEmployeeComponent,
     AddEmployeeComponent,
     ViewEmployeeListComponent,

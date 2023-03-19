@@ -87,7 +87,7 @@ export const menu = [
             },
             {
                 name:'View Zonal Distributer List',
-                link:'view-zonal-distributor',
+                link:'view-zonal-distributor-list',
                 isVisible:true,
             },
             {

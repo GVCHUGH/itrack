@@ -10,16 +10,16 @@ import { UploadEmployeeComponent } from './upload-employee/upload-employee.compo
 import { ViewEmployeeListComponent } from './view-employee-list/view-employee-list.component';
 import { UploadZonalDistributorComponent } from './upload-zonal-distributor/upload-zonal-distributor.component';
 import { ViewAreaDistributorComponent } from './view-area-distributor/view-area-distributor.component';
-import { ViewZonalDistributorComponent } from './view-zonal-distributor/view-zonal-distributor.component';
 import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { UploadRetailerComponent } from './upload-retailer/upload-retailer.component';
 import { ViewRetailerListComponent } from './view-retailer-list/view-retailer-list.component';
+import { ViewZonalDistributorListComponent } from './view-zonal-distributor-list/view-zonal-distributor-list.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
   {path:'dashboard', component:AdminDashboardComponent},
   {path:'add-zonal-distributor', component:AddZonalDistributorComponent},
-  {path:'view-zonal-distributor', component:ViewZonalDistributorComponent},
+  {path:'view-zonal-distributor-list', component:ViewZonalDistributorListComponent},
   {path:'upload-employee', component:UploadEmployeeComponent},
   {path:'add-employee', component:AddEmployeeComponent},
   {path:'view-employee-list', component:ViewEmployeeListComponent},
