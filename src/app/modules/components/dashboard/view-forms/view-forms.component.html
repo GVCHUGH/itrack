@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 heading p-0">
-            <h2>View Branch</h2>
+            <h2>View Forms</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a>Home</a></li>
-                    <li class="breadcrumb-item active">View Branch</li>
+                    <li class="breadcrumb-item active">View Forms</li>
                 </ol>
             </nav>
         </div>
@@ -19,7 +19,7 @@
                 <div class="card__body">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Branch Name</label>
+                            <label class="label">Form Name</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
                                 <input matInput placeholder="Site Name">
                             </mat-form-field>
@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-end">
                             <button matRipple class="btn btn-reset me-2">Reset</button>
-                            <button matRipple class="btn btn-submit">Submit</button>
+                            <button matRipple class="btn btn-submit">Search</button>
                         </div>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
                 <thead>
                     <tr>
                         <th>S.NO</th>
-                        <th>Branch Name</th>
+                        <th>Form Name</th>
                         <th>Status</th>
                         <th style="text-align: center;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of [1,2,3,4,5], let i=index">
+                    <tr *ngFor="let item of [1,2,3], let i=index">
                         <td>{{i + 1}}</td>
-                        <td>Faridabad</td>
-                        <td>North</td>
+                        <td>Branding Update</td>
+                        <td><span>Active</span></td>
                         <td style="text-align: center;">
                             <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
                                 <img src="assets/images/action.svg">

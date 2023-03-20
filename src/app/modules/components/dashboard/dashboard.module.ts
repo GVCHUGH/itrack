@@ -25,6 +25,21 @@ import { AddBranchComponent } from './add-branch/add-branch.component';
 import { AddRegionComponent } from './add-region/add-region.component';
 import { ViewBranchComponent } from './view-branch/view-branch.component';
 import { ViewRegionComponent } from './view-region/view-region.component';
+import { UploadTargetsComponent } from './upload-targets/upload-targets.component';
+import { AddTargetsComponent } from './add-targets/add-targets.component';
+import { ViewTargetsComponent } from './view-targets/view-targets.component';
+import { AddDefaultTargetsComponent } from './add-default-targets/add-default-targets.component';
+import { TargetPerformanceReportComponent } from './target-performance-report/target-performance-report.component';
+import { UploadBranchComponent } from './upload-branch/upload-branch.component';
+import { UploadRegionComponent } from './upload-region/upload-region.component';
+import { AddAreaComponent } from './add-area/add-area.component';
+import { ViewAreaComponent } from './view-area/view-area.component';
+import { UploadAreaComponent } from './upload-area/upload-area.component';
+import { ProductWiseTargetsComponent } from './product-wise-targets/product-wise-targets.component';
+import { DealerWiseTargetsComponent } from './dealer-wise-targets/dealer-wise-targets.component';
+import { CreateFormComponent } from './create-form/create-form.component';
+import { ViewFormsComponent } from './view-forms/view-forms.component';
+import { ViewSubmittedFormsComponent } from './view-submitted-forms/view-submitted-forms.component';
 
 
 
@@ -53,6 +68,21 @@ import { ViewRegionComponent } from './view-region/view-region.component';
     AddRegionComponent,
     ViewBranchComponent,
     ViewRegionComponent,
+    UploadTargetsComponent,
+    AddTargetsComponent,
+    ViewTargetsComponent,
+    AddDefaultTargetsComponent,
+    TargetPerformanceReportComponent,
+    UploadBranchComponent,
+    UploadRegionComponent,
+    AddAreaComponent,
+    ViewAreaComponent,
+    UploadAreaComponent,
+    ProductWiseTargetsComponent,
+    DealerWiseTargetsComponent,
+    CreateFormComponent,
+    ViewFormsComponent,
+    ViewSubmittedFormsComponent,
   ],
   imports: [
     CommonModule,

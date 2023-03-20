@@ -8,7 +8,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 
 .btn {
     height: 40px;
-    width: 100px;
+    min-width: 100px;
     font-size: $text-sm;
     // &-submit {
     //     background: $primary;
@@ -219,4 +219,9 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 }
 .mdc-text-field--outlined .mdc-notched-outline {
     display: none;
+}
+
+//Star Color
+.mandatory{
+    color: red;
 }
