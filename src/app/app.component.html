@@ -9,6 +9,20 @@
         <app-notification></app-notification>
     </div>
     <router-outlet></router-outlet>
+    <div class="copyright" [ngClass]="menuToggler ? 'opened':'closed'">
+        <p class="mb-0">&#169; 2023 Realme Telecommunication</p>
+        <ul>
+            <li>
+                Privacy Policy
+            </li>
+            <li>
+                Terms of Use
+            </li>
+            <li>
+                Contact Us
+            </li>
+        </ul>
+    </div>
 </div>
 </div>
 

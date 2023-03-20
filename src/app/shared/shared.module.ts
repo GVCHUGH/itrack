@@ -10,6 +10,8 @@ import { NotificationComponent } from './notification/notification.component';
 import { XyChartComponent } from './xy-chart/xy-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { AngularMaterialModule } from '../core/models/angular-material/angular-material.module';
+import { SwitchCheckboxComponent } from './switch-checkbox/switch-checkbox.component';
+import { NoPageComponent } from './no-page/no-page.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { AngularMaterialModule } from '../core/models/angular-material/angular-m
     StatusCardComponent,
     NotificationComponent,
     XyChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    SwitchCheckboxComponent,
+    NoPageComponent,
   ],
   imports: [
     CommonModule,
@@ -37,7 +41,8 @@ import { AngularMaterialModule } from '../core/models/angular-material/angular-m
     StatusCardComponent,
     XyChartComponent,
     PieChartComponent,
-    AngularMaterialModule
+    AngularMaterialModule,
+    SwitchCheckboxComponent
   ]
 })
 export class SharedModule { }

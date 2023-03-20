@@ -4,7 +4,6 @@
 .configure{
     border: 1px solid $border;
     border-radius: 5px;
-    padding: 10px 0;
 }
 .content{
     background-color: $light;
@@ -23,4 +22,30 @@
 }
 .configure-toggle{
     border: 1px solid $border;
+}
+
+.table {
+    &--common {
+        thead {
+            tr {
+                th{
+                    background: #E2E2E2;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td {
+                        background: $light;
+                    }
+                }
+                &:nth-child(even) {
+                    td {
+                        background: #F3F3F3;
+                    }
+                }
+            }
+        }
+    }
 }

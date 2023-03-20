@@ -1,0 +1,67 @@
+@import '../../../mixins';
+@import '../../../variables';
+.slide-wrapper {
+    position: relative;
+    input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+    }
+}
+.slide {
+    width: 60px;
+    background: #E2E2E2;
+    height:30px;
+    border-radius: 50px;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    &::before {
+        content: "";
+        display: block;
+        width: 21px;
+        height: 21px;
+        background: white;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        left: 4px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+        transition: all ease-in-out 0.5s;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &.checked {
+        transition: all ease-in-out 0.5s;
+        background: $primary;
+        &::before {
+            transform: translateX(30px);
+            transition: all ease-in-out 0.5s;
+        }
+    }
+}
+
+.checkbox-status {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 19px;
+    z-index: 1;
+    font-size: 12px;
+    pointer-events: none;
+    &--no {
+        left: 8px;
+    }
+    &--yes {
+        right: 8px;
+    }
+    &.hidden {
+        opacity: 0;
+        transition: all ease-in-out 0.2s;
+        transition-delay: 0.2s;
+    }
+}

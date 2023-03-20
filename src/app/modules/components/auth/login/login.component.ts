@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+
+  constructor(private router : Router){}
   slideConfig = 
   {
     slidesToShow: 1, 
@@ -15,5 +18,9 @@ export class LoginComponent {
     prevArrow: false,
     nextArrow: false
   };
+
+  toLogin(){
+    this.router.navigate(['/dashboard']);;
+  }
 
 }

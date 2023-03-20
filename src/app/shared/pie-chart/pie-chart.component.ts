@@ -1,10 +1,11 @@
-import { Component, Inject, NgZone, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, Input, NgZone, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 // amCharts imports
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
+import { any } from '@amcharts/amcharts5/.internal/core/util/Array';
 
 @Component({
   selector: 'app-pie-chart',
@@ -12,6 +13,9 @@ import am4themes_animated from '@amcharts/amcharts4/themes/animated';
   styleUrls: ['./pie-chart.component.scss']
 })
 export class PieChartComponent {
+
+  
+
   readonly DEFAULT_SLICE_STROKE_WIDTH: number = 0;
   readonly DEFAULT_SLICE_OPACITY: number = 1;
   readonly DEFAULT_ANIMATION_START_ANGLE: number = -90;
@@ -29,7 +33,12 @@ export class PieChartComponent {
     }
   }
 
-  ngAfterViewInit() {
+  @Input() IdName :any;
+    @Input() radius:any;
+    
+    
+    ngAfterViewInit() {
+    
     // Chart code goes in here
     this.browserOnly(() => {
       // Themes begin
@@ -37,8 +46,8 @@ export class PieChartComponent {
       // Themes end
 
       // Create chart instance
-      var chart = am4core.create('chartpie', am4charts.PieChart);
-
+      var chart = am4core.create(this.IdName, am4charts.PieChart);
+      chart.innerRadius = am4core.percent(this.radius);
       // Add data
       chart.data = [
         {

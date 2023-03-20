@@ -1,15 +1,15 @@
 <div class="main-header d-flex justify-content-between align-items-center">
-    <div class="main-header__brand" [ngClass]="toggleValue ? '':'main-header__brand--sm'">
+    <div class="main-header__brand" [ngClass]="toggleValue ? '':'main-header__brand--sm d-flex ps-0 justify-content-center align-items-center'">
         <ng-container *ngIf="toggleValue; else smLogo">
-            <p class="mb-0 text-dark">iTrack</p>
+            <img src="assets/images/realme-logo.svg" alt="realme" width="100px">
         </ng-container>
         <ng-template #smLogo>
-            <p class="mb-0 text-dark">I</p>
+            <img src="assets/images/realme-r.png" alt="" width="14px">
         </ng-template>
         
         
     </div>
-    <div class="main-header__content d-flex justify-content-between align-items-center">
+    <div class="main-header__content d-flex justify-content-between align-items-center ps-3">
         <div class="d-flex align-items-center">
             <img src="assets/images/menu.svg" (click)="menu.emit(true)">
             <h3 class="text-dark">Today: 03 Feb 2033 -  07:54:30 PM</h3>
@@ -21,25 +21,24 @@
             <div class="notification" role="button">            
                 <img src="assets/images/notification.svg" alt="notification" width="20">
             </div>
-            <div class="notification w-auto px-1">            
-            <div class="d-flex align-items-center position-relative has-dropdown" role="button">
-                    <img src="assets/images/man.svg" alt="user" width="20">
-                
-                <div class="d-flex align-items-center">
-                    <p class="ps-2 text-dark me-0">Welcome, Rajender Rohila</p>
-                    <i class="material-icons text-dark">keyboard_arrow_down</i>
-                </div>
-                <div class="menu-dropdown">
-                    <p>Welcome Rajender!</p>   
-                    <ul>
-                        <li>
-                            <i class="material-icons">account_circle</i> <span>Profile</span></li>
-                        <li><i class="material-icons">settings</i> <span>Settings</span></li>
-                        <li><i class="material-icons">power_settings_new</i> <span>Logout</span></li>
-                    </ul>
+            <div class="profile-menu d-flex align-items-center">
+                <div class="notification notification--dropdown w-auto px-1">            
+                    <div class="d-flex align-items-center position-relative has-dropdown" role="button">
+                        <img src="assets/images/man.svg" alt="user" width="20">
+                        <div class="d-flex align-items-center">
+                            <p class="ps-2 text-dark me-0">Welcome, Rajender Rohila</p>
+                            <i class="material-icons text-dark">keyboard_arrow_down</i>
+                        </div>
+                        <div class="menu-dropdown">   
+                            <ul>
+                                <li><i class="material-icons">account_circle</i> <span>Profile</span></li>
+                                <li><i class="material-icons">settings</i> <span>Settings</span></li>
+                                <li><i class="material-icons">power_settings_new</i> <span>Logout</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 </div>

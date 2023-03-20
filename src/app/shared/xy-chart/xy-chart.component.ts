@@ -25,7 +25,7 @@ export class XyChartComponent {
     }
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     // Chart code goes in here
     this.browserOnly(() => {
       let root = am5.Root.new("chartbar");
@@ -133,6 +133,7 @@ export class XyChartComponent {
       }
     });
   }
+
 
 
 

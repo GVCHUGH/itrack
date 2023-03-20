@@ -12,38 +12,375 @@
         <div class="col-md-12 p-0">
             <div class="card card--common">
                 <mat-tab-group>
+
+                    <!-- Tab 1 -->
                     <mat-tab label="Personal Info">
-                        <div class="row m-0 mt-3 configure p-0">
-                            <div class="card__title">
-                                <h4 class="mb-0">Configuration</h4>
-                            </div>
-                            <div class="col-md-6 d-flex flex-column mt-3">
-                                <label class="label">Attendance Time</label>
-                                <mat-form-field class="example-full-width"  appearance="outline">
-                                    <input type="time" matInput placeholder="Site Name">
-                                </mat-form-field>
-                            </div>
-                            <div class="col-md-6 d-flex flex-column mt-3">
-                                <label class="label">Minimum Working Hours</label>
-                                <mat-form-field class="example-full-width"  appearance="outline">
-                                    <input matInput placeholder="Site Name">
-                                </mat-form-field>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="configure-toggle">
-                                    <p>Expense to be approved by team leader</p>
+                        <div class="card card--common">
+                            <div class="card__body">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Full Name</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Email</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="email" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">State</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Haryana</mat-option>
+                                              <mat-option value="saab">Delhi</mat-option>
+                                              <mat-option value="mercedes">UP</mat-option>
+                                              <mat-option value="audi">Punjab</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">District</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">City</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Phone</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                            <label class="label">Gender</label>
+                                            <mat-form-field appearance="outline">
+                                                <mat-select matNativeControl required>
+                                                  <mat-option value="volvo">Male</mat-option>
+                                                  <mat-option value="saab">Frmale</mat-option>
+                                                  <mat-option value="mercedes">Other</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Age</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Age">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Address</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </mat-tab>
-                    <mat-tab label="Other Info"> Content 2 </mat-tab>
-                    <mat-tab label="Official Info"> Content 3 </mat-tab>
-                    <mat-tab label="configuration">
-                        hello
+
+                    <!-- Tab 2 -->
+
+                    <mat-tab label="Other Info"> 
+                        <div class="card card--common">
+                            <div class="card__body">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Full Name</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Email</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="email" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">State</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Haryana</mat-option>
+                                              <mat-option value="saab">Delhi</mat-option>
+                                              <mat-option value="mercedes">UP</mat-option>
+                                              <mat-option value="audi">Punjab</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">District</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">City</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Phone</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                            <label class="label">Gender</label>
+                                            <mat-form-field appearance="outline">
+                                                <mat-select matNativeControl required>
+                                                  <mat-option value="volvo">Male</mat-option>
+                                                  <mat-option value="saab">Frmale</mat-option>
+                                                  <mat-option value="mercedes">Other</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Age</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Age">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Address</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
                     </mat-tab>
-                    <mat-tab label="Reports"> Content 5 </mat-tab>
-                    <mat-tab label="Allowance"> Content 6 </mat-tab>
+                    <mat-tab label="Official Info"> 
+                        <div class="card card--common">
+                            <div class="card__body">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Full Name</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Email</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="email" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">State</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Haryana</mat-option>
+                                              <mat-option value="saab">Delhi</mat-option>
+                                              <mat-option value="mercedes">UP</mat-option>
+                                              <mat-option value="audi">Punjab</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">District</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">City</label>
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">Faridabad</mat-option>
+                                              <mat-option value="saab">Gurgaon</mat-option>
+                                              <mat-option value="mercedes">Sonipat</mat-option>
+                                              <mat-option value="audi">Rohtak</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Phone</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                            <label class="label">Gender</label>
+                                            <mat-form-field appearance="outline">
+                                                <mat-select matNativeControl required>
+                                                  <mat-option value="volvo">Male</mat-option>
+                                                  <mat-option value="saab">Frmale</mat-option>
+                                                  <mat-option value="mercedes">Other</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Age</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Age">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column mb-1">
+                                        <label class="label">Address</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Site Name">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </mat-tab>
+                    <mat-tab label="configuration">
+                        <div class="card__body">
+                            <div class="row m-0 configure mb-3 pb-3">
+                                <div class="card__title card__title--nobg">
+                                    <h4 class="mb-0">Configuration</h4>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column mt-3">
+                                    <label class="label">Attendance Time</label>
+                                    <mat-form-field class="example-full-width"  appearance="outline">
+                                        <input type="time" matInput placeholder="Site Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column mt-3">
+                                    <label class="label">Minimum Working Hours</label>
+                                    <mat-form-field class="example-full-width"  appearance="outline">
+                                        <input matInput placeholder="Site Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <app-switch-checkbox [heading]="'Expense to be approved by team leader'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <app-switch-checkbox [heading]="'Re-Order Mandatory'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <app-switch-checkbox [heading]="'Odometer Reading is Mandatory or not'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <app-switch-checkbox [heading]="'Ask the User to Enter the Distance Travelled'"></app-switch-checkbox>
+                                </div>
+                            </div>
+
+                            <!-- Leave allownace -->
+
+                            <div class="row m-0 configure">
+                                <div class="card__title card__title--nobg">
+                                    <h4 class="mb-0">Leaves Allowed in one Financial Year</h4>
+                                </div>
+                                <div class="card__body">
+                                    <table class="table table--common">
+                                        <thead>
+                                            <tr>
+                                                <th>Casual Leave</th>
+                                                <th>Earned Leave</th>
+                                                <th>Sick Leave</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of [1,2,3,4,5]">
+                                                <td>Casual Leave</td>
+                                                <td>Earned Leave</td>
+                                                <td>Sick Leave</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Reports"> 
+                        <div class="card card--common">
+                            <div class="card__body">
+                                <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Monthly Attendance Show'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send Attendance confirmation by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send day over confirmation by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send day summary report by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send monthly consolidated report by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send my monthly report of expense claimed'"></app-switch-checkbox>
+                                </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </mat-tab>
+                    <mat-tab label="Allowance"> 
+                        
+                        <div class="card card--common">
+                            <div class="card__body">
+                                <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Monthly Attendance Show'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send Attendance confirmation by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send day over confirmation by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send day summary report by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send monthly consolidated report by Email'"></app-switch-checkbox>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <app-switch-checkbox [heading]="'Send my monthly report of expense claimed'"></app-switch-checkbox>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                     </mat-tab>
+                     
                   </mat-tab-group>
+                  
+                  <div class="row m-0 pb-3 px-2">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button matRipple class="btn btn-reset me-2">Reset</button>
+                        <button matRipple class="btn btn-submit">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
