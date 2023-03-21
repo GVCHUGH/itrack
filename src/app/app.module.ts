@@ -18,7 +18,7 @@ import { DashboardModule } from './modules/components/dashboard/dashboard.module
     SharedModule,
     AuthModule,
     BrowserAnimationsModule,
-    DashboardModule
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

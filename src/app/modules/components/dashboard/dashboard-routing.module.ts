@@ -38,8 +38,17 @@ import { ProductWiseTargetsComponent } from './product-wise-targets/product-wise
 import { CreateFormComponent } from './create-form/create-form.component';
 import { ViewFormsComponent } from './view-forms/view-forms.component';
 import { ViewSubmittedFormsComponent } from './view-submitted-forms/view-submitted-forms.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { AddVisitPurposeCategoryComponent } from './add-visit-purpose-category/add-visit-purpose-category.component';
+import { AddExtraExpensesCategoryComponent } from './add-extra-expenses-category/add-extra-expenses-category.component';
+import { BuildAttendanceSiteComponent } from './build-attendance-site/build-attendance-site.component';
+import { UploadSalesComponent } from './upload-sales/upload-sales.component';
+import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
+import { VisitsComponent } from './visits/visits.component';
 
 const routes: Routes = [
+  {path:'', component:AdminDashboardComponent},
   {path:'dashboard', component:AdminDashboardComponent},
 
   {path:'add-zonal-distributor', component:AddZonalDistributorComponent},
@@ -88,6 +97,17 @@ const routes: Routes = [
   {path:'target-performance-report', component:TargetPerformanceReportComponent},
   {path:'dealer-wise-targets', component:DealerWiseTargetsComponent},
   {path:'product-wise-targets', component:ProductWiseTargetsComponent},
+
+  {path:'settings', component:SettingsComponent},
+
+  {path:'add-category', component:AddCategoryComponent},
+  {path:'add-visit-purpose-category', component:AddVisitPurposeCategoryComponent},
+  {path:'add-extra-expenses-category', component:AddExtraExpensesCategoryComponent},
+  {path:'build-attendance-site', component: BuildAttendanceSiteComponent},
+  
+  {path:'upload-sales', component: UploadSalesComponent},
+  {path:'pre-booking-configuration', component: PreBookingConfigurationComponent},
+  {path:'visits', component: VisitsComponent},
 
 ];
 

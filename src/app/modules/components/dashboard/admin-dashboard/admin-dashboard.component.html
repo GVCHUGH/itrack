@@ -1,14 +1,13 @@
 <div class="status-cards d-flex flex-wrap">
     <div class="status-card-list">
-        <app-status-card
-            [title]="'Report Date'"
-            [value]="'02/02/2023'"
-            [background]="'#52D188'">
-        </app-status-card>
+        <div class="card" style="background-color: #52D188; padding: 10px 15px; color: #fff;">
+            <p>Report Date</p>
+            <h5><input type="date" value="2023-03-21" class="form-control"></h5>
+        </div>
     </div>
     <div class="status-card-list">
         <app-status-card
-            [title]="'Total App User'"
+            [title]="'Total App Users'"
             [value]="'1,00,000'"
             [background]="'#D982EA'">
         </app-status-card>
@@ -37,7 +36,7 @@
     <div class="status-card-list">
         <app-status-card
             [title]="'Orders'"
-            [value]="'02/02/2023'"
+            [value]="'100'"
             [background]="'#7A81E1'">
         </app-status-card>
     </div>
@@ -57,14 +56,14 @@
     </div>
     <div class="status-card-list">
         <app-status-card
-            [title]="'Feedback'"
+            [title]="'Feedbacks'"
             [value]="'386'"
             [background]="'#6AA2C7'">
         </app-status-card>
     </div>
     <div class="status-card-list">
         <app-status-card
-            [title]="'Form'"
+            [title]="'Forms'"
             [value]="'386'"
             [background]="'#B1AE43'">
         </app-status-card>
@@ -75,7 +74,7 @@
     <div class="col-md-12">
         <div class="card card--common">
             <div class="card__title">
-                <h4 class="mb-0">User List</h4>
+                <h4 class="mb-0">Day Summary</h4>
             </div>
             <div class="card__body">
             <app-xy-chart></app-xy-chart>
@@ -87,7 +86,7 @@
     <div class="col-md-6">
         <div class="card card--common">
             <div class="card__title">
-                <h4 class="mb-0">User List</h4>
+                <h4 class="mb-0">Visit Type</h4>
             </div>
             <div class="card__body">
             <app-pie-chart [IdName]="'chartpie'" [radius]="0"></app-pie-chart>
@@ -97,7 +96,7 @@
     <div class="col-md-6">
         <div class="card card--common">
             <div class="card__title">
-                <h4 class="mb-0">User List</h4>
+                <h4 class="mb-0">Employee Work Location</h4>
             </div>
             <div class="card__body">
             <app-pie-chart [IdName]="'chartDragpie'" [radius]="40"></app-pie-chart>
@@ -107,9 +106,9 @@
 </div>
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-6">
-        <div class="card card--common">
+        <div class="card card--common p-0">
             <div class="card__title">
                 <h4 class="mb-0">User List</h4>
             </div>
@@ -178,5 +177,5 @@
               </div>
         </div>
     </div>    
-</div>
+</div> -->
 

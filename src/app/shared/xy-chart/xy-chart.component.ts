@@ -42,32 +42,16 @@ export class XyChartComponent {
       // Define data
       let data = [
         {
-          day: "Sunday",
-          value: 1200,
+          day: "Logged Users",
+          value: 535,
         },
         {
-          day: "Monday",
-          value: 1400,
+          day: "Visits",
+          value: 412,
         },
         {
-          day: "Tuesday",
-          value: 1000,
-        },
-        {
-          day: "Wednesday",
-          value: 1500,
-        },
-        {
-          day: "Thursday",
-          value: 1200,
-        },
-        {
-          day: "Friday",
-          value: 1000,
-        },
-        {
-          day: "Saturday",
-          value: 900,
+          day: "Not Logged Users",
+          value: 445,
         }
       ];
 

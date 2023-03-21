@@ -29,7 +29,7 @@ import { NoPageComponent } from './no-page/no-page.component';
   imports: [
     CommonModule,
     SlickCarouselModule,
-    AngularMaterialModule
+    AngularMaterialModule,
   ],
   exports: [
     HeaderComponent,

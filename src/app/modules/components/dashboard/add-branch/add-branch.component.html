@@ -19,34 +19,40 @@
                 <div class="card__body">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Region</label>
+                            <label class="label">Region<span class="mandatory">*</span></label>
                     <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
-                            Employee 1
+                            East
                           </mat-option>
                           <mat-option value="Employee 2">
-                            Employee 2
+                            West
+                          </mat-option>
+                          <mat-option value="Employee 1">
+                            North
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            South
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Branch Name</label>
+                            <label class="label">Branch Name<span class="mandatory">*</span></label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Branch Name">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Branch Code</label>
+                            <label class="label">Branch Code<span class="mandatory">*</span></label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Branch Code">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">City</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="City">
                             </mat-form-field>
                         </div>
                     </div>
@@ -54,33 +60,33 @@
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Pin Code</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Pin Code">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">State</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="State">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Telephone</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Telephone">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Email ID</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Email Id">
                             </mat-form-field>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Pin Code</label>
+                            <label class="label">Branch Head</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Branch Head">
                             </mat-form-field>
                         </div>
                     </div>
@@ -88,20 +94,46 @@
                         <div class="col-md-6 d-flex flex-column">
                             <label class="label">Address</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Address">
                             </mat-form-field>
                         </div>
                         <div class="col-md-6 d-flex flex-column">
                             <label class="label">Remarks</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="Remarks">
                             </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">GPS Coordinates</label>
+                            <div class="d-flex" style="gap: 20px;">
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Latitude">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width"  appearance="outline">
+                                    <input matInput placeholder="Longitude">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Remarks<span class="mandatory">*</span></label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Active
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Inactive
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-end">
                             <button matRipple class="btn btn-reset me-2">Reset</button>
-                            <button matRipple class="btn btn-submit">Submit</button>
+                            <button matRipple class="btn btn-submit">Add Branch</button>
                         </div>
                     </div>
                 </div>

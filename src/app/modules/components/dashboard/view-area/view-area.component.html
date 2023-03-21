@@ -19,20 +19,38 @@
                 <div class="card__body">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Area Name</label>
-                            <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="Site Name">
-                            </mat-form-field>
+                            <label class="label">Region</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                    <mat-option value="Employee 1">East</mat-option>
+                                    <mat-option value="Employee 2">West</mat-option>
+                                    <mat-option value="Employee 2">North</mat-option>
+                                    <mat-option value="Employee 2">South</mat-option>
+                                </mat-select>
+                              </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Status</label>
+                            <label class="label">Branch</label>
                     <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
-                            Employee 1
+                            Faridabad
                           </mat-option>
                           <mat-option value="Employee 2">
-                            Employee 2
+                            Gurgaon
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Area</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Faridabad
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Gurgaon
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
@@ -41,7 +59,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-end">
                             <button matRipple class="btn btn-reset me-2">Reset</button>
-                            <button matRipple class="btn btn-submit">Submit</button>
+                            <button matRipple class="btn btn-submit">Search</button>
                         </div>
                     </div>
                 </div>
@@ -50,13 +68,14 @@
     </div>
     <div class="row configure">
         <div class="card__body">
-            <p>Total Search Result: 3</p>
+            <p>Total Search Result: 5</p>
             <table class="table table--common">
                 <thead>
                     <tr>
                         <th>S.NO</th>
                         <th>Area Name</th>
-                        <th>Status</th>
+                        <th>Region</th>
+                        <th>Branch</th>
                         <th style="text-align: center;">Action</th>
                     </tr>
                 </thead>
@@ -65,6 +84,7 @@
                         <td>{{i + 1}}</td>
                         <td>Faridabad</td>
                         <td>North</td>
+                        <td>Faridabad</td>
                         <td style="text-align: center;">
                             <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
                                 <img src="assets/images/action.svg">

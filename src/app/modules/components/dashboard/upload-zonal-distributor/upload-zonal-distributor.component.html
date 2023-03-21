@@ -13,18 +13,31 @@
             <div class="card card--common">
                 <div class="row m-0 px-1 pt-3">
                     <div class="col-md-5 d-flex flex-column">
-                        <label class="label">File Name</label>
+                        <label class="label">Format</label>
                         <div>
                             <mat-form-field appearance="outline">
                                 <mat-select>
-                                    <mat-option value="Employee 1">Employee 1</mat-option>
-                                    <mat-option value="Employee 2">Employee 2</mat-option>
+                                    <mat-option value="Employee 1">Excel File (.xls)</mat-option>
+                                    <mat-option value="Employee 2">Excel File (.xls)</mat-option>
                                 </mat-select>
                             </mat-form-field>
                         </div>
                     </div>
                     <div class="col-md-2 p-0 mt-4">
                         <button class="btn btn-download"><img src="../../../../../assets/images/document.svg">Download Sample</button>
+                    </div>
+                </div>
+                <div class="row px-3">
+                    <div class="col-md-5">
+                        <label class="label">Approval Status</label>
+                        <div>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                    <mat-option value="Employee 1">Approved</mat-option>
+                                    <mat-option value="Employee 2">Pending</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
                     </div>
                 </div>
                 <div class="row m-0 px-1">
@@ -47,7 +60,7 @@
                 <div class="row m-0 px-1 pt-3 pb-3">
                     <div class="col-md-12 d-flex justify-content-end">
                         <button matRipple class="btn btn-reset me-2">Reset</button>
-                        <button matRipple class="btn btn-submit">Submit</button>
+                        <button matRipple class="btn btn-submit">Proceed</button>
                     </div>
                 </div>
             </div>

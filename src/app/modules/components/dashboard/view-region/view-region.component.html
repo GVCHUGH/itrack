@@ -29,10 +29,13 @@
                     <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
-                            Employee 1
+                            Show All
                           </mat-option>
                           <mat-option value="Employee 2">
-                            Employee 2
+                            Active
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Inactive
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
@@ -41,7 +44,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-end">
                             <button matRipple class="btn btn-reset me-2">Reset</button>
-                            <button matRipple class="btn btn-submit">Submit</button>
+                            <button matRipple class="btn btn-submit">Search</button>
                         </div>
                     </div>
                 </div>
@@ -50,7 +53,7 @@
     </div>
     <div class="row configure">
         <div class="card__body">
-            <p>Total Search Result: 3</p>
+            <p>Total Search Results: 5</p>
             <table class="table table--common">
                 <thead>
                     <tr>
@@ -64,7 +67,7 @@
                     <tr *ngFor="let item of [1,2,3,4,5], let i=index">
                         <td>{{i + 1}}</td>
                         <td>Faridabad</td>
-                        <td>North</td>
+                        <td><span class="status">Active</span></td>
                         <td style="text-align: center;">
                             <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
                                 <img src="assets/images/action.svg">

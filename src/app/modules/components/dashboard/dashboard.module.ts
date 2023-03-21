@@ -40,6 +40,15 @@ import { DealerWiseTargetsComponent } from './dealer-wise-targets/dealer-wise-ta
 import { CreateFormComponent } from './create-form/create-form.component';
 import { ViewFormsComponent } from './view-forms/view-forms.component';
 import { ViewSubmittedFormsComponent } from './view-submitted-forms/view-submitted-forms.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { AddExtraExpensesCategoryComponent } from './add-extra-expenses-category/add-extra-expenses-category.component';
+import { AddVisitPurposeCategoryComponent } from './add-visit-purpose-category/add-visit-purpose-category.component';
+import { BuildAttendanceSiteComponent } from './build-attendance-site/build-attendance-site.component';
+import { UploadSalesComponent } from './upload-sales/upload-sales.component';
+import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
+import { VisitsComponent } from './visits/visits.component';
+import { FormControl } from '@angular/forms';
 
 
 
@@ -83,10 +92,18 @@ import { ViewSubmittedFormsComponent } from './view-submitted-forms/view-submitt
     CreateFormComponent,
     ViewFormsComponent,
     ViewSubmittedFormsComponent,
+    SettingsComponent,
+    AddCategoryComponent,
+    AddExtraExpensesCategoryComponent,
+    AddVisitPurposeCategoryComponent,
+    BuildAttendanceSiteComponent,
+    UploadSalesComponent,
+    PreBookingConfigurationComponent,
+    VisitsComponent,
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     AdminDashboardComponent,

@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>Build Attendance Site</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Build Attendance Site</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Build Attendance Site</h4>
+                </div>
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Site Name</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Latitude<span class="mandatory">*</span></label>
+                      <mat-form-field class="example-full-width"  appearance="outline">
+                        <input matInput placeholder="Site Name">
+                    </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Longitude<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Radius<span class="mandatory">*</span> (In Meter)</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Attendance Site Away Alert Distance</label>
+                      <mat-form-field class="example-full-width"  appearance="outline">
+                        <input matInput placeholder="Site Name">
+                    </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Employee</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select placeholder="Employees" [(value)]="selectedEmployees" multiple>
+                            <mat-option *ngFor="let employee of employeeList" [value]="employee">{{employee}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Send SMS to Concern Person</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Yes
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    No
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column">
+                            <label class="label">Remarks</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Site Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

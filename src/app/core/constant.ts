@@ -32,12 +32,7 @@ export const menu = [
                 name:'View Region',
                 link:'view-region',
                 isVisible:true,
-            },
-            {
-                name:'Upload Region',
-                link:'upload-region',
-                isVisible:true,
-            },
+            }
         ]
     },
     {
@@ -99,15 +94,51 @@ export const menu = [
         hasDropdown:true,
         dropDown:[
             {
-                name:'',
-                link:'',
+                name:'Settings',
+                link:'settings',
                 isVisible:true,
             },
             {
-                name:'',
-                link:'',
+                name:'Build Attendance Site',
+                link:'build-attendance-site',
                 isVisible:true,
             },
+            {
+                name:'Upload Sales',
+                link:'upload-sales',
+                isVisible:true,
+            },
+            
+            {
+                name:'Visits',
+                link:'visits',
+                isVisible:true,
+            },
+        ]
+    },
+    {
+        name:'Category',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/home.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Category',
+                link:'add-category',
+                isVisible:true,
+            },
+            {
+                name:'Add Extra Expenses Category',
+                link:'add-extra-expenses-category',
+                isVisible:true,
+            },
+            {
+                name:'Add Visit Purpose Category',
+                link:'add-visit-purpose-category',
+                isVisible:true
+            }
         ]
     },
     {
@@ -343,6 +374,36 @@ export const menu = [
         icon:'assets/images/menu-icons/logout.svg',
         isIconVisible:true,
         hasDropdown:false,
+    },
+    {
+        name:'Dealer',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/logout.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Pre Booking Configuration',
+                link:'pre-booking-configuration',
+                isVisible:true,
+            },
+            {
+                name:'Title 1',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Title 2',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Title 3',
+                link:'',
+                isVisible:true,
+            }
+        ]
     }
 ]
 
