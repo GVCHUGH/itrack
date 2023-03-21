@@ -32,7 +32,7 @@ export const menu = [
                 name:'View Region',
                 link:'view-region',
                 isVisible:true,
-            },
+            }
         ]
     },
     {
@@ -53,6 +53,92 @@ export const menu = [
                 link:'view-branch',
                 isVisible:true,
             },
+            {
+                name:'Upload Branch',
+                link:'upload-branch',
+                isVisible:true,
+            },
+        ]
+    },
+    {
+        name:'Area',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/home.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Area',
+                link:'add-area',
+                isVisible:true,
+            },
+            {
+                name:'View Area',
+                link:'view-area',
+                isVisible:true,
+            },
+            {
+                name:'Upload Area',
+                link:'upload-area',
+                isVisible:true,
+            },
+        ]
+    },
+    {
+        name:'Master',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/home.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Settings',
+                link:'settings',
+                isVisible:true,
+            },
+            {
+                name:'Build Attendance Site',
+                link:'build-attendance-site',
+                isVisible:true,
+            },
+            {
+                name:'Upload Sales',
+                link:'upload-sales',
+                isVisible:true,
+            },
+            
+            {
+                name:'Visits',
+                link:'visits',
+                isVisible:true,
+            },
+        ]
+    },
+    {
+        name:'Category',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/home.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Category',
+                link:'add-category',
+                isVisible:true,
+            },
+            {
+                name:'Add Extra Expenses Category',
+                link:'add-extra-expenses-category',
+                isVisible:true,
+            },
+            {
+                name:'Add Visit Purpose Category',
+                link:'add-visit-purpose-category',
+                isVisible:true
+            }
         ]
     },
     {
@@ -205,11 +291,28 @@ export const menu = [
     },
     {
         name:'Forms',
-        link:'forms',
+        link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/forms.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Create Form',
+                link:'create-form',
+                isVisible:true,
+            },
+            {
+                name:'View Forms',
+                link:'view-forms',
+                isVisible:true,
+            },
+            {
+                name:'View Submitted Forms',
+                link:'view-submitted-forms',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Target',
@@ -217,7 +320,44 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/target.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Targets',
+                link:'add-targets',
+                isVisible:true,
+            },
+            {
+                name:'View Targets',
+                link:'view-targets',
+                isVisible:true,
+            },
+            {
+                name:'Import Targets',
+                link:'upload-targets',
+                isVisible:true,
+            },
+            {
+                name:'Add Default Targets',
+                link:'add-default-targets',
+                isVisible:true,
+            },
+            {
+                name:'Target Performance Report',
+                link:'target-performance-report',
+                isVisible:true,
+            },
+            {
+                name:'Dealer Wise Targets',
+                link:'dealer-wise-targets',
+                isVisible:true,
+            },
+            {
+                name:'Product Wise Targets',
+                link:'product-wise-targets',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'Report',
@@ -234,6 +374,36 @@ export const menu = [
         icon:'assets/images/menu-icons/logout.svg',
         isIconVisible:true,
         hasDropdown:false,
+    },
+    {
+        name:'Dealer',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/logout.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Pre Booking Configuration',
+                link:'pre-booking-configuration',
+                isVisible:true,
+            },
+            {
+                name:'Title 1',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Title 2',
+                link:'',
+                isVisible:true,
+            },
+            {
+                name:'Title 3',
+                link:'',
+                isVisible:true,
+            }
+        ]
     }
 ]
 

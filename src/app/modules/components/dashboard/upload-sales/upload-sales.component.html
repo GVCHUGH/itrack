@@ -1,0 +1,104 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>Upload Sales</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Upload Sales</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Upload Sales</h4>
+                </div>
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Dealer Type</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Employee 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Employee 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Select Year</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Employee 1
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Employee 2
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Select Month</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Employee 1
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Employee 2
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 d-flex flex-column">
+                            <label class="label">Format</label>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-select>
+                                        <mat-option value="Employee 1">Employee 1</mat-option>
+                                        <mat-option value="Employee 2">Employee 2</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-0 mt-4">
+                            <button class="btn btn-download"><img src="../../../../../assets/images/document.svg">Download Sample</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 d-flex flex-column">
+                            <p class="label">Upload</p>
+                            <label class="label" for="uploadBtn" role="button">
+                                <div class="file-upload d-flex align-items-center">
+                                    <div class="upload-img">
+                                        <img src="../../../../../assets/images/upload.svg" alt="">
+                                    </div>
+                                    <div class="upload-content">
+                                        <h2>Upload File</h2>
+                                        <p>File must have contain Region name,  Branch Name, Branch Code</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="file" class="file" name="upload" id="uploadBtn" hidden>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

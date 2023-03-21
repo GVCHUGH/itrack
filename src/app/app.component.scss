@@ -45,6 +45,7 @@
     right: 0;
     padding: 10px;
     transition: all ease-in-out 0.1s;
+    z-index: 99;
     &.closed {
         width: calc(100% - 68px);
         transition: all ease-in-out 0.1s;

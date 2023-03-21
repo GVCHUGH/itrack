@@ -9,4 +9,10 @@ export class HeaderComponent {
   @Input() toggleValue!:boolean;
   @Output() menu = new EventEmitter<any>();
 
+  timeDate : any = new Date();
+  constructor() {
+    setInterval(() => {
+      this.timeDate = new Date();
+    }, 1);
+}
 }

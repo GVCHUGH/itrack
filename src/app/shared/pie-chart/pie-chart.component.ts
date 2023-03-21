@@ -33,7 +33,7 @@ export class PieChartComponent {
     }
   }
 
-  @Input() IdName :any;
+    @Input() IdName :any;
     @Input() radius:any;
     
     
@@ -51,33 +51,17 @@ export class PieChartComponent {
       // Add data
       chart.data = [
         {
-          x: 'C Channel',
-          'y-bar': 13.5,
+          x: 'Zonal Distributor',
+          'y-bar': 377,
         },
         {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
+          x: 'Area Distributor',
+          'y-bar': 28,
         },
         {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
-        },
-        {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
-        },
-        {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
-        },
-        {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
-        },
-        {
-          x: 'Ramp Cut',
-          'y-bar': 66.2,
-        },
+          x: 'Retailer',
+          'y-bar': 7,
+        }
       ];
 
       // Add and configure Series

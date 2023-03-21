@@ -23,8 +23,32 @@ import { AddBranchComponent } from './add-branch/add-branch.component';
 import { AddRegionComponent } from './add-region/add-region.component';
 import { ViewBranchComponent } from './view-branch/view-branch.component';
 import { ViewRegionComponent } from './view-region/view-region.component';
+import { UploadTargetsComponent } from './upload-targets/upload-targets.component';
+import { AddTargetsComponent } from './add-targets/add-targets.component';
+import { ViewTargetsComponent } from './view-targets/view-targets.component';
+import { AddDefaultTargetsComponent } from './add-default-targets/add-default-targets.component';
+import { TargetPerformanceReportComponent } from './target-performance-report/target-performance-report.component';
+import { UploadBranchComponent } from './upload-branch/upload-branch.component';
+import { UploadRegionComponent } from './upload-region/upload-region.component';
+import { AddAreaComponent } from './add-area/add-area.component';
+import { ViewAreaComponent } from './view-area/view-area.component';
+import { UploadAreaComponent } from './upload-area/upload-area.component';
+import { DealerWiseTargetsComponent } from './dealer-wise-targets/dealer-wise-targets.component';
+import { ProductWiseTargetsComponent } from './product-wise-targets/product-wise-targets.component';
+import { CreateFormComponent } from './create-form/create-form.component';
+import { ViewFormsComponent } from './view-forms/view-forms.component';
+import { ViewSubmittedFormsComponent } from './view-submitted-forms/view-submitted-forms.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { AddVisitPurposeCategoryComponent } from './add-visit-purpose-category/add-visit-purpose-category.component';
+import { AddExtraExpensesCategoryComponent } from './add-extra-expenses-category/add-extra-expenses-category.component';
+import { BuildAttendanceSiteComponent } from './build-attendance-site/build-attendance-site.component';
+import { UploadSalesComponent } from './upload-sales/upload-sales.component';
+import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
+import { VisitsComponent } from './visits/visits.component';
 
 const routes: Routes = [
+  {path:'', component:AdminDashboardComponent},
   {path:'dashboard', component:AdminDashboardComponent},
 
   {path:'add-zonal-distributor', component:AddZonalDistributorComponent},
@@ -51,9 +75,40 @@ const routes: Routes = [
 
   {path:'add-branch', component:AddBranchComponent},
   {path:'view-branch', component:ViewBranchComponent},
+  {path:'upload-branch', component:UploadBranchComponent},
 
   {path:'add-region', component:AddRegionComponent},
   {path:'view-region', component:ViewRegionComponent},
+  {path:'upload-region', component:UploadRegionComponent},
+
+
+  {path:'add-area', component:AddAreaComponent},
+  {path:'view-area', component:ViewAreaComponent},
+  {path:'upload-area', component:UploadAreaComponent},
+
+  {path:'create-form', component:CreateFormComponent},
+  {path:'view-forms', component:ViewFormsComponent},
+  {path:'view-submitted-forms', component:ViewSubmittedFormsComponent},
+
+  {path:'upload-targets', component:UploadTargetsComponent},
+  {path:'add-targets', component:AddTargetsComponent},
+  {path:'view-targets', component:ViewTargetsComponent},
+  {path:'add-default-targets', component:AddDefaultTargetsComponent},
+  {path:'target-performance-report', component:TargetPerformanceReportComponent},
+  {path:'dealer-wise-targets', component:DealerWiseTargetsComponent},
+  {path:'product-wise-targets', component:ProductWiseTargetsComponent},
+
+  {path:'settings', component:SettingsComponent},
+
+  {path:'add-category', component:AddCategoryComponent},
+  {path:'add-visit-purpose-category', component:AddVisitPurposeCategoryComponent},
+  {path:'add-extra-expenses-category', component:AddExtraExpensesCategoryComponent},
+  {path:'build-attendance-site', component: BuildAttendanceSiteComponent},
+  
+  {path:'upload-sales', component: UploadSalesComponent},
+  {path:'pre-booking-configuration', component: PreBookingConfigurationComponent},
+  {path:'visits', component: VisitsComponent},
+
 ];
 
 @NgModule({
