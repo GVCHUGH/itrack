@@ -22,16 +22,18 @@
             </div>
         </button>
     </div>
-    <div class="selectUser">
-        <p>Send login credentials to below selected mapped user also</p>
-        <div class="user-list d-flex flex-column">
-            <div class="user"><mat-checkbox class="example-margin">Mahesh (98XXXXXX65)</mat-checkbox></div>
-            <div class="user"><mat-checkbox class="example-margin">Ram (98XXXXXX65)</mat-checkbox></div>
-            <div class="user"><mat-checkbox class="example-margin">Sohan (98XXXXXX65)</mat-checkbox></div>
-            <div class="user"><mat-checkbox class="example-margin">Rakesh (98XXXXXX65)</mat-checkbox></div>
-            <div class="user"><mat-checkbox class="example-margin">Mukesh (98XXXXXX65)</mat-checkbox></div>
-        </div>
-    </div>
+    <mat-dialog-content class="p-0">
+        <div class="selectUser">
+            <p>Send login credentials to below selected mapped user also</p>
+            <div class="user-list d-flex flex-column">
+                <div class="user"><mat-checkbox class="example-margin">Mahesh (98XXXXXX65)</mat-checkbox></div>
+                <div class="user"><mat-checkbox class="example-margin">Ram (98XXXXXX65)</mat-checkbox></div>
+                <div class="user"><mat-checkbox class="example-margin">Sohan (98XXXXXX65)</mat-checkbox></div>
+                <div class="user"><mat-checkbox class="example-margin">Rakesh (98XXXXXX65)</mat-checkbox></div>
+                <div class="user"><mat-checkbox class="example-margin">Mukesh (98XXXXXX65)</mat-checkbox></div>
+            </div>
+        </div>        
+    </mat-dialog-content>
     <div class="d-flex justify-content-end">
         <button class="btn btn-primary" (click)="toClose()">Close</button>
     </div>
