@@ -112,3 +112,37 @@
     border-radius: 50%;
   }
 
+.sync-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 32%);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: rgb(33, 111, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all ease-in-out 1s;
+  &:hover {  
+    animation: rotate 5s linear infinite;
+  }
+  i {
+    font-size: 30px;
+    color: $light;
+    pointer-events: none;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

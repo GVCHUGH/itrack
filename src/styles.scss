@@ -277,3 +277,63 @@ body { margin: 0; font-family: $font; background: $gray-200; }
   ::-webkit-scrollbar-thumb:hover {
     background: $primary; 
   }
+
+
+//   buttons animation
+
+.wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box:reflect;
+}
+.wave button:not(:last-child) {
+    margin-right: 10px;
+}
+.wave button {
+    width: 24px;
+    height: 24px;
+    background: $light;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border: none;
+    /* transform: translateY(calc(5px * var(--item))); */
+}
+
+.action-button-wrapper {
+    display: none;
+}
+
+.table-hover-action {
+    position: relative;
+    &:hover {
+        .action-button-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            padding: {
+                left: 10px;
+                right: 10px;
+            }
+            height: 100%;
+            .wave {
+                    button {
+                        animation: wave-anim 1s;
+                        animation-delay: calc(0.1s * var(--item));
+                    }
+            }
+        }
+    }
+}
+
+@keyframes wave-anim {
+    0%,40%,100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+}
