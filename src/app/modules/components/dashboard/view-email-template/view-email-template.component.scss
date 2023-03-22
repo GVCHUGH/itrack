@@ -1,0 +1,79 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+.container-emailer {
+    margin-bottom: 50px;
+}
+.card {
+    &--emailer {
+       overflow: hidden;
+       border: none;
+       box-shadow: 0 4px 8px 0 rgb(0 0 0 / 7%);
+    }
+    &__left {
+        width: 18px;
+        background: #5E7EFF;
+        flex-shrink: 0;
+    }
+    &__right {
+        height: auto;
+        padding: 10px;
+    }
+    .email {
+        &-header {
+            margin-left: -25px;
+            margin-bottom: 20px;
+        }
+        &-count {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background:lighten($color: #5E7EFF, $amount: 20%);;
+        }
+        &-heading {
+            padding-left: 10px;
+            font-size: $text-lg;
+            font-weight: 500;
+        }
+        &-content {
+            &__inner {
+                h4 {
+                    font-size: $text-base;
+                    margin-bottom: 5px;
+                    color: $dark;
+                }
+                p {
+                    font-size: $text-sm;
+                    margin: 0;
+                    color: $gray;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.email-btn {
+    border: none;
+    background: #5E7EFF;
+    right: 20px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    i {
+        color: $light;
+    }
+}
+
+.emailer-col {
+    margin-bottom: 30px;
+}

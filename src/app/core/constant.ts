@@ -394,6 +394,11 @@ export const menu = [
                 isVisible:true,
             },
             {
+                name:'View Email Templates',
+                link:'view-email-template',
+                isVisible:true,
+            },
+            {
                 name:'Title 2',
                 link:'',
                 isVisible:true,

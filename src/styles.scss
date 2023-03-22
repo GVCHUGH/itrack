@@ -35,7 +35,19 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     //         border-color:none ;
     //     }
     // }
-
+    &-primary {
+        background: $primary;
+        border-color: $primary;
+        color: $dark;
+        &:hover,&:focus {
+            background: darken($color: $primary, $amount: 10%);
+            border-color: darken($color: $primary, $amount: 10%);
+            color: $dark;
+        }
+        &:active{
+            border-color:none ;
+        }
+    }
     &-submit {
         background: $success;
         border-color: $success;
@@ -211,6 +223,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 .label{
     margin-bottom: 3px;
     font-size: 14px;
+    color: $dark;
 }
 
 .mat-mdc-text-field-wrapper {
@@ -232,3 +245,35 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     border-radius: 20px;
     color: $light;
 }
+
+.title {
+    margin-bottom: 15px;
+    h2 {
+        font-size: $text-base;
+        margin: 0;
+    }
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $light-gray;
+    border-radius: 0;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary; 
+    border-radius: 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary; 
+  }

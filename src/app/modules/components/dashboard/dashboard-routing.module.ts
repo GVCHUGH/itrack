@@ -47,6 +47,7 @@ import { UploadSalesComponent } from './upload-sales/upload-sales.component';
 import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
 import { VisitsComponent } from './visits/visits.component';
 import { ViewDealerComponent } from './view-dealer/view-dealer.component';
+import { ViewEmailTemplateComponent } from './view-email-template/view-email-template.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -111,6 +112,8 @@ const routes: Routes = [
   {path:'visits', component: VisitsComponent},
 
   {path:'view-dealer', component:ViewDealerComponent},
+
+  {path:'view-email-template', component:ViewEmailTemplateComponent}
 
 ];
 

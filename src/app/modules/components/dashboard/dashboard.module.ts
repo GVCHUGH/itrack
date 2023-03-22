@@ -50,6 +50,7 @@ import { PreBookingConfigurationComponent } from './pre-booking-configuration/pr
 import { VisitsComponent } from './visits/visits.component';
 import { FormControl } from '@angular/forms';
 import { ViewDealerComponent } from './view-dealer/view-dealer.component';
+import { ViewEmailTemplateComponent } from './view-email-template/view-email-template.component';
 
 
 
@@ -102,6 +103,7 @@ import { ViewDealerComponent } from './view-dealer/view-dealer.component';
     PreBookingConfigurationComponent,
     VisitsComponent,
     ViewDealerComponent,
+    ViewEmailTemplateComponent,
   ],
   imports: [
     CommonModule,

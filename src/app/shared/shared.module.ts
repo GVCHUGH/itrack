@@ -15,6 +15,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { StockComponent } from './stock/stock.component';
 import { LoginDetailComponent } from './login-detail/login-detail.component';
 import { LinkedDevicesComponent } from './linked-devices/linked-devices.component';
+import { AddNewEmailerComponent } from './add-new-emailer/add-new-emailer.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { LinkedDevicesComponent } from './linked-devices/linked-devices.componen
     StockComponent,
     LoginDetailComponent,
     LinkedDevicesComponent,
+    AddNewEmailerComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,55 @@
+<div class="container-fluid container-emailer">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>View Email Template</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">View Email Template</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-12 p-0">
+            <div class="row mb-4">
+                <div class="col-md-12 text-end">
+                    <button class="btn btn-primary" (click)="addNew()">Add New Template</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 emailer-col" *ngFor="let item of [1,2,3,4,5]; let i = index">
+                    <div class="card card--emailer flex-row position-relative">
+                        <div class="card__left">
+                        </div>
+                        <div class="card__right">
+                            <div class="email-header d-flex align-items-center">
+                                <div class="email-count">{{i+1}}</div>
+                                <div class="email-heading">Send customer verification email OTP</div>
+                            </div>
+                            <div class="email-content">
+                                <div class="email-content__inner">
+                                    <h4>Email Subject</h4>
+                                    <p>Email verification OTP</p>
+                                </div>
+                                <div class="email-content__inner">
+                                    <h4>Email Body</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Duis mattis egestas feugiat. Phasellus pellentesque, arcu sit 
+                                        amet venenatis sollicitudin, elit felis dapibus risus, sed ultricies 
+                                        tortor mi quis mauris. Ut pretium quis risus ut aliquet….</p>
+                                </div>
+                                <div class="email-content__inner">
+                                    <h4>Updated on</h4>
+                                    <p>27 April 2022 - 04:14:00 PM</p>
+                                </div>   
+                            </div>
+                            <button class="email-btn">
+                                <i class="material-icons">arrow_forward</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
