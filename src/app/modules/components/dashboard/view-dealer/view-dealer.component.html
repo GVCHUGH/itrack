@@ -108,7 +108,7 @@
                         <div style="width: 15%;">Contact Details</div>
                         <div style="width: 6%;">Login Allowed</div>
                     </div>
-                    <div>
+                    <div *ngFor="let item of [1,2,3], let i = index">
                         <div class="zonal-table-row d-flex justify-content-between">
                             <div style="width: 6%;"><span>1</span></div>
                             <div class="dealer-name" style="width: 22%;">
@@ -126,8 +126,8 @@
                             <div style="width: 15%;"><span>Chirag kumar patel</span></div>
                             <div style="width: 6%;">
                                 <div class="checkbox-wrapper">
-                                    <label class="switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox" />
+                                    <label class="switch" for="{{i + 1}}">
+                                        <input type="checkbox" id="{{i + 1}}">
                                         <div class="slider round"></div>
                                     </label>
                                 </div>
