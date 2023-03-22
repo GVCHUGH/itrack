@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ViewRegionComponent {
 
+  hideValue:boolean = true;
+  hideFilter(){
+    this.hideValue = !this.hideValue;
+  }
 }
