@@ -1,0 +1,27 @@
+@import '../../../mixins';
+@import '../../../variables';
+
+.stock{
+    width: 700px;
+    min-height: 400px;
+    .title{
+        h2{
+            font-size: $text-base;
+            margin-bottom: 15px;
+        }
+    }
+    .tabs{
+        margin-bottom: 20px;
+        gap: 15px;
+        button{
+            background-color: #F3F3F3;
+            &:first-child{
+                background-color: #FFE89D;
+            }
+        }
+    }
+    .table{
+        width: 100%;
+        
+    }
+}

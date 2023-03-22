@@ -13,26 +13,21 @@
             <div class="card card--common">
                 <div class="row m-0 px-1 pt-3">
                     <div class="col-md-4 d-flex flex-column">
-                        <label class="label">Form Name</label>
-                        <div>
-                            <mat-form-field appearance="outline">
-                                <mat-select>
-                                    <mat-option value="Employee 1">Employee 1</mat-option>
-                                    <mat-option value="Employee 2">Employee 2</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
+                        <label class="label">Form Name<span class="mandatory">*</span></label>
+                        <mat-form-field class="example-full-width"  appearance="outline">
+                            <input matInput placeholder="">
+                        </mat-form-field>
                     </div>
                 </div>
                 <div class="row m-0 px-1">
                     <div class="col-md-4">
-                        <app-switch-checkbox [heading]="'Send Email when app user fill form'"></app-switch-checkbox>
+                        <app-switch-checkbox [heading]="'Send Email when app user fill form*'"></app-switch-checkbox>
                     </div>
                     <div class="col-md-4">
-                        <app-switch-checkbox [heading]="'GPS Tagged Form'"></app-switch-checkbox>
+                        <app-switch-checkbox [heading]="'GPS Tagged Form*'"></app-switch-checkbox>
                     </div>
                     <div class="col-md-4">
-                        <app-switch-checkbox [heading]="'Form can be filled without check-in'"></app-switch-checkbox>
+                        <app-switch-checkbox [heading]="'Form can be filled without check-in*'"></app-switch-checkbox>
                     </div>
                 </div>
                 <div class="row m-0 px-1 mt-3">
@@ -55,7 +50,7 @@
                           </mat-form-field>
                     </div>
                     <div class="col-md-4 d-flex flex-column">
-                        <label class="label">Status</label>
+                        <label class="label">Status<span class="mandatory">*</span></label>
                         <mat-form-field appearance="outline">
                             <mat-select>
                               <mat-option value="Employee 1">

@@ -19,21 +19,27 @@
                             <div class="card__body">
                                 <div class="row">
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Employee Name</label>
+                                        <label class="label">Employee Name<span class="mandatory">*</span></label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="Employee Name">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Mobile No.</label>
+                                        <label class="label">Mobile No.<span class="mandatory">*</span></label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="Mobile No.">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Other Contact No.</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="Other Contact No.">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-8 d-flex flex-column">
+                                        <label class="label">Address</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Address">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -47,12 +53,6 @@
                                             </mat-select>
                                         </mat-form-field>
                                     </div>
-                                    <div class="col-md-8 d-flex flex-column">
-                                        <label class="label">Address</label>
-                                        <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
-                                        </mat-form-field>
-                                    </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">State</label>
                                         <mat-form-field appearance="outline">
@@ -64,17 +64,6 @@
                                             </mat-select>
                                         </mat-form-field>
                                     </div>
-                                    <!-- <div class="col-md-4 d-flex flex-column mb-1">
-                                        <label class="label">District</label>
-                                        <mat-form-field appearance="outline">
-                                            <mat-select matNativeControl required>
-                                              <mat-option value="volvo">Faridabad</mat-option>
-                                              <mat-option value="saab">Gurgaon</mat-option>
-                                              <mat-option value="mercedes">Sonipat</mat-option>
-                                              <mat-option value="audi">Rohtak</mat-option>
-                                            </mat-select>
-                                        </mat-form-field>
-                                    </div> -->
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">City</label>
                                         <mat-form-field appearance="outline">
@@ -89,47 +78,42 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Pin Code</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="Pin Code">
                                         </mat-form-field>
                                     </div>
-                                    <!-- <div class="col-md-4 d-flex flex-column mb-1">
-                                            <label class="label">Gender</label>
-                                            <mat-form-field appearance="outline">
-                                                <mat-select matNativeControl required>
-                                                  <mat-option value="volvo">Male</mat-option>
-                                                  <mat-option value="saab">Female</mat-option>
-                                                  <mat-option value="mercedes">Other</mat-option>
-                                                </mat-select>
-                                            </mat-form-field>
-                                    </div> -->
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Home Location Coordinates</label>
-                                        <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Age">
-                                        </mat-form-field>
+                                        <div class="d-flex" style="gap: 15px;">
+                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                <input type="text" matInput placeholder="Latitude">
+                                            </mat-form-field>
+                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                <input type="text" matInput placeholder="Longitude">
+                                            </mat-form-field>
+                                        </div>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Near By Address</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Email Id</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="Email Id">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Date of Birth</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="date" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Anniversary Date</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="date" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -141,6 +125,12 @@
                                               <mat-option value="mercedes">AB</mat-option>
                                               <mat-option value="audi">O</mat-option>
                                             </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-8 d-flex flex-column">
+                                        <label class="label">Remarks</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Remarks">
                                         </mat-form-field>
                                     </div>
                                         <div class="col-md-12 d-flex justify-content-end">
@@ -161,31 +151,31 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">ID No. [e.g. Voter Id]</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Driving License</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">PAN</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Bank Account Holder</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Account Number</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Age">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -212,13 +202,13 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Branch</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">IFSC Code</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-5 d-flex flex-column">
@@ -252,15 +242,15 @@
                             <div class="card__body">
                                 <div class="row">
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Employee Id</label>
+                                        <label class="label">Employee Id<span class="mandatory">*</span></label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Region</label>
+                                        <label class="label">Region<span class="mandatory">*</span></label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -277,11 +267,11 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Support Branch</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Role</label>
+                                        <label class="label">Role<span class="mandatory">*</span></label>
                                         <mat-form-field appearance="outline">
                                             <mat-select matNativeControl required>
                                               <mat-option value="volvo">Faridabad</mat-option>
@@ -294,25 +284,25 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Department (Optional)</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Associated with Brand (Optional)</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">ERP Code</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Member Of Team (Optional)</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -346,20 +336,20 @@
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Headquarter</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Date of Joining
                                         </label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Age">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Date of Leaving</label>
                                         <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Site Name">
+                                            <input type="text" matInput placeholder="">
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-12 d-flex justify-content-end">
@@ -379,7 +369,7 @@
                                 <div class="col-md-4 d-flex flex-column">
                                     <label class="label">Attendance Time</label>
                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                        <input type="time" matInput placeholder="Site Name">
+                                        <input type="time" matInput placeholder="">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-4 d-flex flex-column">
@@ -509,56 +499,56 @@
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Travelling Allowance for 2 Wheeler</label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Travelling Allowance for 4 Wheeler
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Per KM Charges For Public Transport
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Fixed City Allowance
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Fixed Ex-City Allowance
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Fixed Tour Allowance
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Daily Allowance With Document
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                         <div class="col-md-4 d-flex flex-column">
                                             <label class="label">Daily Allowance Without Document
                                             </label>
                                             <mat-form-field class="example-full-width"  appearance="outline">
-                                                <input type="text" matInput placeholder="Site Name">
+                                                <input type="text" matInput placeholder="">
                                             </mat-form-field>
                                         </div>
                                     </div>
@@ -577,14 +567,14 @@
                                                     <label class="label">Allowance Type 1
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label class="label">Allowance value 1
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                             </div>
@@ -595,14 +585,14 @@
                                                     <label class="label">Allowance Type 2
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label class="label">Allowance value 2
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                             </div>
@@ -615,14 +605,14 @@
                                                     <label class="label">Allowance Type 3
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label class="label">Allowance value 3
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                             </div>
@@ -633,14 +623,14 @@
                                                     <label class="label">Allowance Type 4
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label class="label">Allowance value 4
                                                     </label>
                                                     <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Site Name">
+                                                        <input type="text" matInput placeholder="">
                                                     </mat-form-field>
                                                 </div>
                                             </div>

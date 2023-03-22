@@ -389,8 +389,8 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'Title 1',
-                link:'',
+                name:'View Dealer',
+                link:'view-dealer',
                 isVisible:true,
             },
             {

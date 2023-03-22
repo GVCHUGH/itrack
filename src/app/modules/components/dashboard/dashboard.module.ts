@@ -49,6 +49,7 @@ import { UploadSalesComponent } from './upload-sales/upload-sales.component';
 import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
 import { VisitsComponent } from './visits/visits.component';
 import { FormControl } from '@angular/forms';
+import { ViewDealerComponent } from './view-dealer/view-dealer.component';
 
 
 
@@ -100,6 +101,7 @@ import { FormControl } from '@angular/forms';
     UploadSalesComponent,
     PreBookingConfigurationComponent,
     VisitsComponent,
+    ViewDealerComponent,
   ],
   imports: [
     CommonModule,

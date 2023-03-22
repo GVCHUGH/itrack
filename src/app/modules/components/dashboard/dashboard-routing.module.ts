@@ -46,6 +46,7 @@ import { BuildAttendanceSiteComponent } from './build-attendance-site/build-atte
 import { UploadSalesComponent } from './upload-sales/upload-sales.component';
 import { PreBookingConfigurationComponent } from './pre-booking-configuration/pre-booking-configuration.component';
 import { VisitsComponent } from './visits/visits.component';
+import { ViewDealerComponent } from './view-dealer/view-dealer.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -108,6 +109,8 @@ const routes: Routes = [
   {path:'upload-sales', component: UploadSalesComponent},
   {path:'pre-booking-configuration', component: PreBookingConfigurationComponent},
   {path:'visits', component: VisitsComponent},
+
+  {path:'view-dealer', component:ViewDealerComponent},
 
 ];
 

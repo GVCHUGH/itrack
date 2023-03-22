@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AddDefaultTargetsComponent {
 
+  btnValue:string = 'Individual Target'
+  total:boolean = true;
+  changeSingle2All(){
+    this.total = !this.total;
+    if(this.total == true){
+        this.btnValue = 'Individual Target';
+    } else{
+      this.btnValue = 'Total Target';
+    }
+  }
 }

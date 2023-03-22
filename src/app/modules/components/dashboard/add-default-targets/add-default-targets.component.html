@@ -16,7 +16,7 @@
                 </div>
                 <div class="row m-0 px-1 pt-3">
                     <div class="col-md-3 d-flex flex-column">
-                        <label class="label">Select Target For</label>
+                        <label class="label">Select Target For<span class="mandatory">*</span></label>
                         <div>
                             <mat-form-field appearance="outline">
                                 <mat-select>
@@ -37,26 +37,24 @@
                             </mat-form-field>
                         </div>
                     </div>
-                </div>
-                <div class="row m-0 px-1 pb-3">
-                    <div class="col-md-12 d-flex justify-content-end">
-                        <button matRipple class="btn btn-reset me-2">Reset</button>
-                        <button matRipple class="btn btn-submit">Submit</button>
+                    <div class="col-md-3 d-flex flex-column">
+                        <label class="label">Set {{btnValue}}</label>
+                        <button matRipple class="btn btn-submit" (click)="changeSingle2All()">{{btnValue}}</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-12 p-0 mt-3">
+        <div class="col-md-12 p-0 mt-3" *ngIf="total">
             <div class="card card--common">
                 <div class="card__title">
                     <h4 class="mb-0">Total Target</h4>
                 </div>
                 <div class="row m-0 px-1 pt-3">
                     <div class="col-md-4 d-flex flex-column">
-                        <label class="label">Total Visit</label>
+                        <label class="label">Total Visits</label>
                         <div>
                             <mat-form-field class="example-full-width" appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="">
                             </mat-form-field>
                         </div>
                     </div>
@@ -64,7 +62,7 @@
                         <label class="label">Total Sales</label>
                         <div>
                             <mat-form-field class="example-full-width" appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="">
                             </mat-form-field>
                         </div>
                     </div>
@@ -72,7 +70,7 @@
                         <label class="label">Total Collection</label>
                         <div>
                             <mat-form-field class="example-full-width" appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="">
                             </mat-form-field>
                         </div>
                     </div>
@@ -80,7 +78,149 @@
                         <label class="label">Total Contact</label>
                         <div>
                             <mat-form-field class="example-full-width" appearance="outline">
-                                <input matInput placeholder="Site Name">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                <div class="row m-0 px-1 pb-3">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button matRipple class="btn btn-reset me-2">Reset</button>
+                        <button matRipple class="btn btn-submit">Add Target</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-12 p-0 mt-3" *ngIf="!total">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Target For Zonal Distributor</h4>
+                </div>
+                <div class="row m-0 px-1 pt-3">
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Zonal Distributor Visits</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Sales</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Collection</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">New Zonal Distributor</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 px-1 pb-3">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button matRipple class="btn btn-reset me-2">Reset</button>
+                        <button matRipple class="btn btn-submit">Add Target</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 p-0 mt-3" *ngIf="!total">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Target For Area Distributor</h4>
+                </div>
+                <div class="row m-0 px-1 pt-3">
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Area Distributor Visits</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Sales</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Collection</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">New Area Distributor</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row m-0 px-1 pb-3">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Add Target</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 p-0 mt-3" *ngIf="!total">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Target For Retailer</h4>
+                </div>
+                <div class="row m-0 px-1 pt-3">
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Retailer Visits</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Sales</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">Projected Collection</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <label class="label">New Retailer</label>
+                        <div>
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input matInput placeholder="">
                             </mat-form-field>
                         </div>
                     </div>
