@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-targets.component.scss']
 })
 export class ViewTargetsComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

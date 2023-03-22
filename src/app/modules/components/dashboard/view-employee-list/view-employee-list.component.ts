@@ -16,4 +16,9 @@ export class ViewEmployeeListComponent {
   goViewEmployee(){
     this.router.navigateByUrl('view-employee');
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

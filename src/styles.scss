@@ -342,24 +342,24 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     width: 22px;
     height: 22px;
+    display: flex;
     padding: 0;
+    align-items: center;
+    justify-content: center;
     transition: all ease-in-out 0.5s;
+    i{
+        font-size: 18px;
+    }
     &-edit{
-        i{
+        color: blue;
+        &:hover{
             color: blue;
-            font-size: 18px;
-            &:hover{
-                color: blue;
-            }
         }
     }
     &-delete{
-        i{
+        color: red;
+        &:hover{
             color: red;
-            font-size: 18px;
-            &:hover{
-                color: red;
-            }
         }
     }
     &:hover{
@@ -370,14 +370,13 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 
 .filter{
     max-height: 2000px;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.9s;
 }
-.HideFilter{
+.filterHide{
+    max-height: 0px;
     padding: 0;
-    max-height: 0;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.9s;
 }
 .rotateIcon{
     transform: rotate(180deg);
-    transition: all ease-in-out 0.5s;
 }

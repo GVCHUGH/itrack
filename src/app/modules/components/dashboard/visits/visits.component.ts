@@ -12,4 +12,9 @@ export class VisitsComponent {
   changeView(view:any){
     this.contentView = view;
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

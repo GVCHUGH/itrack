@@ -32,4 +32,9 @@ export class ViewDealerComponent {
   showDealer(){
     this.dialogRef.open(ConnectedDealerComponent);
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

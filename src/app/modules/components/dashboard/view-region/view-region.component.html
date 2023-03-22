@@ -13,13 +13,13 @@
     <div class="row mb-3">
         <div class="col-md-12 p-0">
             <div class="card card--common">
-                <div class="card__title">
-                    <div class="d-flex justify-content-between">
-                        <h4 class="mb-0">Search By</h4>
-                        <button class="btn icon" (click)="hideFilter()"><img src="../../../../../assets/images/arrow-down.svg"  [ngClass]="hideValue ? 'rotateIcon' : ''"></button>
-                    </div>
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Search By</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
                 </div>
-                <div class="card__body filter" [ngClass]="hideValue ? 'HideFilter' : ''">
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Region Name</label>

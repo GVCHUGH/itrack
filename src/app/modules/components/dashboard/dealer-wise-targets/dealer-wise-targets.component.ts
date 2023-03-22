@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./dealer-wise-targets.component.scss']
 })
 export class DealerWiseTargetsComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

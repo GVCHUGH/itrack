@@ -11,10 +11,14 @@
         </div>
         <div class="col-md-12 p-0">
             <div class="card card--common">
-                <div class="card__title">
-                    <h4 class="mb-0">Search By</h4>
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Filter</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
                 </div>
-                <div class="row m-0 px-1 pt-3">
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
+                <div class="row">
                     <div class="col-md-4 d-flex flex-column">
                         <label class="label">Employee Name</label>
                         <div>
@@ -71,11 +75,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row m-0 px-1 pb-3">
+                <div class="row">
                     <div class="col-md-12 d-flex justify-content-end">
                         <button matRipple class="btn btn-reset me-2">Reset</button>
                         <button matRipple class="btn btn-submit">Search</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

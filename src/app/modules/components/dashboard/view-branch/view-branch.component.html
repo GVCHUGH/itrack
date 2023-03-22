@@ -13,10 +13,13 @@
     <div class="row mb-3">
         <div class="col-md-12 p-0">
             <div class="card card--common">
-                <div class="card__title">
+                <div class="card__title d-flex justify-content-between">
                     <h4 class="mb-0">Search By</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
                 </div>
-                <div class="card__body">
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Region</label>
@@ -101,7 +104,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of [1,2,3,4,5], let i=index">
+                    <tr *ngFor="let item of [1,2,3,4,5,6,7,8,9,10], let i=index">
                         <td>{{i + 1}}</td>
                         <td>Faridabad</td>
                         <td>N/A</td>
@@ -109,20 +112,11 @@
                         <td>N/A</td>
                         <td>N/A</td>
                         <td><span class="status">Active</span></td>
-                        <td style="text-align: center;">
-                            <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
-                                <img src="assets/images/action.svg">
-                            </button>
-                            <mat-menu #menu="matMenu">
-                                <button mat-menu-item>
-                                    <i class="material-icons">edit</i>
-                                  <span>Edit</span>
-                                </button>
-                                <button mat-menu-item>
-                                    <i class="material-icons">delete</i>
-                                  <span>Delete</span>
-                                </button>
-                              </mat-menu>
+                        <td >
+                            <div class="d-flex justify-content-center" style="gap: 10px;">
+                                <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                <button class="btn icon icon-delete"><i class="material-icons">delete</i></button>
+                            </div>
                         </td>
                     </tr>
                 </tbody>

@@ -16,4 +16,9 @@ export class ViewZonalDistributorListComponent {
   goViewEmployee(){
     this.router.navigateByUrl('view-zonal-distributor');
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }
