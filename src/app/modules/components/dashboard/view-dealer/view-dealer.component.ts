@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ConnectedDealerComponent } from 'src/app/shared/connected-dealer/connected-dealer.component';
 import { LinkedDevicesComponent } from 'src/app/shared/linked-devices/linked-devices.component';
 import { LoginDetailComponent } from 'src/app/shared/login-detail/login-detail.component';
 import { NotificationComponent } from 'src/app/shared/notification/notification.component';
@@ -26,5 +27,9 @@ export class ViewDealerComponent {
 
   showLogin(){
     this.dialogRef.open(LoginDetailComponent);
+  }
+
+  showDealer(){
+    this.dialogRef.open(ConnectedDealerComponent);
   }
 }

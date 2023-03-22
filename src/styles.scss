@@ -256,24 +256,17 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 
 
 
-
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $light-gray;
-    border-radius: 0;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
     background: $primary; 
-    border-radius: 0;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $primary; 
-  }
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
