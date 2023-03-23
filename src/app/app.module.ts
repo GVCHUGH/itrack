@@ -7,6 +7,7 @@ import { AuthModule } from './modules/components/auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './modules/components/dashboard/dashboard.module';
+import { StockComponent } from './shared/stock/stock.component';
 
 @NgModule({
   declarations: [

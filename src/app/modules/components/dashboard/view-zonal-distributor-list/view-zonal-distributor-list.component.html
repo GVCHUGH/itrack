@@ -13,10 +13,13 @@
     <div class="row mb-3">
         <div class="col-md-12 p-0">
             <div class="card card--common">
-                <div class="card__title">
-                    <h4 class="mb-0">Filter</h4>
-                </div>
-                <div class="card__body">
+              <div class="card__title d-flex justify-content-between">
+                <h4 class="mb-0">Filter</h4>
+                <button class="btn icon icon-edit" (click)="showHide()">
+                    <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                </button>
+            </div>
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                 <div class="row">
                     <div class="inp-1-of-5">
                         <label class="label">Region</label>
@@ -341,7 +344,7 @@
                       <img src="assets/images/action.svg">
                   </button>
                   <mat-menu #menu="matMenu">
-                      <button mat-menu-item>
+                      <button mat-menu-item >
                           <i class="material-icons">edit</i>
                         <span>Edit</span>
                       </button>
@@ -379,7 +382,7 @@
                   <label>Zonal Distributor Name</label>
                 </div>
                 <div class="zonal-region d-flex align-items-center">
-                  <label for="">Region</label>
+                  <label for="">Region<br> (Branch)</label>
                 </div>
                 <div class="zonal-city d-flex align-items-center">
                   <label for="">City</label>
@@ -387,9 +390,9 @@
                 <div class="zonal-contact d-flex align-items-center">
                   <label for="">Contact Details</label>
                 </div>
-                <div class="zonal-action d-flex align-items-center">
+                <!-- <div class="zonal-action d-flex align-items-center">
                   <label for="">Action</label>
-                </div>
+                </div> -->
               </div>
               <div *ngFor="let item of [1,2,3,4,5]; let i = index">
                 <div class="zonal-table-row">
@@ -420,7 +423,7 @@
                     <div class="zonal-contact d-flex align-items-center">
                       <span>Shree Mangalmurti Complex, Shop No.06, 90 Feet Road, Thakurli, Thane</span>
                     </div>
-                    <div class="zonal-action d-flex align-items-center justify-content-center">
+                    <!-- <div class="zonal-action d-flex align-items-center justify-content-center">
                       <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
                         <img src="assets/images/action.svg">
                     </button>
@@ -434,12 +437,39 @@
                           <span>Delete</span>
                         </button>
                       </mat-menu>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
-                <div class="d-flex visit-status">
+                <div class="d-flex visit-status position-relative">
                   <p>Added On: <span></span><span>03-April-2023</span></p>
                   <p>Last visited by <span>Vinod Tiwari</span> on <span>30-Jan-2023, 10:50 AM</span></p>
+                  <div class="action-button-wrapper">
+                    <div class="wave">
+                      <button style="--item:1" class="wave-icon-1" mat-raised-button
+                      matTooltip="as App User"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/location.svg" alt="">
+                    </button>
+                      <button style="--item:2" class="wave-icon-2">
+                      <img src="../../../../../assets/images/camera.svg" alt="">
+                    </button>
+                      <button style="--item:3" class="wave-icon-3" mat-raised-button
+                      matTooltip="Reset IMEI"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/rotate.svg" alt="">
+                    </button>
+                      <button style="--item:4" class="wave-icon-4" mat-raised-button
+                      matTooltip="Assign Contact"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/phone.svg" alt="">
+                    </button>
+                      <button style="--item:5" class="wave-icon-5" mat-raised-button
+                      matTooltip="Edit"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/pen.svg" alt="">
+                    </button>
+                    </div>
+                  </div>
                 </div>
               </div>              
             </ng-container>

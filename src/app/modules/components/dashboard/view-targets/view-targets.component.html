@@ -11,10 +11,14 @@
         </div>
         <div class="col-md-12 p-0">
             <div class="card card--common">
-                <div class="card__title">
-                    <h4 class="mb-0">Search By</h4>
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Filter</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
                 </div>
-                <div class="row m-0 px-1 pt-3">
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
+                <div class="row">
                     <div class="col-md-4 d-flex flex-column">
                         <label class="label">Employee Name</label>
                         <div>
@@ -71,11 +75,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row m-0 px-1 pb-3">
+                <div class="row">
                     <div class="col-md-12 d-flex justify-content-end">
                         <button matRipple class="btn btn-reset me-2">Reset</button>
                         <button matRipple class="btn btn-submit">Search</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -89,14 +94,33 @@
                         <table class="table table--common">
                             <thead>
                                 <tr>
-                                    <th style="width: 20px;">S.NO</th>
-                                    <th style="width: 70px; text-align: center;">Employee Name</th>
-                                    <th style="width: 80px; text-align: center;">Target Feb-2023</th>
-                                    <th style="width: 200px; text-align: center;">Total<br> Visits  sales  Collocation  New</th>
-                                    <th style="width: 200px; text-align: center;">Zonal Distributor<br> Visits  sales  Collocation  New</th>
-                                    <th style="width: 200px; text-align: center;">Area Distributor<br> Visits  sales  Collocation  New</th>
-                                    <th style="width: 200px; text-align: center;">Retailer<br> Visits  sales  Collocation  New</th>
-                                    <th style="text-align: center;">Action</th>
+                                    <th rowspan="2">S.NO</th>
+                                    <th rowspan="2" style="text-align: center;">Employee Name</th>
+                                    <th style="width: 100px; text-align: center;">Target</th>
+                                    <th colspan="4" style="text-align: center;">Total</th>
+                                    <th colspan="4" style="text-align: center;">Zonal Distributor</th>
+                                    <th colspan="4" style="text-align: center;">Area Distributor</th>
+                                    <th colspan="4" style="text-align: center;">Retailer</th>
+                                    <th rowspan="2" style="text-align: center;">Action</th>
+                                </tr>
+                                <tr>
+                                    <th>Mar-2023</th>
+                                    <th>Visits</th>
+                                    <th>Sales</th>
+                                    <th>Collection</th>
+                                    <th>New</th>
+                                    <th>Visits</th>
+                                    <th>Sales</th>
+                                    <th>Collection</th>
+                                    <th>New</th>
+                                    <th>Visits</th>
+                                    <th>Sales</th>
+                                    <th>Collection</th>
+                                    <th>New</th>
+                                    <th>Visits</th>
+                                    <th>Sales</th>
+                                    <th>Collection</th>
+                                    <th>New</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -125,7 +149,7 @@
                                     </td>
                                 </tr> -->
                                 <tr>
-                                    <td style="text-align: center;" colspan="8">No Record Found</td>
+                                    <td style="text-align: center;" colspan="20">No Record Found</td>
                                 </tr>
                             </tbody>
                         </table>

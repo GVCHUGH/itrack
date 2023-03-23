@@ -13,13 +13,16 @@
     <div class="row mb-3">
       <div class="col-md-12 p-0">
           <div class="card card--common">
-              <div class="card__title">
-                  <h4 class="mb-0">Filter</h4>
-              </div>
-              <div class="card__body">
+            <div class="card__title d-flex justify-content-between">
+              <h4 class="mb-0">Filter</h4>
+              <button class="btn icon icon-edit" (click)="showHide()">
+                  <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+              </button>
+          </div>
+              <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Employee</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -32,7 +35,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Emp Status</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -45,7 +48,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Dealer Type</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -58,27 +61,27 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">Dealer Name</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                          <input matInput placeholder="Site Name">
+                          <input matInput placeholder="">
                       </mat-form-field>
                   </div>
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Dealer Code</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Dealer City</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Dealer Region</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -91,7 +94,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">Dealer Branch</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -106,7 +109,7 @@
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Contact Creation Via</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -119,7 +122,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Image</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -132,7 +135,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Order</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -145,7 +148,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">Team</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -160,7 +163,7 @@
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Last Visit</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -173,7 +176,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Ad Hoc Visit</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -186,7 +189,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Category</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -199,7 +202,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">Visit Purpose</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -214,7 +217,7 @@
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Visit Mode</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -227,7 +230,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Visit Note Audio</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -240,7 +243,7 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Visit With Plan</label>
               <mat-form-field appearance="outline">
                   <mat-select>
                     <mat-option value="Employee 1">
@@ -253,7 +256,7 @@
                 </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">Dealer Created On</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -268,7 +271,7 @@
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Working With Team</label>
                       <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -281,33 +284,33 @@
                       </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Visit From</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Visit Till</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Region Name</label>
+                      <label class="label">From Time</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
               </div>
                 <div class="row">
                   <div class="col-md-3 d-flex flex-column">
-                      <label class="label">Status</label>
+                      <label class="label">Till Time</label>
                       <mat-form-field class="example-full-width"  appearance="outline">
-                        <input matInput placeholder="Site Name">
+                        <input matInput placeholder="">
                     </mat-form-field>
                   </div>
-                  <div class="col-md-3 d-flex flex-column">
-                    <label class="label">Status</label>
+                  <div class="col-md-6 d-flex flex-column">
+                    <label class="label">Show Visits With Missing Dealer Details</label>
                     <mat-form-field appearance="outline">
                       <mat-select>
                         <mat-option value="Employee 1">
@@ -319,6 +322,18 @@
                       </mat-select>
                     </mat-form-field>
                 </div>
+                <div class="col-md-3 d-flex flex-column">
+                  <label class="label">District</label>
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <input matInput placeholder="">
+                </mat-form-field>
+              </div>
+              <div class="col-md-3 d-flex flex-column">
+                <label class="label">Visit Remarks</label>
+                <mat-form-field class="example-full-width"  appearance="outline">
+                  <input matInput placeholder="">
+              </mat-form-field>
+            </div>
               </div>
               <div class="row">
                 <div class="col-md-12 d-flex justify-content-end">
@@ -329,7 +344,8 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
+
     <div class="row mb-3">
       <div class="col-md-12 p-0">
         <div class="card card--common">
@@ -349,110 +365,82 @@
                    <span>0</span>
                 </div>
               </div>
-              <!-- <div class="view-change">
-                View: 
-                <span 
-                  (click)="changeView('g')" 
-                  [ngClass]="contentView == 'g' ? 'active':''"
-                  ><img src="assets/images/card-view.svg" alt="">
-                </span> 
-                  <span  
-                    [ngClass]="contentView == 'l' ? 'active':''" 
-                    (click)="changeView('l')"
-                    ><img src="assets/images/table-view.svg" alt="">
-                  </span>
-              </div> -->
             </div>
-            <!-- <ng-container *ngIf="contentView == 'g'">
-              <div class="row">
-                <div class="col-md-3 mb-4" *ngFor="let item of [1,2,3,4,5]">
-                  <div class="card card--grid">
-                    <button class="btn btn--action btn--flat btn--card-action position-absolute" [matMenuTriggerFor]="menu">
-                      <img src="assets/images/action.svg">
-                  </button>
-                  <mat-menu #menu="matMenu">
-                      <button mat-menu-item>
-                          <i class="material-icons">edit</i>
-                        <span>Edit</span>
-                      </button>
-                      <button mat-menu-item>
-                          <i class="material-icons">delete</i>
-                        <span>Delete</span>
-                      </button>
-                    </mat-menu>
-                    <div class="thumbnail mb-3">
-                      <img src="../../../../../assets/images/user.png">
-                    </div>
-                    <h4 class="mb-2">Excel Telecom Private Limited</h4>
-                    <ul class="mb-2 card-chip">
-                      <li>V5022</li>
-                      <li class="success">Approved</li>
-                    </ul>
-                    <p class="mb-4">Thane-Maharastra</p> 
-                    <ul class="card_action">
-                      <li>Attendance</li>
-                      <li>View Profile</li>
-                    </ul>
-                  </div>
+            
+              <div class="zonal-table-header d-flex">
+                <div class="sr-no d-flex align-items-center" style="width:9%;">
+                    <mat-checkbox class="example-margin">SR. No.</mat-checkbox>
+                </div>
+                <div class="zonal-name d-flex align-items-center" style="width:25%;">
+                  <label>Name (Employee ID)</label>
+                </div>
+                <div class="zonal-region d-flex align-items-center justify-content-center" style="width:6%;">
+                  <label for="">Orders</label>
+                </div>
+                <div class="zonal-city d-flex align-items-center justify-content-center" style="width:8%;">
+                  <label for="">Payments</label>
+                </div>
+                <div class="zonal-city d-flex align-items-center justify-content-center" style="width:11%;">
+                  <label for="">Check-In</label>
+                </div>
+                <div class="zonal-city d-flex align-items-center justify-content-center" style="width:8%;">
+                  <label for="">Check-Out</label>
+                </div>
+                <div class="zonal-contact d-flex align-items-center justify-content-center" style="width:26%;">
+                  <span>Moved Away From Check In Point</span>
+                </div>
+                <div class="zonal-action d-flex align-items-center justify-content-center" style="width:8%;">
+                  <label for="">Time Spent</label>
                 </div>
               </div>
-            </ng-container> -->
-            
-            <!-- <ng-container *ngIf="contentView == 'l'"> -->
-            <!-- <table class="table">
-              <thead>
-                <tr>
-                  <th><mat-checkbox class="example-margin">SR. No.</mat-checkbox></th>
-                  <th>Employee</th>
-                  <th>Order</th>
-                  <th>Payment</th>
-                  <th>Checjed-In</th>
-                  <th>Checked-Out</th>
-                  <th>Moved Away From <br>Check in point</th>
-                  <th>Spend Time</th>
-                </tr>
-              </thead>
-            </table> -->
-            <table class="table table--common">
-              <thead>
-                  <tr>
-                    <th><mat-checkbox class="example-margin">SR. No.</mat-checkbox></th>
-                    <th>Employee</th>
-                    <th style="text-align: center;">Order</th>
-                    <th style="text-align: center;">Payment</th>
-                    <th style="text-align: center;">Checjed-In</th>
-                    <th style="text-align: center;">Checked-Out</th>
-                    <th style="text-align: center;">Moved Away From <br>Check in point</th>
-                    <th style="text-align: center;">Spend Time</th>
-                  </tr>
-              </thead>
-              <tbody *ngFor="let item of [1,2,3], let i=index"> 
-                  <tr>
-                      <td><mat-checkbox class="example-margin">{{i + 1}}</mat-checkbox></td>
-                      <td>
-                        <div class="d-flex flex-column employeeId">
-                          Bobby <span>V2025</span>
-                        </div>
-                      </td>
-                      <td style="text-align: center;">N/A</td>
-                      <td style="text-align: center;">N/A</td>
-                      <td style="text-align: center;">05-Feb-2023 <br>11:58AM <br>0.01 KM Away </td>
-                      <td style="text-align: center;">Still There</td>
-                      <td style="text-align: center;">05-Feb-2023 <br>11:58AM <br>1.06 </td>
-                      <td style="text-align: center;"></td>
-                  </tr>
-                  <tr>
-                    <td colspan="8">
-                      <div class="d-flex visit-status justify-content-between">
-                        <p><span>Visited Retailer : </span> <span> Gauri Traders(IN007845)</span> Category (Royal Club)</p>
-                        <p><span>Address:</span><span></span> 14/3 Bimal Sinha Road Stall no 3. Commerical complex Beharmpore</p>
+              <div *ngFor="let item of [1,2,3,4,5]; let i = index">
+                <div class="zonal-table-row">
+                  <div class="d-flex">
+                    <div class="sr-no d-flex align-items-center" style="width:9%;">
+                      <section class="example-section">
+                        <mat-checkbox class="example-margin">{{i + 1}}</mat-checkbox>
+                      </section>
+                    </div>
+                    <div class="zonal-name d-flex align-items-center" style="width:25%;">
+                      <div>
+                        <img src="../../../../../assets/images/user.png">
                       </div>
-                    </td>
-                  </tr>
-              </tbody>
-          </table>
+                      <div>
+                        <p style="cursor: pointer;">Excel Telecom Private Limited</p>
+                        <div>
+                          <span>V5022</span>
+                          <span>Approved</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width:6%;">
+                      <span>NA</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width: 8%;">
+                      <span>NA</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width:11%;">
+                      <label style="text-align: center;">22-Mar-2023 <br>12:02 PM <br>0.03   KM away</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width:8%;">
+                      <label for="">Still There</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width:26%;">
+                      <span></span>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-center" style="width:8%;">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex visit-status px-3">
+                  <p>Added On: <span></span><span>03-April-2023</span></p>
+                  <p>Last visited by <span>Vinod Tiwari</span> on <span>30-Jan-2023, 10:50 AM</span></p>
+                </div>
+              </div>        
+            
           </div>
         </div>
       </div>
     </div>
-</div>
+  </div>

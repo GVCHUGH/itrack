@@ -1,0 +1,28 @@
+<div class="stock p-3">
+    <div class="title">
+        <h2>Linked Devices of #2 mobile kuthuparamha </h2>
+    </div>
+    <div class="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Device IMEI</th>
+                    <th>Device Make</th>
+                    <th style="text-align: center;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of [1,2,3,4], let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>89s8d9e89r8e9r</td>
+                    <td>Realme - RMX3523</td>
+                    <td style="text-align: center;"><img src="../../../assets/images/trash.svg"></td>
+                </tr>
+            </tbody>
+        </table>               
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="toClose()">Close</button>
+    </div>
+</div>

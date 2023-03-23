@@ -26,8 +26,11 @@
                                 <input type="password" class="form-control">
                             </div>
                             </div>
-                            <a class="remember" href="#">Remember me?</a><br>
-                            <button class="btn btn-submit w-100" (click)="toLogin()">LOGIN</button>
+                            <div class="d-flex align-items-center justify-content-end">
+                                <input type="checkbox" name="" id="remember">
+                                <label for="remember" class="remember">Remember me?</label>
+                            </div>
+                            <button class="btn login-btn w-100" (click)="toLogin()">LOGIN</button>
                         </form>
                     </div>
                 </div>
@@ -48,23 +51,30 @@
                     [config]="slideConfig">
                     <div ngxSlickItem>
                         <div class="slider-section">
-                        <img src="assets/images/slider-img.svg" alt="">
+                        <img src="assets/images/slider-img-1.svg" alt="">
                         <h2>Friendly Dashboard</h2>
                         <p>The all new designed dashboard lets you enjoy all features on the go</p>
                     </div>
                     </div>
                     <div ngxSlickItem>
                         <div class="slider-section">
-                        <img src="assets/images/slider-img.svg" alt="">
-                        <h2>Friendly Dashboard</h2>
-                        <p>The all new designed dashboard lets you enjoy all features on the go</p>
+                        <img src="assets/images/slider-img-2.svg" alt="">
+                        <h2>Employee Self Service</h2>
+                        <p>Introduced new ESS portal to manage day to day expenses and reimbursement</p>
                     </div>
                     </div>
                     <div ngxSlickItem>
                         <div class="slider-section">
-                        <img src="assets/images/slider-img.svg" alt="">
-                        <h2>Friendly Dashboard</h2>
-                        <p>The all new designed dashboard lets you enjoy all features on the go</p>
+                        <img src="assets/images/slider-img-3.svg" alt="">
+                        <h2>Interactive location markers</h2>
+                        <p>Now visit your vendors with all new map guidance with voice alerts</p>
+                    </div>
+                    </div>
+                    <div ngxSlickItem>
+                        <div class="slider-section">
+                        <img src="assets/images/slider-img-4.svg" alt="">
+                        <h2>Hassle-Free Scheme Management</h2>
+                        <p>Get all scheme details on the go and see the earned benefits on real time</p>
                     </div>
                     </div>
                 </ngx-slick-carousel>

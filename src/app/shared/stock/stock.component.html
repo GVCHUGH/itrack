@@ -1,0 +1,33 @@
+<div class="stock p-3">
+    <div class="title">
+        <h2>Stock of #2 Mobile Kuthuparamha</h2>
+    </div>
+    <div class="tabs d-flex">
+        <button class="btn">Serialized Stock</button>
+        <button class="btn">Unserialized Stock</button>
+        <button class="btn">Inward Stock</button>
+    </div>
+    <div class="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Qty.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of [1,2,3,4,5], let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>Product 1</td>
+                    <td>#542</td>
+                    <td>05</td>
+                </tr>
+            </tbody>
+        </table>               
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="toClose()">Close</button>
+    </div>
+</div>

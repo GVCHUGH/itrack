@@ -34,8 +34,12 @@ export class XyChartComponent {
 
       let chart = root.container.children.push(
         am5xy.XYChart.new(root, {
-          panY: false,
-          layout: root.verticalLayout
+          panY: true,
+          panX: true,
+          // wheelX:'panX',
+          // wheelY:'zoomX',
+          layout: root.verticalLayout,
+          pinchZoomX:false
         })
       );
 
@@ -44,14 +48,17 @@ export class XyChartComponent {
         {
           day: "Logged Users",
           value: 535,
+          color: 'red'
         },
         {
           day: "Visits",
           value: 412,
+          color:'green'
         },
         {
           day: "Not Logged Users",
           value: 445,
+          color:'blue'
         }
       ];
 
@@ -78,28 +85,30 @@ export class XyChartComponent {
           xAxis: xAxis,
           yAxis: yAxis,
           valueYField: "value",
-          categoryXField: "day"
+          sequencedInterpolation: true,
+          categoryXField: "day",
+          tooltip: am5.Tooltip.new(root, {
+            labelText: "{valueY}"
+          })
         })
       );
-      series1.data.setAll(data);
 
-      // let series2 = chart.series.push(
-      //   am5xy.ColumnSeries.new(root, {
-      //     name: "Series",
-      //     xAxis: xAxis,
-      //     yAxis: yAxis,
-      //     valueYField: "value2",
-      //     categoryXField: "category"
-      //   })
-      // );
-      // series2.data.setAll(data);
+
+      series1.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
+
+// series1.set("fill", am5.color(0x33FFD7));
+
+
+      xAxis.data.setAll(data);
+      series1.data.setAll(data);
 
       // Add legend
       let legend = chart.children.push(am5.Legend.new(root, {}));
       legend.data.setAll(chart.series.values);
 
       // Add cursor
-      chart.set("cursor", am5xy.XYCursor.new(root, {}));
+      let cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+      cursor.lineY.set("visible", false);
 
       this.root = root;
       series1.appear(1000);
@@ -107,10 +116,11 @@ export class XyChartComponent {
     
     });
 
+    
+
   }
 
   ngOnDestroy() {
-    // Clean up chart when the component is removed
     this.browserOnly(() => {
       if (this.root) {
         this.root.dispose();

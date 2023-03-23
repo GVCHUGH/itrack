@@ -16,4 +16,9 @@ export class ViewRetailerListComponent {
   goViewEmployee(){
     this.router.navigateByUrl('view-retailer');
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

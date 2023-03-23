@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-wise-targets.component.scss']
 })
 export class ProductWiseTargetsComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

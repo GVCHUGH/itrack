@@ -1,0 +1,52 @@
+<div class="stock p-3">
+    <div class="title">
+        <h2>Connected Dealers - #2 mobile kuthuparamha</h2>
+    </div>
+    <div class="tabs d-flex">
+        <button class="btn">Linked Zonal Distributor</button>
+        <button class="btn">Linked Area Distributor</button>
+    </div>
+    <div class="table">
+        <div class="row mb-3 m-0">
+            <div class="col-md-12 p-0">
+                <div class="card card--common p-0">
+                    <div class="zonal-table p-0">             
+                        <div class="zonal-table-header d-flex justify-content-between align-items-center">
+                            <div style="width: 6%;">S.No</div>
+                            <div style="width: 22%;">Name (Code)</div>
+                            <div style="width: 10%;">Dealer Type</div>
+                            <div style="width: 15%;">Address</div>
+                            <div style="width: 18%;">Contact Details</div>
+                            <div style="width: 15%;">Contact Person</div>
+                        </div>
+                        <div *ngFor="let item of [1,2,3], let i = index">
+                            <div class="zonal-table-row d-flex justify-content-between">
+                                <div style="width: 6%;"><span>{{i + 1}}</span></div>
+                                <div class="dealer-name" style="width: 22%;">
+                                    <p class="mb-3">Ambica Electronics and mobile shop <span>(IND12345)</span></p>
+                                </div>
+                                <div style="width: 10%;"><span>Retailer</span></div>
+                                <div style="width: 15%;"><span>Shree Mangalmurti Complex,<br>Shop No.06, <br>90 Feet Road,<br> Thakurli, Thane</span></div>
+                                <div style="width: 18%;"><span>chiragpatel@gmail.com<br> 9999999999</span></div>
+                                <div style="width: 15%;"><span>Chirag kumar patel</span></div>
+                            </div>
+                            <div class="d-flex visit-status justify-content-end">
+                                <div>
+                                    <button class="btn btn-success me-2">Connect Dealers</button>
+                                    <!-- <button class="btn btn-success me-2" (click)="showDealer()">Connect Dealers</button> -->
+                                    <button class="btn btn-info me-2">Linked Devices</button>
+                                    <!-- <button class="btn btn-info me-2" (click)="showLinkDevice()">Linked Devices</button> -->
+                                    <button class="btn btn-warning">View Stock</button>
+                                    <!-- <button class="btn btn-warning" (click)="showStock()">View Stock</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>               
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="toClose()">Close</button>
+    </div>
+</div>

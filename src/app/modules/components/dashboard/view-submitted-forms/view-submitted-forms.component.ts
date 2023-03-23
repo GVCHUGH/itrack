@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-submitted-forms.component.scss']
 })
 export class ViewSubmittedFormsComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

@@ -13,7 +13,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/products.svg',
         isIconVisible:false,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Product',
+                link:'add-product',
+                isVisible:true,
+            },
+            {
+                name:'View Product',
+                link:'view-product',
+                isVisible:true,
+            },
+            {
+                name:'Upload Product',
+                link:'upload-product',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Regions',
@@ -39,7 +56,7 @@ export const menu = [
         name:'Branch',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/branch.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -64,7 +81,7 @@ export const menu = [
         name:'Area',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/area.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -89,7 +106,7 @@ export const menu = [
         name:'Master',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/master.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -120,7 +137,7 @@ export const menu = [
         name:'Category',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/category.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -160,7 +177,7 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'Import Employee',
+                name:'Upload Employee',
                 link:'upload-employee',
                 isVisible:true,
             }
@@ -170,7 +187,7 @@ export const menu = [
         name:'Employees Leaves',
         link:'employees-leaves',
         isVisible:true,
-        icon:'assets/images/menu-icons/group.svg',
+        icon:'assets/images/menu-icons/leaves.svg',
         isIconVisible:true,
         hasDropdown:false,
     },
@@ -211,7 +228,7 @@ export const menu = [
         name:'Area Distributer',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/distributor.svg',
+        icon:'assets/images/menu-icons/area-distributor.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -379,7 +396,7 @@ export const menu = [
         name:'Dealer',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/logout.svg',
+        icon:'assets/images/menu-icons/dealer.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -389,18 +406,33 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'Title 1',
-                link:'',
+                name:'View Dealer',
+                link:'view-dealer',
                 isVisible:true,
             },
             {
-                name:'Title 2',
-                link:'',
+                name:'View Email Templates',
+                link:'view-email-template',
                 isVisible:true,
             },
             {
-                name:'Title 3',
-                link:'',
+                name:'View Users',
+                link:'view-users',
+                isVisible:true,
+            },
+            {
+                name:'View Customer',
+                link:'view-customer',
+                isVisible:true,
+            },
+            {
+                name:'Add New Scheme',
+                link:'add-new-scheme',
+                isVisible:true,
+            },
+            {
+                name:'View Scheme',
+                link:'view-scheme',
                 isVisible:true,
             }
         ]

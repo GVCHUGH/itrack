@@ -260,29 +260,4 @@
         font-size: $text-sm;
     }
 }
-.table {
-    &--common {
-        thead {
-            tr {
-                th{
-                    background: #E2E2E2;
-                }
-            }
-        }
-        tbody {
-            tr {
-                &:nth-child(odd) {
-                    td {
-                        background: $light;
-                    }
-                }
-                &:nth-child(even) {
-                    td {
-                        background: #F3F3F3;
-                    }
-                }
-            }
-        }
-    }
-}
 

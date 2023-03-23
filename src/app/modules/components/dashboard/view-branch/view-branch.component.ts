@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-branch.component.scss']
 })
 export class ViewBranchComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

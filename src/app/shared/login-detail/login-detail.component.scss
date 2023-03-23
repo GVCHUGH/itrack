@@ -1,0 +1,80 @@
+@import '../../../mixins';
+@import '../../../variables';
+
+.stock{
+    width: 700px;
+    min-height: 400px;
+    .title{
+        h2{
+            font-size: $text-base;
+            margin-bottom: 15px;
+        }
+    }
+    .tabs{
+        margin-bottom: 20px;
+        gap: 15px;
+        .btn{
+            background-color: #FFFAEA;
+            border: 1px solid #ECE3C4;
+            width: 50%;
+            height: 90px;
+            .sms-img{
+                background-color: $light;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 15px;
+                box-shadow: 0 4px 8px 0 rgb(170 132 9 / 16%);
+                img{
+                    width: 30px;
+                }
+            }
+            span{
+                color: #6D6D6D;
+                font-size: $text-sm;
+            }
+            p{
+                font-weight: 600;
+                font-size: $text-base;
+            }
+        }
+    }
+    .selectUser{
+        p{
+            font-size: $text-base;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .user-list{
+            margin-bottom: 10px;
+            .user{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+::ng-deep {
+    .user {
+        .mat-mdc-checkbox  {
+            border: 1px solid $border;
+            border-radius: 5px;
+            width: 100%;
+            .mdc-form-field {
+                width: 100%;
+            }
+            &.mat-mdc-checkbox-checked {
+                background: #D2DBFF;
+            }
+        }
+        .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background, .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background {
+            background: $light !important;
+            border-color: $light !important;
+        }
+        .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+            color: $dark;
+        }
+    }
+}

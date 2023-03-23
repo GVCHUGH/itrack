@@ -7,6 +7,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
     transition: all ease-in-out 0.1s;
     position: fixed;
+    top: 0;
+    bottom: 0;
     &.closed {
         width: 68px;
         overflow: hidden;

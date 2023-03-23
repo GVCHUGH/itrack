@@ -16,4 +16,9 @@ export class ViewAreaDistributorListComponent {
   goViewEmployee(){
     this.router.navigateByUrl('view-area-distributor');
   }
+
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }
