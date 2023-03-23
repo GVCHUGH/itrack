@@ -1,65 +1,6 @@
 @import '../../../../../mixins';
 @import '../../../../../variables';
 
-.zonal-table{
-    padding: 20px;
-}
-.zonal-table{
-    &-header{
-        padding: 0 20px;
-        border-radius: 5px 5px 0 0;
-        height: 50px;
-        background-color: #FFE89D;
-        font-weight: 500;
-    }
-    &-row{
-        padding: 20px;
-        border-radius: 5px;
-        height: 120px;
-        background-color: #FFFAEA;
-        p{
-            font-size: $text-sm;
-            margin: 0;
-            color: #1c1c1c;
-                &:first-child{
-                    span{
-                        color: #B18903;
-                    }
-                }
-                &:not(:first-child){
-                    span{
-                        font-weight: 500;
-                    }
-                }
-        }
-        span{
-            font-size: $text-sm;
-        }
-    }
-}
-.visit-status{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #F9F2DB;
-    padding: 0 20px;
-    margin-bottom: 5px;
-    p{
-        margin: 0;
-        font-size: $text-sm;
-        &:last-child{
-            margin-left: 30px;
-        }
-        span{
-            &:first-child{
-                color: #B18903;
-            }
-            &:last-child{
-                font-weight: 500;
-            }
-        }
-    }
-}
 
 
 

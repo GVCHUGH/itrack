@@ -35,29 +35,6 @@
         font-weight: 600;
     }
 }
-.zonal-table{
-    padding: 20px;
-}
-.zonal-table{
-    &-header{
-        padding: 0 20px;
-        border-radius: 5px 5px 0 0;
-        height: 50px;
-        background-color: $primary;
-        font-weight: 500;
-    }
-    &-row{
-        padding: 20px;
-        border-radius: 5px;
-        height: 90px;
-        background-color: #FFFAEA;
-        font-weight: 500;
-    }
-}
-.sr-no{
-    width: 10%;
-    font-weight: 500;
-}
 ::ng-deep{
     .mat-mdc-checkbox label {
         font-weight: 500;
@@ -130,29 +107,7 @@
 .result-chips {
     gap: 10px;
 }
-.visit-status{
-    height: 35px;
-    display: flex;
-    align-items: center;
-    background-color: #F9F2DB;
-    padding: 0 20px;
-    margin-bottom: 5px;
-    p{
-        margin: 0;
-        font-size: $text-sm;
-        &:last-child{
-            margin-left: 30px;
-        }
-        span{
-            &:first-child{
-                color: #B18903;
-            }
-            &:last-child{
-                font-weight: 500;
-            }
-        }
-    }
-}
+
 
 // Grid view
 
