@@ -259,36 +259,35 @@
             
             <ng-container *ngIf="contentView == 'l'">
               <div class="zonal-table-header d-flex">
-                <div class="sr-no d-flex align-items-center">
-                  <section class="example-section">
+                <div class="sr-no d-flex align-items-center" style="width: 10%;">
                     <mat-checkbox class="example-margin">SR. No.</mat-checkbox>
-                  </section>
                 </div>
-                <div class="zonal-name d-flex align-items-center">
+                <div class="zonal-name d-flex align-items-center" style="width: 30%;">
                   <label>Name (Employee ID)</label>
                 </div>
-                <div class="zonal-region d-flex align-items-center">
-                  <label for="">Region (Branch)</label>
+                <div class="zonal-region d-flex align-items-center" style="width: 14%;">
+                  <label for="">Region<br> (Branch)</label>
                 </div>
-                <div class="zonal-city d-flex align-items-center">
+                <div class="zonal-city d-flex align-items-center" style="width: 8%;">
                   <label for="">Role</label>
                 </div>
-                <div class="zonal-contact d-flex align-items-center">
+                <div class="d-flex align-items-center" style="width: 17%;">
                   <label for="">Contact Details</label>
                 </div>
-                <div class="zonal-action d-flex align-items-center">
-                  <label for="">Action</label>
+                <div class="zonal-contact d-flex align-items-center" style="width: 16%;">
+                  <label for="">Reporting Manager</label>
+                </div>
+                <div class="zonal-action d-flex justify-content-center align-items-center" style="width: 12%;">
+                  <label for="">Status</label>
                 </div>
               </div>
               <div *ngFor="let item of [1,2,3,4,5]; let i = index" class="table-hover-action">
                 <div class="zonal-table-row">
-                  <div class="d-flex">
-                    <div class="sr-no d-flex align-items-center">
-                      <section class="example-section">
+                  <div class="d-flex justify-content-between">
+                    <div class="sr-no d-flex align-items-center" style="width: 10%;">
                         <mat-checkbox class="example-margin">{{i + 1}}</mat-checkbox>
-                      </section>
                     </div>
-                    <div class="zonal-name d-flex align-items-center">
+                    <div class="zonal-name d-flex align-items-center justify-content-start" style="width: 30%;">
                       <div>
                         <img src="../../../../../assets/images/user.png">
                       </div>
@@ -300,54 +299,56 @@
                         </div>
                       </div>
                     </div>
-                    <div class="zonal-region d-flex align-items-center">
-                      <span>West Maharastra</span>
+                    <div class="zonal-region d-flex align-items-center" style="width: 14%;">
+                      <span>West<br> (Maharastra)</span>
                     </div>
-                    <div class="zonal-city d-flex align-items-center">
+                    <div class="zonal-city d-flex align-items-center" style="width: 8%;">
                       <span>FOS</span>
                     </div>
-                    <div class="zonal-contact d-flex align-items-center">
-                      <span>Shree Mangalmurti Complex, Shop No.06, 90 Feet Road, Thakurli, Thane</span>
+                    <div class="d-flex flex-column justify-content-center" style="width: 17%;">
+                      <span>9999999999</span>
+                      <span>dummy@gmail.com</span>
                     </div>
-                    <div class="zonal-action d-flex align-items-center justify-content-center">
-                      <button class="btn btn--action btn--flat" [matMenuTriggerFor]="menu">
-                        <img src="assets/images/action.svg">
-                    </button>
-                    <mat-menu #menu="matMenu">
-                        <button mat-menu-item>
-                            <i class="material-icons">edit</i>
-                          <span>Edit</span>
-                        </button>
-                        <button mat-menu-item>
-                            <i class="material-icons">delete</i>
-                          <span>Delete</span>
-                        </button>
-                      </mat-menu>
+                    <div class="zonal-contact d-flex align-items-center" style="width: 16%;">
+                      <span>Kompelli Nagaraju <br>(RIN00066)</span>
+                    </div>
+                    <div class="zonal-action d-flex align-items-center justify-content-center" style="width: 12%;">
+                      <div class="checkbox-wrapper">
+                        <label class="switch" for="{{i + 1}}">
+                            <input type="checkbox" id="{{i + 1}}">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
                     </div>
                   </div>
                 </div>
                 <div class="d-flex visit-status position-relative">
                   <p>Added On: <span></span><span>03-April-2023</span></p>
-                  <p>Last visited by <span>Vinod Tiwari</span> on <span>30-Jan-2023, 10:50 AM</span></p>
+                  <p class="ms-3">Last visited by <span>Vinod Tiwari</span> on <span>30-Jan-2023, 10:50 AM</span></p>
                   <div class="action-button-wrapper">
                     <div class="wave">
-                      <button style="--item:1">
-                      <img src="assets/images/notification.svg" alt="">
+                      <button style="--item:1" class="wave-icon-1" mat-raised-button
+                      matTooltip="as App User"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/location.svg" alt="">
                     </button>
-                      <button style="--item:2">
-                      <img src="assets/images/notification.svg" alt="">
+                      <button style="--item:2" class="wave-icon-2">
+                      <img src="../../../../../assets/images/camera.svg" alt="">
                     </button>
-                      <button style="--item:3">
-                      <img src="assets/images/notification.svg" alt="">
+                      <button style="--item:3" class="wave-icon-3" mat-raised-button
+                      matTooltip="Reset IMEI"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/rotate.svg" alt="">
                     </button>
-                      <button style="--item:4">
-                      <img src="assets/images/notification.svg" alt="">
+                      <button style="--item:4" class="wave-icon-4" mat-raised-button
+                      matTooltip="Assign Contact"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/phone.svg" alt="">
                     </button>
-                      <button style="--item:5">
-                      <img src="assets/images/notification.svg" alt="">
-                    </button>
-                      <button style="--item:6">
-                      <img src="assets/images/notification.svg" alt="">
+                      <button style="--item:5" class="wave-icon-5" mat-raised-button
+                      matTooltip="Edit"
+                      [matTooltipPosition]="'above'">
+                      <img src="../../../../../assets/images/pen.svg" alt="">
                     </button>
                     </div>
                   </div>
@@ -360,3 +361,4 @@
       </div>
     </div>
 </div>
+

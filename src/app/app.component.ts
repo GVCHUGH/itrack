@@ -30,6 +30,7 @@ export class AppComponent {
   expend(){
     this.menuToggler = true;
   }
+  
 }
 
 

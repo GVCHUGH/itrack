@@ -31,10 +31,19 @@
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
-                                        <label class="label">Other Contact No.</label>
-                                        <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="Other Contact No.">
-                                        </mat-form-field>
+                                        <label class="label">Telephone</label>
+                                        <div class="row">
+                                            <div class="col-md-4 pe-0">
+                                                <mat-form-field class="example-full-width"  appearance="outline">
+                                                    <input type="text" matInput placeholder="STD">
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <mat-form-field class="example-full-width"  appearance="outline">
+                                                    <input type="text" matInput placeholder="Phone">
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-8 d-flex flex-column">
                                         <label class="label">Address</label>
@@ -133,10 +142,16 @@
                                             <input type="text" matInput placeholder="Remarks">
                                         </mat-form-field>
                                     </div>
-                                        <div class="col-md-12 d-flex justify-content-end">
-                                            <button matRipple class="btn btn-reset me-2">Reset</button>
-                                            <button matRipple class="btn btn-submit">Save</button>
-                                        </div>
+                                    <div class="col-md-4 d-flex flex-column">
+                                        <label class="label">Emergency Contact No.</label>
+                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                            <input type="text" matInput placeholder="Contact Number">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <button matRipple class="btn btn-reset me-2">Reset</button>
+                                        <button matRipple class="btn btn-submit">Save</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +227,7 @@
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-5 d-flex flex-column">
-                                        <p class="label">Upload</p>
+                                        <p class="label">Attach Document</p>
                                         <label class="label" for="uploadBtn" role="button">
                                             <div class="file-upload d-flex align-items-center">
                                                 <div class="upload-img">
@@ -249,8 +264,13 @@
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
                                         <label class="label">Region<span class="mandatory">*</span></label>
-                                        <mat-form-field class="example-full-width"  appearance="outline">
-                                            <input type="text" matInput placeholder="">
+                                        <mat-form-field appearance="outline">
+                                            <mat-select matNativeControl required>
+                                              <mat-option value="volvo">North</mat-option>
+                                              <mat-option value="saab">South</mat-option>
+                                              <mat-option value="mercedes">East</mat-option>
+                                              <mat-option value="audi">West</mat-option>
+                                            </mat-select>
                                         </mat-form-field>
                                     </div>
                                     <div class="col-md-4 d-flex flex-column">
@@ -274,10 +294,10 @@
                                         <label class="label">Role<span class="mandatory">*</span></label>
                                         <mat-form-field appearance="outline">
                                             <mat-select matNativeControl required>
-                                              <mat-option value="volvo">Faridabad</mat-option>
-                                              <mat-option value="saab">Gurgaon</mat-option>
-                                              <mat-option value="mercedes">Sonipat</mat-option>
-                                              <mat-option value="audi">Rohtak</mat-option>
+                                              <mat-option value="volvo">AD</mat-option>
+                                              <mat-option value="saab">ABM</mat-option>
+                                              <mat-option value="mercedes">FOS</mat-option>
+                                              <mat-option value="audi">RDM</mat-option>
                                             </mat-select>
                                         </mat-form-field>
                                     </div>
@@ -323,13 +343,13 @@
                                         <label class="label">Reporting Manager</label>
                                         <mat-form-field appearance="outline">
                                             <mat-select matNativeControl required>
-                                              <mat-option value="volvo">Sunday</mat-option>
-                                              <mat-option value="saab">Monday</mat-option>
-                                              <mat-option value="mercedes">Tuesday</mat-option>
-                                              <mat-option value="audi">Wednesday</mat-option>
-                                              <mat-option value="audi">Thursday</mat-option>
-                                              <mat-option value="audi">Friday</mat-option>
-                                              <mat-option value="audi">Saturday</mat-option>
+                                              <mat-option value="volvo">Mohan</mat-option>
+                                              <mat-option value="saab">Radhey</mat-option>
+                                              <mat-option value="mercedes">Sohan</mat-option>
+                                              <mat-option value="audi">Ram</mat-option>
+                                              <mat-option value="audi">Rajesh</mat-option>
+                                              <mat-option value="audi">Rohan</mat-option>
+                                              <mat-option value="audi">shayam</mat-option>
                                             </mat-select>
                                         </mat-form-field>
                                     </div>
@@ -373,7 +393,7 @@
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-4 d-flex flex-column">
-                                    <label class="label">Reporting Manager</label>
+                                    <label class="label">Minimum Working Hours</label>
                                     <mat-form-field appearance="outline">
                                         <mat-select matNativeControl required>
                                           <mat-option value="volvo">6 Hours</mat-option>

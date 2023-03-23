@@ -24,7 +24,7 @@
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Region Name</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="">
+                                <input matInput placeholder="Region Name">
                             </mat-form-field>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
@@ -73,8 +73,12 @@
                         <td><span class="status">Active</span></td>
                         <td>
                             <div class="d-flex justify-content-center" style="gap: 10px;">
-                                <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
-                                <button class="btn icon icon-delete"><i class="material-icons">delete</i></button>
+                                <button class="btn icon icon-edit" mat-raised-button
+                                matTooltip="Edit"
+                                [matTooltipPosition]="'above'"><i class="material-icons">edit</i></button>
+                                <button class="btn icon icon-delete" mat-raised-button
+                                matTooltip="Delete"
+                                [matTooltipPosition]="'above'"><i class="material-icons">delete</i></button>
                             </div>
                         </td>
                     </tr>

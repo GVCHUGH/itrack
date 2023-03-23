@@ -51,6 +51,13 @@ import { VisitsComponent } from './visits/visits.component';
 import { FormControl } from '@angular/forms';
 import { ViewDealerComponent } from './view-dealer/view-dealer.component';
 import { ViewEmailTemplateComponent } from './view-email-template/view-email-template.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ViewProductComponent } from './view-product/view-product.component';
+import { UploadProductComponent } from './upload-product/upload-product.component';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
+import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component';
+import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 
 
 
@@ -104,6 +111,13 @@ import { ViewEmailTemplateComponent } from './view-email-template/view-email-tem
     VisitsComponent,
     ViewDealerComponent,
     ViewEmailTemplateComponent,
+    AddProductComponent,
+    ViewProductComponent,
+    UploadProductComponent,
+    ViewUsersComponent,
+    ViewCustomerComponent,
+    AddNewSchemeComponent,
+    ViewSchemeComponent,
   ],
   imports: [
     CommonModule,

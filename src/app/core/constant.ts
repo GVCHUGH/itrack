@@ -13,7 +13,24 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/products.svg',
         isIconVisible:false,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Product',
+                link:'add-product',
+                isVisible:true,
+            },
+            {
+                name:'View Product',
+                link:'view-product',
+                isVisible:true,
+            },
+            {
+                name:'Upload Product',
+                link:'upload-product',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Regions',
@@ -160,7 +177,7 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'Import Employee',
+                name:'Upload Employee',
                 link:'upload-employee',
                 isVisible:true,
             }
@@ -399,13 +416,23 @@ export const menu = [
                 isVisible:true,
             },
             {
-                name:'Title 2',
-                link:'',
+                name:'View Users',
+                link:'view-users',
                 isVisible:true,
             },
             {
-                name:'Title 3',
-                link:'',
+                name:'View Customer',
+                link:'view-customer',
+                isVisible:true,
+            },
+            {
+                name:'Add New Scheme',
+                link:'add-new-scheme',
+                isVisible:true,
+            },
+            {
+                name:'View Scheme',
+                link:'view-scheme',
                 isVisible:true,
             }
         ]

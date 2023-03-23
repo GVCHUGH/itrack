@@ -1,0 +1,111 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>View Scheme</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">View Scheme</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Filter</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
+                </div>
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Scheme Name</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Branch Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Start Date</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Branch Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">End Date</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Branch Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Applicable For</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Retailer
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Zonal Distributor
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Scheme Status</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                    <mat-option value="Employee 1">Active</mat-option>
+                                    <mat-option value="Employee 2">Inactive</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="zonal-table">             
+                    <div class="zonal-table-header d-flex justify-content-between align-items-center">
+                        <div style="width: 6%;">S.No</div>
+                        <div style="width: 25%;">Scheme Name</div>
+                        <div style="width: 17%;">Scheme Desc.</div>
+                        <div style="width: 10%;">Start Date</div>
+                        <div style="width: 10%;">End Date</div>
+                        <div style="width: 10%;">Status</div>
+                        <div style="width: 11%;">Applicable For</div>
+                    </div>
+                    <div *ngFor="let item of [1,2,3], let i = index">
+                        <div class="zonal-table-row d-flex justify-content-between">
+                            <div style="width: 6%;"><span>{{i + 1}}</span></div>
+                            <div class="dealer-name" style="width: 25%;">
+                                <p class="mb-3">Ambica Electronics and mobile shop <span>(IND12345)</span></p>
+                            </div>
+                            <div style="width: 17%;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></div>
+                            <div style="width: 10%;"><span>23 Nov 2023</span></div>
+                            <div style="width: 10%;"><span>27 Nov 2023</span></div>
+                            <div style="width: 10%;"><span>Past</span></div>
+                            <div style="width: 11%;"><span>Retailer</span></div>
+                        </div>
+                        <div class="d-flex visit-status justify-content-end">
+                            <div>
+                                <button class="btn btn-settlement me-2">Upload Settlement</button>
+                                <button class="btn btn-scheme me-2">Update Scheme</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

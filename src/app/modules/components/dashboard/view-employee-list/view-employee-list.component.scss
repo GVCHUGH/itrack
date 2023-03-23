@@ -52,11 +52,11 @@
         height: 90px;
         background-color: #FFFAEA;
         font-weight: 500;
+        span{
+            font-weight: 500;
+            font-size: $text-sm;
+        }
     }
-}
-.sr-no{
-    width: 10%;
-    font-weight: 500;
 }
 ::ng-deep{
     .mat-mdc-checkbox label {
@@ -101,31 +101,6 @@
             margin-left: 10px;
         }
     }
-}
-.zonal-region{
-    width: 12%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-        width: 100px;
-    }
-}
-.zonal-city{
-    width: 12%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-    }
-}
-.zonal-contact{
-    width: 28%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-    }
-}
-.zonal-action{
-    width: 6%;
 }
 .result-chips {
     gap: 10px;
@@ -311,6 +286,41 @@
                     color: $dark;
                     font-size: $text-base;
                 }
+            }
+        }
+    }
+}
+
+.wave{
+    &-icon{
+        &-1{
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &-2{
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &-3{
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &-4{
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &-5{
+            img{
+                width: 15px;
+                height: 15px;
             }
         }
     }

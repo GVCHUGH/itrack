@@ -21,4 +21,5 @@ export class ViewEmployeeListComponent {
   showHide(){
     this.hideValue = !this.hideValue;
   }
+  
 }

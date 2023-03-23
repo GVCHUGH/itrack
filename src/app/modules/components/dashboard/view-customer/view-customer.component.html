@@ -1,0 +1,140 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>View Customer</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">View Customer</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Filter</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
+                </div>
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Customer Name</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                            
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Email ID</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                            
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Mobile Number</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Mobile Verified</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Yes
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    No
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Gender</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Male
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Female
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Transgender
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Added From Date</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Added Till Date</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row configure">
+        <div class="card__body">
+            <p>Total Search Results: 5</p>
+            <table class="table table--common">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="sr-no d-flex align-items-center" style="width: 10%;">
+                                <mat-checkbox class="example-margin">S.No</mat-checkbox>
+                            </div>
+                        </th>
+                        <th>Customer Name</th>
+                        <th>Gender</th>
+                        <th>Mobile Number</th>
+                        <th>Email ID</th>
+                        <th>Added On</th>
+                        <!-- <th style="text-align: center;">Action</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of [1,2,3,4,5,6,7,8,9,10], let i=index">
+                        <td><div class="sr-no d-flex align-items-center" style="width: 10%;">
+                            <mat-checkbox class="example-margin">{{i + 1}}</mat-checkbox>
+                        </div></td>
+                        <td>Jitender</td>
+                        <td>Male</td>
+                        <td>9876987458</td>
+                        <td>Dummy@gmail.com</td>
+                        <td>29 July 2023</td>
+                        <!-- <td>
+                            <div class="d-flex justify-content-center" style="gap: 10px;">
+                                <button class="btn icon icon-edit" mat-raised-button
+                                matTooltip="Edit"
+                                [matTooltipPosition]="'above'"><i class="material-icons">edit</i></button>
+                                <button class="btn icon icon-delete" mat-raised-button
+                                matTooltip="Delete"
+                                [matTooltipPosition]="'above'"><i class="material-icons">delete</i></button>
+                            </div>
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

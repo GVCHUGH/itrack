@@ -63,54 +63,7 @@
 
 
 
-  .checkbox-wrapper .switch {
-    display: inline-block;
-    height: 26px;
-    position: relative;
-    width: 50px;
-  }
-
-  .checkbox-wrapper .switch input {
-    display:none;
-  }
-
-  .checkbox-wrapper .slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-  }
-
-  .checkbox-wrapper .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 18px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 18px;
-  }
-
-  .checkbox-wrapper input:checked + .slider {
-    background-color: #66bb6a;
-  }
-
-  .checkbox-wrapper input:checked + .slider:before {
-    transform: translateX(22px);
-  }
-
-  .checkbox-wrapper .slider.round {
-    border-radius: 34px;
-  }
-
-  .checkbox-wrapper .slider.round:before {
-    border-radius: 50%;
-  }
+  
 
 
   .send{
@@ -135,7 +88,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transform: rotate(0deg);
+  transform: translateX(180deg) !important;
   transition: all ease-in-out 1s;
   &:hover {  
     animation: rotate 5s linear infinite;

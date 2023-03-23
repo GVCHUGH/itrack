@@ -48,6 +48,13 @@ import { PreBookingConfigurationComponent } from './pre-booking-configuration/pr
 import { VisitsComponent } from './visits/visits.component';
 import { ViewDealerComponent } from './view-dealer/view-dealer.component';
 import { ViewEmailTemplateComponent } from './view-email-template/view-email-template.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ViewProductComponent } from './view-product/view-product.component';
+import { UploadProductComponent } from './upload-product/upload-product.component';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
+import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component';
+import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -87,6 +94,10 @@ const routes: Routes = [
   {path:'add-area', component:AddAreaComponent},
   {path:'view-area', component:ViewAreaComponent},
   {path:'upload-area', component:UploadAreaComponent},
+  
+  {path:'add-product', component:AddProductComponent},
+  {path:'view-product', component:ViewProductComponent},
+  {path:'upload-product', component:UploadProductComponent},
 
   {path:'create-form', component:CreateFormComponent},
   {path:'view-forms', component:ViewFormsComponent},
@@ -113,7 +124,12 @@ const routes: Routes = [
 
   {path:'view-dealer', component:ViewDealerComponent},
 
-  {path:'view-email-template', component:ViewEmailTemplateComponent}
+  {path:'view-email-template', component:ViewEmailTemplateComponent},
+
+  {path:'view-users', component:ViewUsersComponent},
+  {path:'view-customer', component:ViewCustomerComponent},
+  {path:'view-scheme', component:ViewSchemeComponent},
+  {path:'add-new-scheme', component:AddNewSchemeComponent},
 
 ];
 

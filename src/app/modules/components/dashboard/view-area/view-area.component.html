@@ -90,8 +90,12 @@
                         <td>Faridabad</td>
                         <td>
                             <div class="d-flex justify-content-center" style="gap: 10px;">
-                                <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
-                                <button class="btn icon icon-delete"><i class="material-icons">delete</i></button>
+                                <button class="btn icon icon-edit" mat-raised-button
+                                matTooltip="Edit"
+                                [matTooltipPosition]="'above'"><i class="material-icons">edit</i></button>
+                                <button class="btn icon icon-delete" mat-raised-button
+                                matTooltip="Delete"
+                                [matTooltipPosition]="'above'"><i class="material-icons">delete</i></button>
                             </div>
                         </td>
                     </tr>
