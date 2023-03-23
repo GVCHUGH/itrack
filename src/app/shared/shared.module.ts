@@ -34,7 +34,7 @@ import { ConnectedDealerComponent } from './connected-dealer/connected-dealer.co
     LoginDetailComponent,
     LinkedDevicesComponent,
     AddNewEmailerComponent,
-    ConnectedDealerComponent,
+    ConnectedDealerComponent
   ],
   imports: [
     CommonModule,

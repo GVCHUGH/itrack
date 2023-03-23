@@ -1,0 +1,96 @@
+<div class="heading p-0">
+    <h2>Build Team</h2>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a>Home</a></li>
+            <li class="breadcrumb-item active">Build Team</li>
+        </ol>
+    </nav>
+</div>
+<div class="card h-100 card--common">
+    <div class="card__title">
+        <h4 class="mb-0">Build Team</h4>
+    </div>
+    <div class="card__body">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="label">Select Team Head<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="Employee 1" *ngFor="let item of [1,2,3,4,5,6]; let i = index">
+                            Member {{i+1}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <label class="label">Employees Role<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="Employee 1" *ngFor="let item of [1,2,3,4,5,6]; let i = index">
+                            Role {{i+1}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row position-relative team-row">
+            <div class="move-button position-absolute">
+                <div class="move-button__col">
+                    <button class="left-btn">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                </div>
+                <div class="move-button__col">
+                    <button class="right-btn">
+                        <i class="material-icons">arrow_forward</i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 team-col">
+                <div class="card h-100 card--left position-relative">
+                    <div class="searching">
+                        <input type="text" name="" id="" placeholder="Search Employee">
+                    </div>
+                    <ul class="team-list">
+                        <li>A.Pretham [FOS1869]</li>
+                        <li>Aabid Manawar [FOS1869]</li>
+                        <li>Aadil [FOS1869]</li>
+                        <li>Aamir [FOS1869]</li>
+                        <li>Pankaj [FOS1869]</li>
+                        <li>Yogesh [FOS1869]</li>
+                        <li>Dheeraj [FOS1869]</li>
+                        <li>Parmindar [FOS1869]</li>
+                        <li>Jasbir [FOS1869]</li>
+                        <li>Jagdish [FOS1869]</li>
+                        <li>Rahul singh [FOS1869]</li>
+                        <li>Gaurav Verma [FOS1869]</li>
+                        <li>Inderpal [FOS1869]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 team-col">
+                <div class="card h-100 card--right">
+                    <div class="searching">
+                        <input type="text" name="" id="" placeholder="Search Employee">
+                    </div>
+                    <ul class="team-list">
+                        <li>A.Pretham [FOS1869]</li>
+                        <li>Aabid Manawar [FOS1869]</li>
+                        <li>Aadil [FOS1869]</li>
+                        <li>Aamir [FOS1869]</li>
+                        <li>Pankaj [FOS1869]</li>
+                        <li>Yogesh [FOS1869]</li>
+                        <li>Dheeraj [FOS1869]</li>
+                        <li>Parmindar [FOS1869]</li>
+                        <li>Jasbir [FOS1869]</li>
+                        <li>Jagdish [FOS1869]</li>
+                        <li>Rahul singh [FOS1869]</li>
+                        <li>Gaurav Verma [FOS1869]</li>
+                        <li>Inderpal [FOS1869]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
