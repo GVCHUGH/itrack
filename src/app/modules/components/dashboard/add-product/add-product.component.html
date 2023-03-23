@@ -85,6 +85,13 @@
                                             </div>
                                         </label>
                                         <input type="file" class="file" name="upload" id="uploadBtn" hidden>
+                                        <div class="uploaded-file">
+                                            <div class="uploaded-thumbnail">
+                                                <img src="assets/images/man.svg" alt="">
+                                            </div>
+                                            <span>sadjlkshdjahsd.png</span>
+                                            <i class="material-icons">close</i>
+                                        </div> 
                                     </div>
                                     <div class="col-md-6 d-flex flex-column">
                                         <p class="label">Product YouTube Video</p>
@@ -146,8 +153,8 @@
                                                 </mat-form-field>
                                             </div>
                                             </div>
-                                            <div class="row m-0">
-                                                <div class="col-md-12 multiple-section position-relative">
+                                            <div class="row m-0 mb-4">
+                                                <div class="col-md-12 multiple-section position-relative p-3">
                                                     <span class="position-absolute">Products can be booked in the multiple of</span>
                                                     <div class="row mt-4">
                                                         <div class="col-md-4 d-flex flex-column">
@@ -171,116 +178,160 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-3">
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Zonal Distributor Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                                <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Including GST No.</label>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Excluding GST No.</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Zonal Distributor GST No. Percentage (%)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Zonal Distributor GST No. Amount (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Zonal Distributor Final Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                        </div>
-                                            <div class="row mt-3">
-                                                
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Area Distributor Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                                <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Including GST No.</label>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Excluding GST No.</label>
+                                            <div class="row m-0 mb-4">
+                                                <div class="col-md-12 multiple-section position-relative p-3">
+                                                    <span class="position-absolute">Zonal Distributor</span>
+                                                    <div class="row mt-4">
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">GST No<span class="mandatory">*</span></label>
+                                                            <mat-form-field appearance="outline">
+                                                                <mat-select matNativeControl required>
+                                                                  <mat-option value="volvo">Include</mat-option>
+                                                                  <mat-option value="saab">Exclude</mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Zonal Distributor Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                            <!-- <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Including GST No.</label>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Excluding GST No.</label>
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Zonal Distributor GST No. Percentage (%)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Zonal Distributor GST No. Amount (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Zonal Distributor Final Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Area Distributor GST No. Percentage (%)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Area Distributor GST No. Amount (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Area Distributor Final Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                        </div>
-                                            <div class="row mt-3">
-                                                
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Retailer Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                                <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Including GST No.</label>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" name="zonalGST" id="withGST">
-                                                        <label for="withGST">Excluding GST No.</label>
+
+
+                                            <div class="row m-0 mb-4">
+                                                <div class="col-md-12 multiple-section position-relative p-3">
+                                                    <span class="position-absolute">Area Distributor</span>
+                                                    <div class="row mt-4">
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">GST No<span class="mandatory">*</span></label>
+                                                            <mat-form-field appearance="outline">
+                                                                <mat-select matNativeControl required>
+                                                                  <mat-option value="volvo">Include</mat-option>
+                                                                  <mat-option value="saab">Exclude</mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Area Distributor Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                            <!-- <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Including GST No.</label>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Excluding GST No.</label>
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Area Distributor GST No. Percentage (%)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Area Distributor GST No. Amount (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Area Distributor Final Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Retailer GST No. Percentage (%)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
+
+
+                                            <div class="row m-0 mb-4">
+                                                <div class="col-md-12 multiple-section position-relative p-3">
+                                                    <span class="position-absolute">Retailer Price</span>
+                                                    <div class="row mt-4">
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">GST No<span class="mandatory">*</span></label>
+                                                            <mat-form-field appearance="outline">
+                                                                <mat-select matNativeControl required>
+                                                                  <mat-option value="volvo">Include</mat-option>
+                                                                  <mat-option value="saab">Exclude</mat-option>
+                                                                </mat-select>
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Retailer Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                            <!-- <div class="gst-section-radio d-flex align-items-center" style="gap: 10px; margin-top: -15px;">
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Including GST No.</label>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <input type="radio" name="zonalGST" id="withGST">
+                                                                    <label for="withGST">Excluding GST No.</label>
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Retailer GST No. Percentage (%)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Retailer GST No. Amount (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <label class="label">Retailer Final Price (INR)</label>
+                                                            <mat-form-field class="example-full-width"  appearance="outline">
+                                                                <input type="text" matInput placeholder="">
+                                                            </mat-form-field>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Retailer GST No. Amount (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                            <div class="col-md-3 d-flex flex-column">
-                                                <label class="label">Retailer Final Price (INR)</label>
-                                                <mat-form-field class="example-full-width"  appearance="outline">
-                                                    <input type="text" matInput placeholder="">
-                                                </mat-form-field>
-                                            </div>
-                                        </div>
                                             <div class="row mt-3">
                                                 
                                     <div class="col-md-12 d-flex justify-content-end">
@@ -316,10 +367,11 @@
                                         </mat-form-field>
                                     </div>
                                 </div>
-                                <div class="row m-0 mt-3"> 
-                                    <div class="col-md-4 multiple-section position-relative">
+                                <div class="row mt-3"> 
+                                    <div class="col-md-4">
+                                       <div class="multiple-section position-relative p-3">
                                         <span class="position-absolute">Properties</span>
-                                        <div class="row mt-4 flex-column">
+                                        <div class="row mt-2 flex-column">
                                             <div class="col-md-12 d-flex flex-column">
                                                 <label class="label">Property 1</label>
                                                 <div class="d-flex" style="gap: 10px;">
@@ -376,140 +428,145 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       </div>
                                     </div>
-                                    <div class="col-md-4 multiple-section position-relative">
-                                        <span class="position-absolute">Packaging Option</span>
-                                        <div class="row mt-4 flex-column">
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <label class="label">Packet 1</label>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Size 1">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Rate 1">
-                                                    </mat-form-field>
+                                    <div class="col-md-4">
+                                        <div class="multiple-section position-relative p-3">
+                                            <span class="position-absolute">Packaging Option</span>
+                                            <div class="row mt-2 flex-column">
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <label class="label">Packet 1</label>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Size 1">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Rate 1">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <label class="label">Packet 2</label>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Size 2">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Rate 2">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <label class="label">Packet 2</label>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Size 2">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Rate 2">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <label class="label">Packet 3</label>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Size 3">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Rate 3">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <label class="label">Packet 3</label>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Size 3">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Rate 3">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <label class="label">Packet 4</label>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Size 4">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Rate 4">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <label class="label">Packet 4</label>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Size 4">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Rate 4">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <label class="label">Packet 5</label>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Size 5">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Rate 5">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <label class="label">Packet 5</label>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Size 5">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Rate 5">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </div>                                            
                                         </div>
                                     </div>
-                                    <div class="col-md-4 multiple-section position-relative">
-                                        <span class="position-absolute">Fields</span>
-                                        <div class="row mt-4 flex-column">
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <div class="d-flex">
-                                                    <label class="label">Field 1</label>
-                                                    <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                    <div class="col-md-4">
+                                        <div class="multiple-section position-relative p-3">
+                                            <span class="position-absolute">Fields</span>
+                                            <div class="row mt-2 flex-column">
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <label class="label mb-0">Field 1</label>
+                                                        <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                    </div>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Name 1">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Value 1">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Name 1">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Value 1">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <label class="label mb-0">Field 2</label>
+                                                        <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                    </div>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="name 2">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Value 2">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <div class="d-flex">
-                                                    <label class="label">Field 2</label>
-                                                    <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <label class="label mb-0">Field 3</label>
+                                                        <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                    </div>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="name 3">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Value 3">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="name 2">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Value 2">
-                                                    </mat-form-field>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <label class="label mb-0">Field 4</label>
+                                                        <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                    </div>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="name 4">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Value 4">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <div class="d-flex">
-                                                    <label class="label">Field 3</label>
-                                                    <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                <div class="col-md-12 d-flex flex-column">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <label class="label mb-0">Field 5</label>
+                                                        <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
+                                                    </div>
+                                                    <div class="d-flex" style="gap: 10px;">
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="name 5">
+                                                        </mat-form-field>
+                                                        <mat-form-field class="example-full-width"  appearance="outline">
+                                                            <input type="text" matInput placeholder="Value 5">
+                                                        </mat-form-field>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="name 3">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Value 3">
-                                                    </mat-form-field>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <div class="d-flex">
-                                                    <label class="label">Field 4</label>
-                                                    <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
-                                                </div>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="name 4">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Value 4">
-                                                    </mat-form-field>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 d-flex flex-column">
-                                                <div class="d-flex">
-                                                    <label class="label">Field 5</label>
-                                                    <button class="btn icon icon-edit"><i class="material-icons">edit</i></button>
-                                                </div>
-                                                <div class="d-flex" style="gap: 10px;">
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="name 5">
-                                                    </mat-form-field>
-                                                    <mat-form-field class="example-full-width"  appearance="outline">
-                                                        <input type="text" matInput placeholder="Value 5">
-                                                    </mat-form-field>
-                                                </div>
-                                            </div>
+                                            </div>                                            
                                         </div>
                                     </div>
                                 </div>

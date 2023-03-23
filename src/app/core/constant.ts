@@ -56,7 +56,7 @@ export const menu = [
         name:'Branch',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/branch.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -81,7 +81,7 @@ export const menu = [
         name:'Area',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/area.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -106,7 +106,7 @@ export const menu = [
         name:'Master',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/master.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -137,7 +137,7 @@ export const menu = [
         name:'Category',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/home.svg',
+        icon:'assets/images/menu-icons/category.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -187,7 +187,7 @@ export const menu = [
         name:'Employees Leaves',
         link:'employees-leaves',
         isVisible:true,
-        icon:'assets/images/menu-icons/group.svg',
+        icon:'assets/images/menu-icons/leaves.svg',
         isIconVisible:true,
         hasDropdown:false,
     },
@@ -228,7 +228,7 @@ export const menu = [
         name:'Area Distributer',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/distributor.svg',
+        icon:'assets/images/menu-icons/area-distributor.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
@@ -396,7 +396,7 @@ export const menu = [
         name:'Dealer',
         link:'',
         isVisible:true,
-        icon:'assets/images/menu-icons/logout.svg',
+        icon:'assets/images/menu-icons/dealer.svg',
         isIconVisible:true,
         hasDropdown:true,
         dropDown:[
