@@ -628,3 +628,9 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     width: 10%;
     font-weight: 500;
 }
+
+.form-input-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

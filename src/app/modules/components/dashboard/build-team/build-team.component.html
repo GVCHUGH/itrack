@@ -13,7 +13,7 @@
     </div>
     <div class="card__body">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 form-input-col">
                 <label class="label">Select Team Head<span class="mandatory">*</span></label>
                 <mat-form-field appearance="outline">
                     <mat-select>
@@ -23,7 +23,7 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 form-input-col">
                 <label class="label">Employees Role<span class="mandatory">*</span></label>
                 <mat-form-field appearance="outline">
                     <mat-select>
@@ -34,7 +34,7 @@
                 </mat-form-field>
             </div>
         </div>
-        <div class="row position-relative team-row">
+        <div class="row position-relative team-row mb-4">
             <div class="move-button position-absolute">
                 <div class="move-button__col">
                     <button class="left-btn">
@@ -48,6 +48,7 @@
                 </div>
             </div>
             <div class="col-md-6 team-col">
+                <p class="labels mb-1">Employees</p>
                 <div class="card h-100 card--left position-relative">
                     <div class="searching">
                         <input type="text" name="" id="" placeholder="Search Employee">
@@ -70,6 +71,7 @@
                 </div>
             </div>
             <div class="col-md-6 team-col">
+                <p class="labels mb-1">Selected Employees</p>
                 <div class="card h-100 card--right">
                     <div class="searching">
                         <input type="text" name="" id="" placeholder="Search Employee">
@@ -90,6 +92,104 @@
                         <li>Inderpal [FOS1869]</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-4 form-input-col">
+                <label class="label">Team Name<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <input type="text" matInput>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Send email to team lead<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Yes</mat-option>
+                        <mat-option value="no">No</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Report Type<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Comprehensive</mat-option>
+                        <mat-option value="no">Detailed</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Report Format<span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">PDF</mat-option>
+                        <mat-option value="no">TEXT</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Skip report sending, if no visits found <span class="mandatory">*</span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Yes</mat-option>
+                        <mat-option value="no">No</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Not logged in alerts report time<span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <input type="time" matInput>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Allow device IMEI reset of team member <span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Yes</mat-option>
+                        <mat-option value="no">No</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Maximum zonal distributor required in dayplan for attendance making <span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">ZOne 1</mat-option>
+                        <mat-option value="no">ZOne 2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Maximum area distributor required in dayplan for attendance making <span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Area 1</mat-option>
+                        <mat-option value="no">Area 2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Maximum retailer distributor required in dayplan for attendance making <span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Retailer 1</mat-option>
+                        <mat-option value="no">Retailer 2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-4 form-input-col">
+                <label class="label">Allow team leader to add team <span class="mandatory"></span></label>
+                <mat-form-field appearance="outline">
+                    <mat-select>
+                        <mat-option value="yes">Yes</mat-option>
+                        <mat-option value="no">No</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-12 d-flex justify-content-end">
+                <button class="btn btn-submit">Submit</button>
             </div>
         </div>
     </div>
