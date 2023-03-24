@@ -43,16 +43,7 @@
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Mobile Verified</label>
-                            <mat-form-field appearance="outline">
-                                <mat-select>
-                                  <mat-option value="Employee 1">
-                                    Yes
-                                  </mat-option>
-                                  <mat-option value="Employee 2">
-                                    No
-                                  </mat-option>
-                                </mat-select>
-                              </mat-form-field>
+                            <app-radio-button></app-radio-button>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
                             <label class="label">Gender</label>
@@ -95,7 +86,10 @@
     </div>
     <div class="row configure">
         <div class="card__body">
-            <p>Total Search Results: 5</p>
+            <div class="d-flex align-items-center justify-content-between">
+                <p>Total Search Results: 5</p>
+                <button class="btn btn-success excel-btn"> <img src="../../../../../assets/images/excel.svg"> Excel</button>
+            </div>
             <table class="table table--common">
                 <thead>
                     <tr>

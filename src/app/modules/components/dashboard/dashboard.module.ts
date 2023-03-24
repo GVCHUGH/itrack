@@ -67,6 +67,9 @@ import { ViewRoleComponent } from './view-role/view-role.component';
 import { ViewExtraExpensesCategoryComponent } from './view-extra-expenses-category/view-extra-expenses-category.component';
 import { AddTaskNameComponent } from './add-task-name/add-task-name.component';
 import { ViewTaskNameComponent } from './view-task-name/view-task-name.component';
+import { AddLeaveCategoryComponent } from './add-leave-category/add-leave-category.component';
+import { ViewLeaveCategoryComponent } from './view-leave-category/view-leave-category.component';
+import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-leave.component';
 
 
 
@@ -135,7 +138,10 @@ import { ViewTaskNameComponent } from './view-task-name/view-task-name.component
     ViewRoleComponent,
     ViewExtraExpensesCategoryComponent,
     AddTaskNameComponent,
-    ViewTaskNameComponent
+    ViewTaskNameComponent,
+    AddLeaveCategoryComponent,
+    ViewLeaveCategoryComponent,
+    ViewEmployeeLeaveComponent
   ],
   imports: [
     CommonModule,

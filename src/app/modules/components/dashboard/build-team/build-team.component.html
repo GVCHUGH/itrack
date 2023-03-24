@@ -101,14 +101,9 @@
                     <input type="text" matInput>
                 </mat-form-field>
             </div>
-            <div class="col-md-4 form-input-col">
+            <div class="col-md-4 form-input-col justify-content-start">
                 <label class="label">Send email to team lead<span class="mandatory">*</span></label>
-                <mat-form-field appearance="outline">
-                    <mat-select>
-                        <mat-option value="yes">Yes</mat-option>
-                        <mat-option value="no">No</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <app-radio-button></app-radio-button>
             </div>
             <div class="col-md-4 form-input-col">
                 <label class="label">Report Type<span class="mandatory">*</span></label>
@@ -128,14 +123,9 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div class="col-md-4 form-input-col">
+            <div class="col-md-4 form-input-col justify-content-start">
                 <label class="label">Skip report sending, if no visits found <span class="mandatory">*</span></label>
-                <mat-form-field appearance="outline">
-                    <mat-select>
-                        <mat-option value="yes">Yes</mat-option>
-                        <mat-option value="no">No</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <app-radio-button></app-radio-button>
             </div>
             <div class="col-md-4 form-input-col">
                 <label class="label">Not logged in alerts report time<span class="mandatory"></span></label>
@@ -143,14 +133,9 @@
                     <input type="time" matInput>
                 </mat-form-field>
             </div>
-            <div class="col-md-4 form-input-col">
+            <div class="col-md-4 form-input-col justify-content-start">
                 <label class="label">Allow device IMEI reset of team member <span class="mandatory"></span></label>
-                <mat-form-field appearance="outline">
-                    <mat-select>
-                        <mat-option value="yes">Yes</mat-option>
-                        <mat-option value="no">No</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <app-radio-button></app-radio-button>
             </div>
             <div class="col-md-4 form-input-col">
                 <label class="label">Maximum zonal distributor required in dayplan for attendance making <span class="mandatory"></span></label>
@@ -179,14 +164,9 @@
                     </mat-select>
                 </mat-form-field>
             </div>
-            <div class="col-md-4 form-input-col">
-                <label class="label">Allow team leader to add team <span class="mandatory"></span></label>
-                <mat-form-field appearance="outline">
-                    <mat-select>
-                        <mat-option value="yes">Yes</mat-option>
-                        <mat-option value="no">No</mat-option>
-                    </mat-select>
-                </mat-form-field>
+            <div class="col-md-4 form-input-col justify-content-start">
+                <label class="label mb-4">Allow team leader to add team <span class="mandatory"></span></label>
+                <app-radio-button></app-radio-button>
             </div>
             <div class="col-md-12 d-flex justify-content-end">
                 <button class="btn btn-submit">Submit</button>

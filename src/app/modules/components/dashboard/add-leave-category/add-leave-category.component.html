@@ -1,0 +1,100 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>Add Leave Category</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Add Leave Category</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title">
+                    <h4 class="mb-0">Add Leave Category</h4>
+                </div>
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Category Name<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Color<span class="mandatory">*</span></label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Red
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Green
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Allow Leave in a Year<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Attachment Required<span class="mandatory">*</span></label>
+                    <app-radio-button></app-radio-button>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">To be approved by<span class="mandatory">*</span></label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Admin
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Team Lead
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Financila Year<span class="mandatory">*</span></label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            2023
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            2022
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Status<span class="mandatory">*</span></label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Active
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Inactive
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

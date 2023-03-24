@@ -216,24 +216,3 @@
         font-size: $text-sm;
     }
 }
-.table {
-    &--common {
-        thead {
-            tr {
-                th{
-                    background: #FFE89D;
-                    font-size: 14px;
-                    font-family: 500;
-                }
-            }
-        }
-        tbody {
-            tr {
-                border-bottom: 3px solid $light;
-                td {
-                    background: #FFFAEA;
-                }
-            }
-        }
-    }
-}

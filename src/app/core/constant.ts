@@ -124,13 +124,7 @@ export const menu = [
                 name:'Upload Sales',
                 link:'upload-sales',
                 isVisible:true,
-            },
-            
-            {
-                name:'Visits',
-                link:'visits',
-                isVisible:true,
-            },
+            }
         ]
     },
     {
@@ -215,6 +209,11 @@ export const menu = [
                 name:'Upload Employee',
                 link:'upload-employee',
                 isVisible:true,
+            },
+            {
+                name:'Build Team',
+                link:'build-team',
+                isVisible:true,
             }
         ]
     },
@@ -224,11 +223,36 @@ export const menu = [
         isVisible:true,
         icon:'assets/images/menu-icons/leaves.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Leave Category',
+                link:'add-leave-category',
+                isVisible:true,
+            },
+            {
+                name:'View Leave Category',
+                link:'view-leave-category',
+                isVisible:true,
+            },
+            {
+                name:'View Employee Leave',
+                link:'view-employee-leave',
+                isVisible:true,
+            }
+        ]
     },
     {
         name:'App Users',
         link:'app-users',
+        isVisible:true,
+        icon:'assets/images/menu-icons/app-user.svg',
+        isIconVisible:true,
+        hasDropdown:false,
+    },
+    {
+        name:'Visits',
+        link:'visits',
         isVisible:true,
         icon:'assets/images/menu-icons/app-user.svg',
         isIconVisible:true,
@@ -438,11 +462,6 @@ export const menu = [
             {
                 name:'Pre Booking Configuration',
                 link:'pre-booking-configuration',
-                isVisible:true,
-            },
-            {
-                name:'Build Team',
-                link:'build-team',
                 isVisible:true,
             },
             {

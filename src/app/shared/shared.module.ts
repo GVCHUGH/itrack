@@ -17,6 +17,7 @@ import { LoginDetailComponent } from './login-detail/login-detail.component';
 import { LinkedDevicesComponent } from './linked-devices/linked-devices.component';
 import { AddNewEmailerComponent } from './add-new-emailer/add-new-emailer.component';
 import { ConnectedDealerComponent } from './connected-dealer/connected-dealer.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ConnectedDealerComponent } from './connected-dealer/connected-dealer.co
     LoginDetailComponent,
     LinkedDevicesComponent,
     AddNewEmailerComponent,
-    ConnectedDealerComponent
+    ConnectedDealerComponent,
+    RadioButtonComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { ConnectedDealerComponent } from './connected-dealer/connected-dealer.co
     SwitchCheckboxComponent,
     StockComponent,
     LoginDetailComponent,
-    LinkedDevicesComponent
+    LinkedDevicesComponent,
+    RadioButtonComponent
   ]
 })
 export class SharedModule { }

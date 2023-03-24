@@ -64,6 +64,9 @@ import { ViewRoleComponent } from './view-role/view-role.component';
 import { ViewExtraExpensesCategoryComponent } from './view-extra-expenses-category/view-extra-expenses-category.component';
 import { AddTaskNameComponent } from './add-task-name/add-task-name.component';
 import { ViewTaskNameComponent } from './view-task-name/view-task-name.component';
+import { AddLeaveCategoryComponent } from './add-leave-category/add-leave-category.component';
+import { ViewLeaveCategoryComponent } from './view-leave-category/view-leave-category.component';
+import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-leave.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -150,6 +153,10 @@ const routes: Routes = [
   {path:'view-extra-expenses-category', component:ViewExtraExpensesCategoryComponent},
   {path:'add-task-name', component: AddTaskNameComponent},
   {path:'view-task-name', component: ViewTaskNameComponent},
+
+  {path:'add-leave-category', component:AddLeaveCategoryComponent},
+  {path:'view-leave-category', component: ViewLeaveCategoryComponent},
+  {path:'view-employee-leave', component:ViewEmployeeLeaveComponent}
 
 
 ];

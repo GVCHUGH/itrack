@@ -693,3 +693,66 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     background: $dark;
     white-space: nowrap;
 }
+
+
+.primary-radio {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .mat-mdc-radio-button {
+        border: 1px solid $border;
+        border-radius: 4px;
+        display: inline-flex;
+        padding-right: 10px;
+        height: 40px;
+        width: 80px;
+        .mdc-form-field{
+            label {
+                font-family: $font;
+            }
+        }
+        &.mat-mdc-radio-checked {
+            border-color: #2E6C2F;
+            .mdc-form-field{
+                label {
+                    color: #2E6C2F;
+                }
+            }
+        }
+    }
+}
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle,
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+    border-color: #2E6C2F !important;
+}
+
+.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-focus-icon-color:#2E6C2F !important;  
+    --mdc-radio-selected-hover-icon-color:#2E6C2F !important;
+    --mdc-radio-selected-icon-color:#2E6C2F !important;
+    --mdc-radio-selected-pressed-icon-color: #2E6C2F !important;
+    --mat-mdc-radio-checked-ripple-color: #2E6C2F !important;
+    label{
+        margin-right: 4px;
+    }
+    &:hover{
+        border: 1px solid #2E6C2F;
+        label{
+            color: #2E6C2F;
+            cursor: pointer;
+        }
+    }
+}
+
+.excel-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    img{
+        width: 10px;
+    }
+}
