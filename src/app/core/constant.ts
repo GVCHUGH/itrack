@@ -406,6 +406,11 @@ export const menu = [
                 isVisible:true,
             },
             {
+                name:'Build Team',
+                link:'build-team',
+                isVisible:true,
+            },
+            {
                 name:'View Dealer',
                 link:'view-dealer',
                 isVisible:true,

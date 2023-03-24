@@ -59,6 +59,7 @@ import { ViewCustomerComponent } from './view-customer/view-customer.component';
 import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component';
 import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 import { ViewAppUsersComponent } from './view-app-users/view-app-users.component';
+import { BuildTeamComponent } from './build-team/build-team.component';
 
 
 
@@ -120,6 +121,7 @@ import { ViewAppUsersComponent } from './view-app-users/view-app-users.component
     AddNewSchemeComponent,
     ViewSchemeComponent,
     ViewAppUsersComponent,
+    BuildTeamComponent
   ],
   imports: [
     CommonModule,

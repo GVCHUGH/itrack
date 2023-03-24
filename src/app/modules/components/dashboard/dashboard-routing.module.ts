@@ -56,6 +56,7 @@ import { ViewCustomerComponent } from './view-customer/view-customer.component';
 import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component';
 import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 import { ViewAppUsersComponent } from './view-app-users/view-app-users.component';
+import { BuildTeamComponent } from './build-team/build-team.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -132,6 +133,7 @@ const routes: Routes = [
   {path:'view-scheme', component:ViewSchemeComponent},
   {path:'add-new-scheme', component:AddNewSchemeComponent},
   {path:'view-app-users', component:ViewAppUsersComponent}
+  {path:'build-team', component:BuildTeamComponent},
 
 ];
 
