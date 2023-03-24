@@ -60,6 +60,13 @@ import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component
 import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 import { ViewAppUsersComponent } from './view-app-users/view-app-users.component';
 import { BuildTeamComponent } from './build-team/build-team.component';
+import { ViewVisitPurposeCategoryComponent } from './view-visit-purpose-category/view-visit-purpose-category.component';
+import { ViewCategoryComponent } from './view-category/view-category.component';
+import { AddRoleComponent } from './add-role/add-role.component';
+import { ViewRoleComponent } from './view-role/view-role.component';
+import { ViewExtraExpensesCategoryComponent } from './view-extra-expenses-category/view-extra-expenses-category.component';
+import { AddTaskNameComponent } from './add-task-name/add-task-name.component';
+import { ViewTaskNameComponent } from './view-task-name/view-task-name.component';
 
 
 
@@ -121,7 +128,14 @@ import { BuildTeamComponent } from './build-team/build-team.component';
     AddNewSchemeComponent,
     ViewSchemeComponent,
     ViewAppUsersComponent,
-    BuildTeamComponent
+    BuildTeamComponent,
+    ViewVisitPurposeCategoryComponent,
+    ViewCategoryComponent,
+    AddRoleComponent,
+    ViewRoleComponent,
+    ViewExtraExpensesCategoryComponent,
+    AddTaskNameComponent,
+    ViewTaskNameComponent
   ],
   imports: [
     CommonModule,

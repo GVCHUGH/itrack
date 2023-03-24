@@ -57,6 +57,13 @@ import { AddNewSchemeComponent } from './add-new-scheme/add-new-scheme.component
 import { ViewSchemeComponent } from './view-scheme/view-scheme.component';
 import { ViewAppUsersComponent } from './view-app-users/view-app-users.component';
 import { BuildTeamComponent } from './build-team/build-team.component';
+import { ViewVisitPurposeCategoryComponent } from './view-visit-purpose-category/view-visit-purpose-category.component';
+import { ViewCategoryComponent } from './view-category/view-category.component';
+import { AddRoleComponent } from './add-role/add-role.component';
+import { ViewRoleComponent } from './view-role/view-role.component';
+import { ViewExtraExpensesCategoryComponent } from './view-extra-expenses-category/view-extra-expenses-category.component';
+import { AddTaskNameComponent } from './add-task-name/add-task-name.component';
+import { ViewTaskNameComponent } from './view-task-name/view-task-name.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -116,7 +123,6 @@ const routes: Routes = [
   {path:'settings', component:SettingsComponent},
 
   {path:'add-category', component:AddCategoryComponent},
-  {path:'add-visit-purpose-category', component:AddVisitPurposeCategoryComponent},
   {path:'add-extra-expenses-category', component:AddExtraExpensesCategoryComponent},
   {path:'build-attendance-site', component: BuildAttendanceSiteComponent},
   
@@ -134,6 +140,17 @@ const routes: Routes = [
   {path:'add-new-scheme', component:AddNewSchemeComponent},
   {path:'view-app-users', component:ViewAppUsersComponent},
   {path:'build-team', component:BuildTeamComponent},
+  
+  {path:'add-visit-purpose-category', component:AddVisitPurposeCategoryComponent},
+  {path:'view-visit-purpose-category', component: ViewVisitPurposeCategoryComponent},
+  
+  {path:'view-category', component:ViewCategoryComponent},
+  {path:'add-role', component:AddRoleComponent},
+  {path:'view-role', component:ViewRoleComponent},
+  {path:'view-extra-expenses-category', component:ViewExtraExpensesCategoryComponent},
+  {path:'add-task-name', component: AddTaskNameComponent},
+  {path:'view-task-name', component: ViewTaskNameComponent},
+
 
 ];
 

@@ -155,6 +155,41 @@ export const menu = [
                 name:'Add Visit Purpose Category',
                 link:'add-visit-purpose-category',
                 isVisible:true
+            },
+            {
+                name:'View Visit Purpose Category',
+                link:'view-visit-purpose-category',
+                isVisible:true
+            },
+            {
+                name:'View Category',
+                link:'view-category',
+                isVisible:true
+            },
+            {
+                name:'Add Role',
+                link:'add-role',
+                isVisible:true
+            },
+            {
+                name:'View Role',
+                link:'view-role',
+                isVisible:true
+            },
+            {
+                name:'View Extra Expenses Category',
+                link:'view-extra-expenses-category',
+                isVisible:true
+            },
+            {
+                name:'Add Task Name',
+                link:'add-task-name',
+                isVisible:true
+            },
+            {
+                name:'View Task Name',
+                link:'view-task-name',
+                isVisible:true
             }
         ]
     },

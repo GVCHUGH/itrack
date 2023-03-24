@@ -602,6 +602,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         height: 90px;
         background-color: rgb(243 243 243 / 45%);
         font-weight: 500;
+        font-size: $text-sm;
     }
 }
 
@@ -642,38 +643,6 @@ body { margin: 0; font-family: $font; background: $gray-200; }
 }
 
 .wave{
-    &-icon{
-        &-1{
-            img{
-                width: 15px;
-                height: 15px;
-            }
-        }
-        &-2{
-            img{
-                width: 15px;
-                height: 15px;
-            }
-        }
-        &-3{
-            img{
-                width: 15px;
-                height: 15px;
-            }
-        }
-        &-4{
-            img{
-                width: 15px;
-                height: 15px;
-            }
-        }
-        &-5{
-            img{
-                width: 15px;
-                height: 15px;
-            }
-        }
-    }
     button {
         &:nth-child(1) {
             background: #F0B1AC;

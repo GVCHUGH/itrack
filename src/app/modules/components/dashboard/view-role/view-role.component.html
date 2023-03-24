@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>View Role</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">View Role</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__title d-flex justify-content-between">
+                    <h4 class="mb-0">Search By</h4>
+                    <button class="btn icon icon-edit" (click)="showHide()">
+                        <img src="../../../../../assets/images/arrow-down.svg" [ngClass]="hideValue ? '' : 'rotateIcon'">
+                    </button>
+                </div>
+                <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Name</label>
+                    <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Status</label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Show All">
+                                    Show All
+                                  </mat-option>
+                                  <mat-option value="Active">
+                                    Active
+                                  </mat-option>
+                                  <mat-option value="Inactive">
+                                    Inactive
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row configure">
+        <div class="card__body">
+            <p>Total Search Result: 5</p>
+            <table class="table table--common">
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th style="text-align: center;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of [1,2,3,4,5,6,7,8,9,10], let i=index">
+                        <td>{{i + 1}}</td>
+                        <td>ABM</td>
+                        <td><span class="status">Active</span></td>
+                        <td >
+                            <div class="d-flex justify-content-center" style="gap: 10px;">
+                                <button class="btn icon icon-edit" mat-raised-button
+                                matTooltip="Edit"
+                                [matTooltipPosition]="'above'"><i class="material-icons">edit</i></button>
+                                <button class="btn icon icon-delete" mat-raised-button
+                                matTooltip="Delete"
+                                [matTooltipPosition]="'above'"><i class="material-icons">delete</i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
