@@ -378,8 +378,14 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     background: $light;
     border-radius: 5px;
     padding: 0;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow:0 2px 4px 0 rgb(0 0 0 / 10%);
     border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: $text-base;
+    }
     /* transform: translateY(calc(5px * var(--item))); */
 }
 
@@ -668,4 +674,53 @@ body { margin: 0; font-family: $font; background: $gray-200; }
             }
         }
     }
+    button {
+        &:nth-child(1) {
+            background: #F0B1AC;
+        }
+        &:nth-child(2) {
+            background: #F5D3A6;
+        }
+        &:nth-child(3) {
+            background: #FAE8B6;
+        }
+        &:nth-child(4) {
+            background: #BBDBB4;
+        }
+        &:nth-child(5) {
+            background: #90AFB1;
+        }
+        &:nth-child(6) {
+            background: #85C3D7;
+        }
+        &:nth-child(7) {
+            background: #EBB6B7;
+        }
+        &:nth-child(8) {
+            background: #96C796;
+        }
+        &:nth-child(9) {
+            background: #F08080;
+        }
+        &:nth-child(10) {
+            background: #C0EEFD;
+        }
+        &:nth-child(11) {
+            background: #84a8e3;
+        }
+        &:nth-child(12) {
+            background: #93e7cb;
+        }
+    }
+}
+
+.cdk-overlay-pane.mat-mdc-tooltip-panel-above.mat-mdc-tooltip-panel {
+    transform: translateY(-10px) !important;
+}
+
+.mdc-tooltip__surface.mdc-tooltip__surface-animation {
+    max-width: 300px;
+    min-width: 100px;
+    background: $dark;
+    white-space: nowrap;
 }
