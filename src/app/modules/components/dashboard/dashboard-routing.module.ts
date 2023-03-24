@@ -132,7 +132,7 @@ const routes: Routes = [
   {path:'view-customer', component:ViewCustomerComponent},
   {path:'view-scheme', component:ViewSchemeComponent},
   {path:'add-new-scheme', component:AddNewSchemeComponent},
-  {path:'view-app-users', component:ViewAppUsersComponent}
+  {path:'view-app-users', component:ViewAppUsersComponent},
   {path:'build-team', component:BuildTeamComponent},
 
 ];
