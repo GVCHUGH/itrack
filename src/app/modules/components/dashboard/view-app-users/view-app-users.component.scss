@@ -1,0 +1,93 @@
+@import '../../../../../mixins';
+@import '../../../../../variables';
+
+.zonal-table{
+    padding: 20px;
+}
+.zonal-table{
+    &-header{
+        padding: 0 20px;
+        border-radius: 5px 5px 0 0;
+        height: 50px;
+        font-weight: 500;
+    }
+    &-row{
+        padding: 20px;
+        border-radius: 5px;
+        height: 100px;
+        p{
+            font-size: $text-sm;
+            margin: 0;
+            color: #1c1c1c;
+                &:first-child{
+                    span{
+                        color: #B18903;
+                    }
+                }
+                &:not(:first-child){
+                    span{
+                        font-weight: 500;
+                    }
+                }
+        }
+        span{
+            font-size: $text-sm;
+        }
+    }
+}
+.visit-status{
+  span{
+    font-size: 14px;
+    &:first-child{
+      margin-right: 20px;
+      color: #B18903;
+    }
+  }
+}
+
+
+  
+
+
+  .send{
+    text-decoration: underline;
+    color: #B18903;
+  }
+  .recreate{
+    text-decoration: underline;
+    color: #1C1C1C;
+  }
+.sync-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 32%);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: rgb(33, 111, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translateX(180deg) !important;
+  transition: all ease-in-out 1s;
+  &:hover {  
+    animation: rotate 5s linear infinite;
+  }
+  i {
+    font-size: 30px;
+    color: $light;
+    pointer-events: none;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

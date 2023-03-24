@@ -434,6 +434,11 @@ export const menu = [
                 name:'View Scheme',
                 link:'view-scheme',
                 isVisible:true,
+            },
+            {
+                name:'View App Users',
+                link:'view-app-users',
+                isVisible:true,
             }
         ]
     }

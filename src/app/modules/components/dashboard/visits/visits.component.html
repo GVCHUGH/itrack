@@ -393,7 +393,7 @@
                   <label for="">Time Spent</label>
                 </div>
               </div>
-              <div *ngFor="let item of [1,2,3,4,5]; let i = index">
+              <div *ngFor="let item of [1,2,3,4,5]; let i = index" class="table-hover-action">
                 <div class="zonal-table-row">
                   <div class="d-flex">
                     <div class="sr-no d-flex align-items-center" style="width:9%;">
@@ -420,7 +420,7 @@
                       <span>NA</span>
                     </div>
                     <div class="d-flex align-items-center justify-content-center" style="width:11%;">
-                      <label style="text-align: center;">22-Mar-2023 <br>12:02 PM <br>0.03   KM away</label>
+                      <label style="text-align: center;">22-Mar-2023 <br><img src="../../../../../assets/images/location.svg" style="width: 10px; margin-right: 5px;">12:02 PM <br>0.03   KM away</label>
                     </div>
                     <div class="d-flex align-items-center justify-content-center" style="width:8%;">
                       <label for="">Still There</label>
@@ -433,9 +433,29 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex visit-status px-3">
+                <div class="d-flex visit-status px-3 position-relative" style="gap: 10px;">
                   <p>Added On: <span></span><span>03-April-2023</span></p>
                   <p>Last visited by <span>Vinod Tiwari</span> on <span>30-Jan-2023, 10:50 AM</span></p>
+                  <div class="action-button-wrapper">
+                    <div class="wave">
+                      <button style="--item:1" class="wave-icon-1" mat-raised-button
+                      matTooltip="as App User"
+                      [matTooltipPosition]="'above'">
+                      <!-- <img src="../../../../../assets/images/location.svg" alt=""> -->
+                      <i class="material-icons">location_on</i>
+                    </button>
+                      <button style="--item:2" class="wave-icon-2">
+                      <!-- <img src="../../../../../assets/images/camera.svg" alt=""> -->
+                      <i class="material-icons">camera_alt</i>
+                    </button>
+                    <button style="--item:3" class="wave-icon-3" mat-raised-button
+                    matTooltip="Reset IMEI"
+                    [matTooltipPosition]="'above'">
+                    <!-- <img src="../../../../../assets/images/rotate.svg" alt=""> -->
+                    <i class="material-icons">wifi</i>
+                  </button>
+                    </div>
+                  </div>
                 </div>
               </div>        
             
