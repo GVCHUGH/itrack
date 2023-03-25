@@ -83,6 +83,7 @@ import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
 import { BookExpensesComponent } from './book-expenses/book-expenses.component';
 import { MonthlyEmployeeWiseExpenseComponent } from './monthly-employee-wise-expense/monthly-employee-wise-expense.component';
 import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.component';
+import { ViewAppUserDialogComponent } from './view-app-user-dialog/view-app-user-dialog.component';
 
 
 
@@ -168,6 +169,7 @@ import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.compo
     BookExpensesComponent,
     MonthlyEmployeeWiseExpenseComponent,
     EmployeeWalletComponent,
+    ViewAppUserDialogComponent,
   ],
   imports: [
     CommonModule,
