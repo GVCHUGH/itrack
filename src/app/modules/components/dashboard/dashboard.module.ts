@@ -84,6 +84,7 @@ import { BookExpensesComponent } from './book-expenses/book-expenses.component';
 import { MonthlyEmployeeWiseExpenseComponent } from './monthly-employee-wise-expense/monthly-employee-wise-expense.component';
 import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.component';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-date-and-time-picker';
+import { ViewAppUserDialogComponent } from './view-app-user-dialog/view-app-user-dialog.component';
 
 
 
@@ -169,6 +170,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-date-and-time-pic
     BookExpensesComponent,
     MonthlyEmployeeWiseExpenseComponent,
     EmployeeWalletComponent,
+    ViewAppUserDialogComponent,
   ],
   imports: [
     CommonModule,

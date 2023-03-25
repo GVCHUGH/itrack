@@ -1,0 +1,180 @@
+@import "../../../../../variables";
+@import "../../../../../mixins";
+
+::ng-deep {
+    .view-app-user-dialog {
+        max-width: 1000px;
+        width: 70vw;
+    }
+}
+
+.view-profile {
+    background: $light;
+    min-height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    &__left {
+        flex: 2;
+    }
+    &__right {
+        padding-top: 30px;
+    }
+}
+
+.list-items {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    margin: 0 -7.5px;
+    flex-wrap: wrap;
+    .list-item {
+        padding: 0 7.5px;
+        width: 33.33%;
+        list-style: none;
+        margin-bottom: 20px;
+        span {
+            color: $dark;
+            font-size: $text-sm;
+            font-weight: 500;
+        }
+        p {
+            color: $gray;
+            font-size: $text-sm;
+            margin: 0;
+        }
+    }
+}
+
+.top-right-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 125px;
+    width: 110px;
+    background: #ffd54a;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px;
+        background: #ffe89d;
+        bottom: -20px;
+        position: absolute;
+    }
+}
+
+.profile-section {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    position: relative;
+    align-items: flex-start;
+    padding: {
+        right: 33px;
+    }
+}
+.profile-name-strip {
+    flex: 2;
+    background: #F8F8F8;
+    text-align: right;
+    padding: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // margin-top: 20px;
+    h3 {
+        font-size: $text-lg;
+        color: $dark;
+        margin: 0;
+        margin-right: 10px;
+    }
+    span {
+        font-size: $text-sm;
+        color: #B18903;
+    }
+}
+.profile-thumb-child {
+    width: 160px;
+    height: 160px;
+    border-radius: 0 50px 0 50px;
+    background: $light;
+    border: 6px solid #ffc915;
+    overflow: hidden;
+    flex-shrink: 0;
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1.1;
+    }
+}
+
+.view-profile {
+    &__top {
+        padding: 10px 20px;
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-size: $text-sm;
+                > span {
+                    margin-right: 10px;
+                    font-weight: 500;
+                    color: $dark;
+                }
+                > div {
+                    display: flex;
+                    span {
+                        margin-right: 10px;
+                    }
+                    &.battery {
+                        background: #f2f2f2;
+                        padding: 4px 12px;
+                        border-radius: 40px;
+                        margin-left: 10px;
+                        img {
+                            margin-right: 10px;
+                        }
+                        label {
+                            font-size: $text-sm;
+                        }
+                    }
+                }
+                p {
+                    margin: 0;
+                    color: $gray;
+                }
+                &:not(:last-child) {
+                    margin-right: 20px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 15px;
+                        position: absolute;
+                        right: -10px;
+                        background: #dfdfdf;
+                    }
+                }
+                &.red {
+                    span ,p {
+                        color: #F14E4E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.close-dialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
