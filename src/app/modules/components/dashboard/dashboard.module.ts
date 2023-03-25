@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -83,6 +83,7 @@ import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
 import { BookExpensesComponent } from './book-expenses/book-expenses.component';
 import { MonthlyEmployeeWiseExpenseComponent } from './monthly-employee-wise-expense/monthly-employee-wise-expense.component';
 import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.component';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-date-and-time-picker';
 
 
 
@@ -172,10 +173,15 @@ import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.compo
   imports: [
     CommonModule,
     SharedModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule
   ],
   exports: [
     AdminDashboardComponent,
     DashboardRoutingModule
-  ]
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class DashboardModule { }

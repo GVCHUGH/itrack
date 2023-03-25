@@ -26,9 +26,12 @@
                     </div>
                     <div class="col-md-3 d-flex flex-column">
                         <label class="label">Start Date</label>
-                        <mat-form-field class="example-full-width"  appearance="outline">
+                        <!-- <mat-form-field class="example-full-width"  appearance="outline">
                             <input type="text" matInput placeholder="">
-                        </mat-form-field>
+                        </mat-form-field> -->
+                        <input [owlDateTime]="dt2" placeholder="Date Time" />
+                        <span [owlDateTimeTrigger]="dt2"><i class="fa fa-calendar"></i></span>
+                        <owl-date-time #dt2></owl-date-time>
                     </div>
                     <div class="col-md-3 d-flex flex-column">
                         <label class="label">End Date</label>

@@ -13,7 +13,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
-
 const material = [
     MatTabsModule,
     MatSelectModule,
@@ -24,7 +23,7 @@ const material = [
     MatCheckboxModule,
     MatRadioModule,
     MatDialogModule,
-    MatTooltipModule
+    MatTooltipModule,
 ]
 
 @NgModule({
