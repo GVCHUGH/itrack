@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>Add Expense Type</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Add Expense Type</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Select Expense Type</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Type 1
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Type 2
+                          </mat-option>
+                          <mat-option value="Employee 1">
+                            Type 3
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Type 4
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Category Name<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Position<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Picture<span class="mandatory">*</span></label>
+                    <app-radio-button></app-radio-button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Max Value Allow to App User</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input type="number" matInput placeholder="Address">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Status<span class="mandatory">*</span></label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Active
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Inactive
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Add Type</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

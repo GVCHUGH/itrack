@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 heading p-0">
-            <h2>View Forms</h2>
+            <h2>View Expense Icon</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a>Home</a></li>
-                    <li class="breadcrumb-item active">View Forms</li>
+                    <li class="breadcrumb-item active">View Expense Icon</li>
                 </ol>
             </nav>
         </div>
@@ -22,7 +22,7 @@
                 <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Form Name</label>
+                            <label class="label">Icon Name</label>
                             <mat-form-field class="example-full-width"  appearance="outline">
                                 <input matInput placeholder="">
                             </mat-form-field>
@@ -32,10 +32,13 @@
                     <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
-                            Employee 1
+                            Show All
                           </mat-option>
                           <mat-option value="Employee 2">
-                            Employee 2
+                            Active
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Inactive
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
@@ -61,7 +64,8 @@
                 <thead>
                     <tr>
                         <th>S.NO</th>
-                        <th>Form Name</th>
+                        <th>Icon Name</th>
+                        <th>Icon</th>
                         <th>Status</th>
                         <th style="text-align: center;">Action</th>
                     </tr>
@@ -69,8 +73,9 @@
                 <tbody>
                     <tr *ngFor="let item of [1,2,3], let i=index">
                         <td>{{i + 1}}</td>
-                        <td>Branding Update</td>
-                        <td><span>Active</span></td>
+                        <td>Icon 1</td>
+                        <td>NA</td>
+                        <td><span class="status">Active</span></td>
                         <td style="text-align: center;">
                             <div class="d-flex justify-content-center" style="gap: 10px;">
                                 <button class="btn icon icon-edit" mat-raised-button

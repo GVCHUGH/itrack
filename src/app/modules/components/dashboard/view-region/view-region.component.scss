@@ -56,58 +56,6 @@
     --mdc-checkbox-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
 }
 }
-.zonal-name{
-    width: 30%;
-    img{
-        margin-right: 10px;
-    }
-    p{
-        margin-bottom: 5px;
-        font-weight: 500;
-        font-size: $text-sm;
-    }
-    span{
-        padding: 5px 15px;
-        border-radius: 30px;
-        font-size: $text-2xs;
-        &:first-child{
-            background-color: #FFE89D;
-        }
-        &:last-child{
-            background-color: #49E979;
-            color: $light;
-            margin-left: 10px;
-        }
-    }
-}
-.zonal-region{
-    width: 12%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-        width: 100px;
-    }
-}
-.zonal-city{
-    width: 12%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-    }
-}
-.zonal-contact{
-    width: 28%;
-    span{
-        font-size: 14px;
-        font-weight: 500;
-    }
-}
-.zonal-action{
-    width: 6%;
-}
-.result-chips {
-    gap: 10px;
-}
 
 
 // Grid view

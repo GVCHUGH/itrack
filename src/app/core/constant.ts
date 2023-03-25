@@ -351,11 +351,88 @@ export const menu = [
     },
     {
         name:'Stock',
-        link:'stock',
+        link:'',
         isVisible:true,
         icon:'assets/images/menu-icons/stock.svg',
         isIconVisible:true,
-        hasDropdown:false,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Upload Stock',
+                link:'upload-stock',
+                isVisible:true,
+            },
+            {
+                name:'View Stock',
+                link:'view-stock',
+                isVisible:true,
+            },
+            {
+                name:'View Stock Report',
+                link:'view-stock-report',
+                isVisible:true,
+            }
+        ]
+    },
+    {
+        name:'Expenses',
+        link:'',
+        isVisible:true,
+        icon:'assets/images/menu-icons/stock.svg',
+        isIconVisible:true,
+        hasDropdown:true,
+        dropDown:[
+            {
+                name:'Add Expense Icons',
+                link:'add-expense-icons',
+                isVisible:true,
+            },
+            {
+                name:'View Expense Icons',
+                link:'view-expense-icons',
+                isVisible:true,
+            },
+            {
+                name:'Add Expense Group',
+                link:'add-expense-group',
+                isVisible:true,
+            },
+            {
+                name:'View Expense Group',
+                link:'view-expense-group',
+                isVisible:true,
+            },
+            {
+                name:'Add Expense Type',
+                link:'add-expense-type',
+                isVisible:true,
+            },
+            {
+                name:'View Expense Type',
+                link:'view-expense-type',
+                isVisible:true,
+            },
+            {
+                name:'Monthly Employee Expense',
+                link:'monthly-employee-wise-expense',
+                isVisible:true,
+            },
+            {
+                name:'View Expenses',
+                link:'view-expenses',
+                isVisible:true,
+            },
+            {
+                name:'Book Expenses',
+                link:'book-expenses',
+                isVisible:true,
+            },
+            {
+                name:'Employee Wallet',
+                link:'employee-wallet',
+                isVisible:true,
+            },
+        ]
     },
     {
         name:'Sample Group',

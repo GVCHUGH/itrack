@@ -67,6 +67,19 @@ import { ViewTaskNameComponent } from './view-task-name/view-task-name.component
 import { AddLeaveCategoryComponent } from './add-leave-category/add-leave-category.component';
 import { ViewLeaveCategoryComponent } from './view-leave-category/view-leave-category.component';
 import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-leave.component';
+import { UploadStockComponent } from './upload-stock/upload-stock.component';
+import { ViewStockComponent } from './view-stock/view-stock.component';
+import { ViewStockReportComponent } from './view-stock-report/view-stock-report.component';
+import { AddExpenseIconsComponent } from './add-expense-icons/add-expense-icons.component';
+import { AddExpenseGroupComponent } from './add-expense-group/add-expense-group.component';
+import { AddExpenseTypeComponent } from './add-expense-type/add-expense-type.component';
+import { ViewExpenseIconsComponent } from './view-expense-icons/view-expense-icons.component';
+import { ViewExpenseGroupComponent } from './view-expense-group/view-expense-group.component';
+import { ViewExpenseTypeComponent } from './view-expense-type/view-expense-type.component';
+import { MonthlyEmployeeWiseExpenseComponent } from './monthly-employee-wise-expense/monthly-employee-wise-expense.component';
+import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
+import { BookExpensesComponent } from './book-expenses/book-expenses.component';
+import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.component';
 
 const routes: Routes = [
   {path:'', component:AdminDashboardComponent},
@@ -156,7 +169,22 @@ const routes: Routes = [
 
   {path:'add-leave-category', component:AddLeaveCategoryComponent},
   {path:'view-leave-category', component: ViewLeaveCategoryComponent},
-  {path:'view-employee-leave', component:ViewEmployeeLeaveComponent}
+  {path:'view-employee-leave', component:ViewEmployeeLeaveComponent},
+
+  {path:'upload-stock', component:UploadStockComponent},
+  {path:'view-stock', component:ViewStockComponent},
+  {path:'view-stock-report', component:ViewStockReportComponent},
+
+  {path:'add-expense-icons',component:AddExpenseIconsComponent},
+  {path:'view-expense-icons',component:ViewExpenseIconsComponent},
+  {path:'add-expense-group',component:AddExpenseGroupComponent},
+  {path:'view-expense-group',component:ViewExpenseGroupComponent},
+  {path:'add-expense-type',component:AddExpenseTypeComponent},
+  {path:'view-expense-type',component:ViewExpenseTypeComponent},
+  {path:'monthly-employee-wise-expense',component:MonthlyEmployeeWiseExpenseComponent},
+  {path:'view-expenses',component:ViewExpensesComponent},
+  {path:'book-expenses',component:BookExpensesComponent},
+  {path:'employee-wallet',component:EmployeeWalletComponent},
 
 
 ];

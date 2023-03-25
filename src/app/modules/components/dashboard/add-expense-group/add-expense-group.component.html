@@ -1,0 +1,67 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 heading p-0">
+            <h2>Add Expense Group</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a>Home</a></li>
+                    <li class="breadcrumb-item active">Add Expense Group</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12 p-0">
+            <div class="card card--common">
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Category Type Name<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Position<span class="mandatory">*</span></label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Image Icon<span class="mandatory">*</span></label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Image 1
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Image 2
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Status<span class="mandatory">*</span></label>
+                            <mat-form-field appearance="outline">
+                                <mat-select>
+                                  <mat-option value="Employee 1">
+                                    Active
+                                  </mat-option>
+                                  <mat-option value="Employee 2">
+                                    Inactive
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button matRipple class="btn btn-reset me-2">Reset</button>
+                            <button matRipple class="btn btn-submit">Add Group</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

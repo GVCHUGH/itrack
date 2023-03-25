@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-employee-leave.component.scss']
 })
 export class ViewEmployeeLeaveComponent {
-
+  hideValue:boolean = true;
+  showHide(){
+    this.hideValue = !this.hideValue;
+  }
 }

@@ -70,6 +70,19 @@ import { ViewTaskNameComponent } from './view-task-name/view-task-name.component
 import { AddLeaveCategoryComponent } from './add-leave-category/add-leave-category.component';
 import { ViewLeaveCategoryComponent } from './view-leave-category/view-leave-category.component';
 import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-leave.component';
+import { UploadStockComponent } from './upload-stock/upload-stock.component';
+import { ViewStockComponent } from './view-stock/view-stock.component';
+import { ViewStockReportComponent } from './view-stock-report/view-stock-report.component';
+import { AddExpenseIconsComponent } from './add-expense-icons/add-expense-icons.component';
+import { ViewExpenseIconsComponent } from './view-expense-icons/view-expense-icons.component';
+import { AddExpenseGroupComponent } from './add-expense-group/add-expense-group.component';
+import { ViewExpenseGroupComponent } from './view-expense-group/view-expense-group.component';
+import { AddExpenseTypeComponent } from './add-expense-type/add-expense-type.component';
+import { ViewExpenseTypeComponent } from './view-expense-type/view-expense-type.component';
+import { ViewExpensesComponent } from './view-expenses/view-expenses.component';
+import { BookExpensesComponent } from './book-expenses/book-expenses.component';
+import { MonthlyEmployeeWiseExpenseComponent } from './monthly-employee-wise-expense/monthly-employee-wise-expense.component';
+import { EmployeeWalletComponent } from './employee-wallet/employee-wallet.component';
 
 
 
@@ -141,7 +154,20 @@ import { ViewEmployeeLeaveComponent } from './view-employee-leave/view-employee-
     ViewTaskNameComponent,
     AddLeaveCategoryComponent,
     ViewLeaveCategoryComponent,
-    ViewEmployeeLeaveComponent
+    ViewEmployeeLeaveComponent,
+    UploadStockComponent,
+    ViewStockComponent,
+    ViewStockReportComponent,
+    AddExpenseIconsComponent,
+    ViewExpenseIconsComponent,
+    AddExpenseGroupComponent,
+    ViewExpenseGroupComponent,
+    AddExpenseTypeComponent,
+    ViewExpenseTypeComponent,
+    ViewExpensesComponent,
+    BookExpensesComponent,
+    MonthlyEmployeeWiseExpenseComponent,
+    EmployeeWalletComponent,
   ],
   imports: [
     CommonModule,

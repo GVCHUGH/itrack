@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 heading p-0">
-            <h2>View Forms</h2>
+            <h2>View Expenses</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a>Home</a></li>
-                    <li class="breadcrumb-item active">View Forms</li>
+                    <li class="breadcrumb-item active">View Expenses</li>
                 </ol>
             </nav>
         </div>
@@ -22,13 +22,7 @@
                 <div class="card__body filter" [ngClass]="hideValue ? 'filterHide' : ''">
                     <div class="row">
                         <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Form Name</label>
-                            <mat-form-field class="example-full-width"  appearance="outline">
-                                <input matInput placeholder="">
-                            </mat-form-field>
-                        </div>
-                        <div class="col-md-3 d-flex flex-column">
-                            <label class="label">Status</label>
+                            <label class="label">Employee</label>
                     <mat-form-field appearance="outline">
                         <mat-select>
                           <mat-option value="Employee 1">
@@ -39,6 +33,31 @@
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Category Name</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                          <mat-option value="Employee 1">
+                            Category 1
+                          </mat-option>
+                          <mat-option value="Employee 2">
+                            Category 2
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Expenses From</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <label class="label">Expenses Till</label>
+                            <mat-form-field class="example-full-width"  appearance="outline">
+                                <input matInput placeholder="">
+                            </mat-form-field>
                         </div>
                     </div>
                     <div class="row">
@@ -61,26 +80,19 @@
                 <thead>
                     <tr>
                         <th>S.NO</th>
-                        <th>Form Name</th>
-                        <th>Status</th>
-                        <th style="text-align: center;">Action</th>
+                        <th>Employee</th>
+                        <th>Title</th>
+                        <th>Category Name</th>
+                        <th>Amount</th>
+                        <th>Remarks</th>
+                        <th>Expense From</th>
+                        <th>Expense Till</th>
+                        <th>Report Date</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of [1,2,3], let i=index">
-                        <td>{{i + 1}}</td>
-                        <td>Branding Update</td>
-                        <td><span>Active</span></td>
-                        <td style="text-align: center;">
-                            <div class="d-flex justify-content-center" style="gap: 10px;">
-                                <button class="btn icon icon-edit" mat-raised-button
-                                matTooltip="Edit"
-                                [matTooltipPosition]="'above'"><i class="material-icons">edit</i></button>
-                                <button class="btn icon icon-delete" mat-raised-button
-                                matTooltip="Delete"
-                                [matTooltipPosition]="'above'"><i class="material-icons">delete</i></button>
-                            </div>
-                        </td>
+                    <tr>
+                        <td colspan="9" style="text-align: center;">No Record Found</td>
                     </tr>
                 </tbody>
             </table>

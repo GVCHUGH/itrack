@@ -226,7 +226,10 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         padding: 20px;
     }
 }
-
+.configure{
+    border: 1px solid $border;
+    border-radius: 5px;
+}
 .table {
     &--common {
         font-size: $text-sm;
@@ -705,7 +708,7 @@ body { margin: 0; font-family: $font; background: $gray-200; }
         display: inline-flex;
         padding-right: 10px;
         height: 40px;
-        width: 80px;
+        min-width: 80px;
         .mdc-form-field{
             label {
                 font-family: $font;
@@ -754,5 +757,52 @@ body { margin: 0; font-family: $font; background: $gray-200; }
     margin-bottom: 10px;
     img{
         width: 10px;
+    }
+}
+
+.file-upload{
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 15px;
+    .upload-img{
+        background-color: $secondary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .upload-content{
+        margin-left: 20px;
+        width: calc(100% - 50px);
+        h2{
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+            color: #6d6d6d;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+}
+
+.btn-download{
+    background: $secondary;
+    border-color: $secondary;
+    color: $dark;
+    &:hover,&:focus {
+        background: darken($color: $secondary, $amount: 10%);
+        border-color: darken($color: $secondary, $amount: 10%);
+    }
+    font-size: 12px;
+    width: 160px;
+    height: 40px;
+    margin-left: 10px;
+    img{
+        margin-right: 10px;
     }
 }
